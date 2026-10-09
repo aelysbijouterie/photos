@@ -627,11 +627,11 @@ function splitName(name) {
   return i > 0 ? [name.slice(0, i), name.slice(i + 1)] : [name, ''];
 }
 
-// Nom de téléchargement : nom d'origine + "-compressed" + extension réelle de la sortie
+// Nom de téléchargement : nom d'origine inchangé, avec l'extension réelle du format de sortie
 function outputName(item) {
   const [base] = splitName(item.file.name);
   const ext = MIME_EXT[item.result.mime] || splitName(item.file.name)[1] || 'bin';
-  return base + '-compressed.' + ext;
+  return base + '.' + ext;
 }
 
 // Création d'éléments DOM sans innerHTML (pas d'injection via les noms de fichiers)

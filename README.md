@@ -9,7 +9,7 @@ Outil web en une seule page (`index.html`) qui compresse vos photos **sous 100 K
 - Une image déjà sous la cible est laissée intacte.
 - L'orientation EXIF est respectée ; la transparence des PNG est conservée (sortie WebP, ou PNG si le navigateur n'encode pas le WebP).
 - Calcul dans des Web Workers (`OffscreenCanvas`), avec repli automatique sur le thread principal si le navigateur ne les gère pas.
-- Comparaison avant/après (curseur), téléchargement individuel ou en ZIP (JSZip via CDN), fichiers nommés `nom-compressed.ext`.
+- Comparaison avant/après (curseur), téléchargement individuel ou en ZIP (JSZip via CDN), fichiers gardant leur nom d'origine (l'extension suit le format de sortie, ex. `photo.jpg` → `photo.webp`).
 - Réglages repliables : taille cible, format (WebP/JPEG), conservation des dimensions d'origine.
 - Thème clair/sombre automatique. 1 Ko = 1 000 octets.
 
