@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Compresseur d'images</title>
+<meta name="description" content="Compressez vos photos sous 100 Ko directement dans votre navigateur. Aucune donnée n'est envoyée à un serveur.">
+<style>
+  /* ============ Thème : variables clair / sombre (automatique) ============ */
+  :root {
+    --bg: #f5f6fa;
+    --surface: #ffffff;
+    --surface-2: #eef0f6;
+    --text: #1a1d29;
+    --muted: #666d85;
+    --border: #dde0ea;
+    --accent: #5b5bf0;
+    --accent-2: #8a5cf6;
+    --accent-soft: rgba(91, 91, 240, .10);
+    --ok: #12945a;
+    --ok-soft: rgba(18, 148, 90, .12);
+    --warn: #b7791f;
+    --warn-soft: rgba(183, 121, 31, .14);
+    --err: #d2384b;
+    --err-soft: rgba(210, 56, 75, .12);
+    --shadow: 0 1px 2px rgba(20, 24, 50, .06), 0 8px 24px rgba(20, 24, 50, .06);
+    --radius: 16px;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f111a;
+      --surface: #181b27;
+      --surface-2: #212536;
+      --text: #eceef7;
+      --muted: #9aa1ba;
+      --border: #2b3045;
+      --accent: #7c7cff;
+      --accent-2: #a98bff;
+      --accent-soft: rgba(124, 124, 255, .14);
+      --ok: #3ccf8e;
+      --ok-soft: rgba(60, 207, 142, .14);
+      --warn: #f0b24a;
+      --warn-soft: rgba(240, 178, 74, .15);
+      --err: #ff6b7e;
+      --err-soft: rgba(255, 107, 126, .14);
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px rgba(0, 0, 0, .35);
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); margin: 0 0 6px; letter-spacing: -.02em; }
+  .lead { margin: 0 0 24px; color: var(--muted); }
+  .lead strong { color: var(--text); font-weight: 600; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ============ Zone de dépôt ============ */
+  .dropzone {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 6px; text-align: center;
+    min-height: 240px; padding: 32px 20px;
+    border: 2px dashed var(--border);
+    border-radius: 24px;
+    background: var(--surface);
+    cursor: pointer;
+    transition: border-color .2s, background .2s, transform .2s, box-shadow .2s;
+  }
+  .dropzone:hover { border-color: var(--accent); }
+  .dropzone.dragover {
+    border-color: var(--accent); border-style: solid;
+    background: var(--accent-soft);
+    transform: scale(1.012);
+    box-shadow: 0 0 0 6px var(--accent-soft);
+  }
+  .dropzone .icon {
+    width: 64px; height: 64px; border-radius: 20px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff;
+    margin-bottom: 8px; transition: transform .25s;
+  }
+  .dropzone.dragover .icon { transform: translateY(-4px) scale(1.08); }
+  .dropzone .title { font-size: 1.15rem; font-weight: 650; }
+  .dropzone .hint { color: var(--muted); font-size: .92rem; }
+  .dropzone u { text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  .privacy { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: .82rem; color: var(--muted); }
+
+  /* ============ Réglages repliables ============ */
+  details.settings {
+    margin-top: 16px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 0 16px;
+  }
+  details.settings summary {
+    cursor: pointer; padding: 12px 0; font-weight: 600; font-size: .95rem; list-style: none;
+    display: flex; align-items: center; gap: 8px; user-select: none;
+  }
+  details.settings summary::-webkit-details-marker { display: none; }
+  details.settings summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s; }
+  details.settings[open] summary::after { transform: rotate(180deg); }
+  .settings-grid { display: grid; gap: 16px; padding: 4px 0 16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .field label, .field .label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: 6px; }
+  .field small { display: block; color: var(--muted); margin-top: 4px; font-size: .78rem; }
+  .field input[type="number"], .field select {
+    width: 100%; padding: 9px 12px; border-radius: 10px; font: inherit;
+    border: 1px solid var(--border); background: var(--surface-2); color: var(--text);
+  }
+  .check { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; font-size: .92rem; }
+  .check input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--accent); }
+  .settings-actions { padding-bottom: 16px; }
+
+  /* ============ Boutons ============ */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 9px 16px; border-radius: 10px; border: 1px solid var(--border);
+    background: var(--surface); cursor: pointer; font-weight: 600; font-size: .92rem;
+    transition: transform .12s, background .15s, border-color .15s, opacity .15s;
+    text-decoration: none;
+  }
+  .btn:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+  .btn:active:not(:disabled) { transform: scale(.97); }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; border-color: transparent; }
+  .btn.primary:hover:not(:disabled) { filter: brightness(1.08); background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+  .btn.danger:hover:not(:disabled) { border-color: var(--err); background: var(--err-soft); }
+  .btn.small { padding: 6px 12px; font-size: .84rem; }
+
+  /* ============ Barre globale ============ */
+  #results { margin-top: 28px; }
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .toolbar .buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+  .summary { font-size: .92rem; color: var(--muted); }
+  .summary b { color: var(--text); }
+  .progress { height: 6px; border-radius: 99px; background: var(--surface-2); overflow: hidden; margin-bottom: 16px; }
+  .progress > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width .3s ease; }
+
+  /* ============ Messages (rejets, erreurs) ============ */
+  #notices { display: grid; gap: 8px; margin-top: 16px; }
+  .notice {
+    display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; border-radius: 12px;
+    font-size: .9rem; background: var(--warn-soft); border: 1px solid transparent; animation: pop .25s ease;
+  }
+  .notice.error { background: var(--err-soft); }
+  .notice button { margin-left: auto; background: none; border: 0; cursor: pointer; font-size: 1.1rem; line-height: 1; color: var(--muted); }
+
+  /* ============ Cartes image ============ */
+  #list { display: grid; gap: 12px; list-style: none; padding: 0; margin: 0; }
+  .card {
+    display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 12px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); animation: pop .3s ease; position: relative; overflow: hidden;
+  }
+  @keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+  .thumb {
+    width: 92px; height: 92px; border-radius: 12px; overflow: hidden; flex: none;
+    background: repeating-conic-gradient(var(--surface-2) 0 25%, transparent 0 50%) 0 0 / 14px 14px;
+  }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .info { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+  .name-row { display: flex; gap: 8px; align-items: center; }
+  .name { font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .badge {
+    flex: none; font-size: .72rem; font-weight: 700; padding: 2px 9px; border-radius: 99px;
+    background: var(--surface-2); color: var(--muted); letter-spacing: .02em;
+  }
+  .badge.ok { background: var(--ok-soft); color: var(--ok); }
+  .badge.warn { background: var(--warn-soft); color: var(--warn); }
+  .badge.err { background: var(--err-soft); color: var(--err); }
+  .sizes { font-size: .95rem; font-variant-numeric: tabular-nums; }
+  .sizes .arrow { color: var(--muted); margin: 0 4px; }
+  .sizes .gain { color: var(--ok); font-weight: 700; margin-left: 6px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .8rem; color: var(--muted); }
+  .note { font-size: .8rem; color: var(--warn); }
+  .errmsg { font-size: .88rem; color: var(--err); }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+  .remove {
+    position: absolute; top: 8px; right: 8px; width: 28px; height: 28px; border-radius: 8px;
+    border: 0; background: transparent; color: var(--muted); cursor: pointer; font-size: 1.2rem; line-height: 1;
+  }
+  .remove:hover { background: var(--err-soft); color: var(--err); }
+  .card .bar { height: 4px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+  .card .bar > i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .25s; }
+  .card .bar.indeterminate > i { width: 35%; animation: slide 1.1s infinite ease-in-out; }
+  @keyframes slide { from { margin-left: -35%; } to { margin-left: 100%; } }
+  .spin { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--accent); border-right-color: transparent; animation: rot .7s linear infinite; }
+  @keyframes rot { to { transform: rotate(360deg); } }
+
+  /* ============ Comparaison avant / après ============ */
+  dialog.compare {
+    width: min(960px, 96vw); max-height: 94vh; padding: 0; border: 1px solid var(--border);
+    border-radius: 20px; background: var(--surface); color: var(--text); box-shadow: 0 24px 80px rgba(0,0,0,.45);
+  }
+  dialog.compare::backdrop { background: rgba(8, 10, 20, .65); backdrop-filter: blur(3px); }
+  .cmp-head { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+  .cmp-head h2 { margin: 0; font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .cmp-head .btn { margin-left: auto; }
+  .cmp-body { padding: 14px 16px 16px; }
+  .cmp-stage {
+    position: relative; width: 100%; margin: 0 auto; max-height: 70vh; overflow: hidden; border-radius: 12px;
+    user-select: none; touch-action: pan-y; cursor: ew-resize;
+    background: repeating-conic-gradient(var(--surface-2) 0 25%, transparent 0 50%) 0 0 / 18px 18px;
+  }
+  .cmp-stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+  .cmp-stage .before { clip-path: inset(0 50% 0 0); }
+  .cmp-divider { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.35); pointer-events: none; }
+  .cmp-divider::after {
+    content: "⇄"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 36px; height: 36px; border-radius: 50%; background: #fff; color: #222; display: grid; place-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,.4); font-size: 1rem;
+  }
+  .cmp-tag { position: absolute; bottom: 10px; padding: 3px 10px; border-radius: 99px; font-size: .78rem; font-weight: 700; background: rgba(0,0,0,.62); color: #fff; pointer-events: none; }
+  .cmp-tag.l { left: 10px; } .cmp-tag.r { right: 10px; }
+  .cmp-range { width: 100%; margin: 14px 0 0; accent-color: var(--accent); }
+  .cmp-foot { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); margin-top: 6px; }
+
+  .compat { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--err-soft); color: var(--err); font-weight: 600; }
+  [hidden] { display: none !important; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  footer { margin-top: 40px; text-align: center; font-size: .82rem; color: var(--muted); }
+
+  @media (max-width: 520px) {
+    .card { grid-template-columns: 72px 1fr; gap: 10px; }
+    .thumb { width: 72px; height: 72px; }
+    .toolbar .buttons, .toolbar .buttons .btn { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Compresseur d'images</h1>
+  <p class="lead">Déposez vos photos : elles sont réduites <strong>sous la taille cible</strong> (100&nbsp;Ko par défaut) avec la meilleure qualité possible. Tout se passe dans votre navigateur.</p>
+
+  <div id="compat" class="compat" hidden></div>
+
+  <!-- Zone de dépôt : clic, clavier ou glisser-déposer -->
+  <div id="dropzone" class="dropzone" role="button" tabindex="0" aria-label="Déposer des images ou cliquer pour choisir des fichiers">
+    <div class="icon" aria-hidden="true">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
+    </div>
+    <div class="title">Glissez vos images ici</div>
+    <div class="hint">ou <u>cliquez pour parcourir</u> · JPG, PNG, WebP · plusieurs fichiers possibles</div>
+    <div class="privacy">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      Aucune donnée envoyée : traitement 100 % local
+    </div>
+  </div>
+  <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple hidden>
+
+  <!-- Réglages discrets -->
+  <details class="settings" id="settings">
+    <summary>⚙️ Réglages</summary>
+    <div class="settings-grid">
+      <div class="field">
+        <label for="opt-target">Taille cible (Ko)</label>
+        <input id="opt-target" type="number" min="10" max="5000" step="10" value="100" inputmode="numeric">
+        <small>1 Ko = 1 000 octets. Entre 10 et 5 000.</small>
+      </div>
+      <div class="field">
+        <label for="opt-format">Format de sortie</label>
+        <select id="opt-format">
+          <option value="webp">WebP (meilleur rapport qualité/poids)</option>
+          <option value="jpeg">JPEG (compatibilité maximale)</option>
+        </select>
+        <small>Les PNG transparents restent en WebP (ou PNG) pour garder la transparence.</small>
+      </div>
+      <div class="field">
+        <span class="label">Dimensions</span>
+        <label class="check"><input id="opt-keep" type="checkbox"><span>Conserver les dimensions d'origine<small>Seule la qualité baisse (jusqu'à 10 %) : la cible peut alors ne pas être atteinte.</small></span></label>
+      </div>
+    </div>
+    <div class="settings-actions">
+      <button class="btn small" id="btn-reprocess" type="button" disabled>↻ Recompresser les images avec ces réglages</button>
+    </div>
+  </details>
+
+  <div id="notices" aria-live="polite"></div>
+
+  <section id="results" hidden>
+    <div class="toolbar">
+      <div class="summary" id="summary" aria-live="polite"></div>
+      <div class="buttons">
+        <button class="btn primary" id="btn-zip" type="button" disabled>⬇ Tout télécharger en ZIP</button>
+        <button class="btn danger" id="btn-clear" type="button">🗑 Tout effacer</button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="global-bar"></i></div>
+    <ul id="list"></ul>
+  </section>
+
+  <footer>Les images ne quittent jamais votre appareil.</footer>
+</main>
+
+<!-- Fenêtre de comparaison avant / après -->
+<dialog class="compare" id="compare" aria-labelledby="cmp-title">
+  <div class="cmp-head">
+    <h2 id="cmp-title"></h2>
+    <button class="btn small" id="cmp-close" type="button">Fermer ✕</button>
+  </div>
+  <div class="cmp-body">
+    <div class="cmp-stage" id="cmp-stage">
+      <img class="after" id="cmp-after" alt="Image compressée">
+      <img class="before" id="cmp-before" alt="Image d'origine">
+      <div class="cmp-divider" id="cmp-divider"></div>
+      <span class="cmp-tag l">Avant</span><span class="cmp-tag r">Après</span>
+    </div>
+    <input class="cmp-range" id="cmp-range" type="range" min="0" max="100" value="50" aria-label="Position du curseur de comparaison">
+    <div class="cmp-foot"><span id="cmp-left"></span><span id="cmp-right"></span></div>
+  </div>
+</dialog>
+
+<!-- Seule dépendance externe : JSZip (pour l'export ZIP) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+'use strict';
+
+/* =====================================================================
+ *  1. NOYAU DE COMPRESSION
+ *  Cette fonction est autonome (aucune référence à l'extérieur) : elle est
+ *  exécutée telle quelle dans le Web Worker, ou sur le thread principal
+ *  en solution de repli. `env` fournit la création de canvas et l'encodage.
+ * ===================================================================== */
+async function coreCompress(file, o, env, progress) {
+  const MAX_Q = 0.95;                       // qualité maximale testée
+  const MIN_Q = o.keepDims ? 0.10 : 0.50;   // qualité minimale acceptée
+  const STEP = 0.9;                         // palier de réduction : -10 % par étape
+  const MIN_SIDE = 32;                      // on ne descend jamais sous 32 px
+  let attempts = 0;
+  const report = (text) => {
+    attempts++;
+    progress({ pct: Math.round(95 * (1 - Math.pow(0.88, attempts))), text });
+  };
+
+  // --- Décodage (l'orientation EXIF est appliquée par le navigateur) ---
+  progress({ pct: 3, text: 'Lecture de l\'image…' });
+  let bmp;
+  try {
+    bmp = await createImageBitmap(file, { imageOrientation: 'from-image' });
+  } catch (e1) {
+    try { bmp = await createImageBitmap(file); }
+    catch (e2) { throw new Error('Image illisible ou corrompue.'); }
+  }
+  const W = bmp.width, H = bmp.height;
+  if (!W || !H) throw new Error('Image vide ou corrompue.');
+
+  const result = (extra) => Object.assign({
+    origW: W, origH: H, width: W, height: H, quality: null, intact: false,
+    overTarget: false, notes: [],
+  }, extra);
+
+  // --- Image déjà assez légère : on la laisse strictement intacte ---
+  if (file.size <= o.targetBytes) {
+    bmp.close && bmp.close();
+    return result({ blob: file, mime: file.type, intact: true });
+  }
+
+  // --- Détection de la transparence (sur une version réduite, pour la vitesse) ---
+  let hasAlpha = false;
+  if (file.type === 'image/png' || file.type === 'image/webp') {
+    const k = Math.min(1, 1024 / Math.max(W, H));
+    const sw = Math.max(1, Math.round(W * k)), sh = Math.max(1, Math.round(H * k));
+    const c = env.createCanvas(sw, sh);
+    const x = c.getContext('2d', { willReadFrequently: true });
+    x.drawImage(bmp, 0, 0, sw, sh);
+    const d = x.getImageData(0, 0, sw, sh).data;
+    for (let i = 3; i < d.length; i += 4) { if (d[i] < 255) { hasAlpha = true; break; } }
+  }
+
+  // --- Choix du format réellement encodable (Safari n'encode pas le WebP) ---
+  let webpOK = false;
+  try {
+    const pc = env.createCanvas(2, 2);
+    pc.getContext('2d').fillRect(0, 0, 1, 1); // OffscreenCanvas exige un contexte avant l'encodage
+    webpOK = (await env.toBlob(pc, 'image/webp', 0.8)).type === 'image/webp';
+  } catch (e) {}
+  const notes = [];
+  let mime;
+  if (hasAlpha) {
+    mime = webpOK ? 'image/webp' : 'image/png';
+    if (o.format === 'jpeg' || !webpOK) notes.push('Transparence conservée : sortie ' + (webpOK ? 'WebP' : 'PNG') + '.');
+  } else if (o.format === 'webp' && webpOK) {
+    mime = 'image/webp';
+  } else {
+    mime = 'image/jpeg';
+    if (o.format === 'webp') notes.push('WebP non géré par ce navigateur : sortie JPEG.');
+  }
+  const lossless = mime === 'image/png';
+  if (lossless) notes.push('PNG sans perte : seules les dimensions peuvent baisser.');
+
+  // --- Dessin à une échelle donnée (toujours depuis l'original) ---
+  const render = (w, h) => {
+    const c = env.createCanvas(w, h);
+    const x = c.getContext('2d');
+    if (mime === 'image/jpeg') { x.fillStyle = '#fff'; x.fillRect(0, 0, w, h); } // JPEG : pas d'alpha
+    x.imageSmoothingEnabled = true;
+    x.imageSmoothingQuality = 'high';
+    x.drawImage(bmp, 0, 0, w, h);
+    return c;
+  };
+  const encode = async (c, q) => {
+    const b = await env.toBlob(c, mime, lossless ? undefined : q);
+    if (b.type !== mime) throw new Error('Encodage ' + mime + ' non supporté.');
+    return b;
+  };
+
+  // --- Tentative à un palier de dimensions donné (k = nombre de réductions de 10 %) ---
+  // Renvoie { best } (plus haute qualité sous la cible) ou { fail } (meilleure tentative ratée)
+  const attempt = async (k) => {
+    const scale = Math.pow(STEP, k);
+    const w = Math.max(1, Math.round(W * scale)), h = Math.max(1, Math.round(H * scale));
+    const tag = k ? ' · ' + w + '×' + h : '';
+    const canvas = render(w, h);
+    if (lossless) {
+      report('PNG ' + w + '×' + h + '…');
+      const b = await encode(canvas);
+      return b.size <= o.targetBytes ? { best: { blob: b, q: null, w, h } } : { fail: { blob: b, q: null, w, h } };
+    }
+    // 1) La qualité maximale passe-t-elle déjà ? (cas le plus favorable)
+    report('Qualité ' + Math.round(MAX_Q * 100) + ' %' + tag);
+    const bHi = await encode(canvas, MAX_Q);
+    if (bHi.size <= o.targetBytes) return { best: { blob: bHi, q: MAX_Q, w, h } };
+    // 2) La qualité minimale passe-t-elle ? Sinon il faudra réduire les dimensions.
+    report('Qualité ' + Math.round(MIN_Q * 100) + ' %' + tag);
+    const bLo = await encode(canvas, MIN_Q);
+    if (bLo.size > o.targetBytes) return { fail: { blob: bLo, q: MIN_Q, w, h } };
+    // 3) Recherche dichotomique de la qualité la plus haute qui passe sous la cible
+    let lo = MIN_Q, hi = MAX_Q, ok = { blob: bLo, q: MIN_Q, w, h };
+    while (hi - lo > 0.005) {
+      const mid = (lo + hi) / 2;
+      report('Recherche de la meilleure qualité (' + Math.round(mid * 100) + ' %)' + tag);
+      const b = await encode(canvas, mid);
+      if (b.size <= o.targetBytes) { ok = { blob: b, q: mid, w, h }; lo = mid; } else { hi = mid; }
+    }
+    return { best: ok };
+  };
+  const tooSmall = (k) => Math.min(W, H) * Math.pow(STEP, k) < MIN_SIDE;
+
+  // --- Boucle principale : qualité d'abord, dimensions en dernier recours ---
+  let k = 0, failK = -1, fail = null, found = null;
+  for (;;) {
+    const r = await attempt(k);
+    if (r.best) { found = r.best; break; }
+    fail = r.fail; failK = k;
+    // Cible non atteinte : on réduit, sauf si l'utilisateur veut garder les dimensions
+    if (o.keepDims || tooSmall(k + 1)) break;
+    k++;
+    // Accélération : très loin de la cible, on saute quelques paliers (estimation prudente
+    // basée sur la surface), puis l'affinage ci-dessous remonte si on a trop sauté.
+    if (fail.blob.size > o.targetBytes * 1.5) {
+      const jump = Math.floor(Math.log(Math.sqrt(o.targetBytes / fail.blob.size)) / Math.log(STEP)) - 1;
+      for (let i = 0; i < jump && !tooSmall(k + 1); i++) k++;
+    }
+  }
+
+  if (found) {
+    // Affinage : si des paliers ont été sautés, on remonte d'un palier à la fois
+    // tant que la cible reste atteignable, pour ne pas réduire plus que nécessaire.
+    while (k - 1 > failK) {
+      const r = await attempt(k - 1);
+      if (!r.best) break;
+      found = r.best; k--;
+    }
+    bmp.close && bmp.close();
+    if (k > 0) notes.push('Dimensions réduites de ' + Math.round((1 - Math.pow(STEP, k)) * 100) + ' % pour atteindre la cible.');
+    return result({ blob: found.blob, mime, width: found.w, height: found.h, quality: found.q, notes });
+  }
+
+  // Cible inatteignable : si le résultat n'est pas plus léger que l'original, on garde l'original
+  bmp.close && bmp.close();
+  if (fail.blob.size >= file.size) {
+    notes.push('Cible inatteignable : original conservé.');
+    return result({ blob: file, mime: file.type, intact: true, overTarget: true, notes });
+  }
+  notes.push(o.keepDims ? 'Cible inatteignable en conservant les dimensions.' : 'Cible inatteignable, même fortement réduite.');
+  return result({ blob: fail.blob, mime, width: fail.w, height: fail.h, quality: fail.q, overTarget: true, notes });
+}
+
+/* =====================================================================
+ *  2. ENVIRONNEMENTS (canvas) ET WEB WORKER
+ * ===================================================================== */
+
+// Thread principal : <canvas> classique
+const mainEnv = {
+  createCanvas(w, h) { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; },
+  toBlob(c, type, q) {
+    return new Promise((res, rej) => c.toBlob((b) => b ? res(b) : rej(new Error('Encodage impossible.')), type, q));
+  },
+};
+
+// Code du worker : le noyau + un petit gestionnaire de messages
+const WORKER_SRC = coreCompress.toString() + `
+const workerEnv = {
+  createCanvas(w, h) { return new OffscreenCanvas(w, h); },
+  toBlob(c, type, q) { return c.convertToBlob({ type: type, quality: q }); },
+};
+self.onmessage = async (e) => {
+  const { id, file, opts } = e.data;
+  try {
+    const result = await coreCompress(file, opts, workerEnv, (p) => self.postMessage({ id, type: 'progress', pct: p.pct, text: p.text }));
+    self.postMessage({ id, type: 'done', result });
+  } catch (err) {
+    self.postMessage({ id, type: 'error', message: (err && err.message) || 'Erreur inconnue.' });
+  }
+};
+self.postMessage({ type: 'ready' });
+`;
+
+// Le worker n'est utilisable que si OffscreenCanvas + createImageBitmap existent
+const CAN_WORKER = typeof Worker !== 'undefined' && typeof OffscreenCanvas !== 'undefined'
+  && typeof OffscreenCanvas.prototype.convertToBlob === 'function' && typeof createImageBitmap === 'function';
+const CAN_MAIN = typeof createImageBitmap === 'function' && !!document.createElement('canvas').getContext;
+
+/* ---- Pool de workers (ou repli séquentiel sur le thread principal) ---- */
+const pool = { workers: [], idle: [], queue: [], useWorkers: false, mainBusy: false, url: null, nextId: 1 };
+
+function spawnWorker() {
+  const w = new Worker(pool.url);
+  w.ready = false; w.task = null;
+  w.onmessage = (e) => {
+    const m = e.data;
+    if (m.type === 'ready') { w.ready = true; pool.idle.push(w); pump(); return; }
+    const t = w.task;
+    if (!t) return;
+    if (m.type === 'progress') { t.onProgress(m); return; }
+    w.task = null; pool.idle.push(w);
+    if (m.type === 'done') t.resolve(m.result); else t.reject(new Error(m.message));
+    pump();
+  };
+  w.onerror = (e) => {
+    e.preventDefault && e.preventDefault();
+    const t = w.task; w.task = null;
+    pool.workers = pool.workers.filter((x) => x !== w);
+    pool.idle = pool.idle.filter((x) => x !== w);
+    w.terminate();
+    if (!w.ready) {
+      // Le worker n'a pas pu démarrer (ex. restrictions du navigateur) : repli thread principal
+      pool.useWorkers = false;
+      pool.workers.forEach((x) => x.terminate());
+      pool.workers = []; pool.idle = [];
+      if (t) pool.queue.unshift(t);
+    } else if (t) {
+      t.reject(new Error('Le traitement a échoué (mémoire insuffisante ?).'));
+      try { pool.workers.push(spawnWorker()); } catch (_) {}
+    }
+    pump();
+  };
+  return w;
+}
+
+function initPool() {
+  if (!CAN_WORKER) return;
+  try {
+    pool.url = URL.createObjectURL(new Blob([WORKER_SRC], { type: 'text/javascript' }));
+    const n = Math.max(1, Math.min(4, (navigator.hardwareConcurrency || 2) - 1));
+    for (let i = 0; i < n; i++) pool.workers.push(spawnWorker());
+    pool.useWorkers = true;
+  } catch (e) {
+    pool.useWorkers = false;
+  }
+}
+
+function pump() {
+  while (pool.queue.length) {
+    // Tâche annulée entre-temps (image supprimée) : on l'ignore
+    if (pool.queue[0].cancelled()) { pool.queue.shift().resolve(null); continue; }
+    if (pool.useWorkers) {
+      const w = pool.idle.pop();
+      if (!w) return;
+      const t = pool.queue.shift();
+      w.task = t;
+      w.postMessage({ id: t.id, file: t.file, opts: t.opts });
+    } else {
+      if (pool.mainBusy) return;
+      const t = pool.queue.shift();
+      pool.mainBusy = true;
+      coreCompress(t.file, t.opts, mainEnv, t.onProgress)
+        .then(t.resolve, t.reject)
+        .finally(() => { pool.mainBusy = false; pump(); });
+      return;
+    }
+  }
+}
+
+function compressFile(file, opts, onProgress, cancelled) {
+  return new Promise((resolve, reject) => {
+    pool.queue.push({ id: pool.nextId++, file, opts, onProgress, cancelled, resolve, reject });
+    pump();
+  });
+}
+
+/* =====================================================================
+ *  3. OUTILS
+ * ===================================================================== */
+const $ = (id) => document.getElementById(id);
+const ACCEPTED = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
+const EXT_TO_MIME = { jpg: 'image/jpeg', jpeg: 'image/jpeg', png: 'image/png', webp: 'image/webp' };
+const MIME_EXT = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp' };
+
+// Taille lisible en français (1 Ko = 1 000 octets)
+function fmtSize(bytes) {
+  const nf = (n, d) => n.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d });
+  if (bytes >= 1e6) return nf(bytes / 1e6, 2) + ' Mo';
+  if (bytes >= 1e3) return nf(bytes / 1e3, bytes >= 1e5 ? 0 : 1) + ' Ko';
+  return bytes + ' o';
+}
+
+// Détermine le type MIME accepté (via type déclaré, sinon extension) ou null
+function detectMime(file) {
+  if (ACCEPTED[file.type]) return file.type;
+  const m = /\.([a-z0-9]+)$/i.exec(file.name);
+  return m ? (EXT_TO_MIME[m[1].toLowerCase()] || null) : null;
+}
+
+function splitName(name) {
+  const i = name.lastIndexOf('.');
+  return i > 0 ? [name.slice(0, i), name.slice(i + 1)] : [name, ''];
+}
+
+// Nom de téléchargement : nom d'origine + "-compressed" + extension réelle de la sortie
+function outputName(item) {
+  const [base] = splitName(item.file.name);
+  const ext = MIME_EXT[item.result.mime] || splitName(item.file.name)[1] || 'bin';
+  return base + '-compressed.' + ext;
+}
+
+// Création d'éléments DOM sans innerHTML (pas d'injection via les noms de fichiers)
+function el(tag, props, ...kids) {
+  const e = document.createElement(tag);
+  if (props) for (const k in props) {
+    if (k === 'class') e.className = props[k];
+    else if (k === 'text') e.textContent = props[k];
+    else if (k.startsWith('on')) e.addEventListener(k.slice(2), props[k]);
+    else e.setAttribute(k, props[k]);
+  }
+  kids.forEach((c) => c != null && e.append(c));
+  return e;
+}
+
+function downloadBlob(blob, name) {
+  const url = URL.createObjectURL(blob);
+  const a = el('a', { href: url, download: name });
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 4000);
+}
+
+/* =====================================================================
+ *  4. RÉGLAGES
+ * ===================================================================== */
+const settings = { targetKb: 100, format: 'webp', keepDims: false };
+try { Object.assign(settings, JSON.parse(localStorage.getItem('compressor-settings') || '{}')); } catch (_) {}
+
+function readSettings() {
+  let kb = parseInt($('opt-target').value, 10);
+  if (!Number.isFinite(kb)) kb = 100;
+  settings.targetKb = Math.min(5000, Math.max(10, kb));
+  settings.format = $('opt-format').value === 'jpeg' ? 'jpeg' : 'webp';
+  settings.keepDims = $('opt-keep').checked;
+  try { localStorage.setItem('compressor-settings', JSON.stringify(settings)); } catch (_) {}
+}
+function applySettingsToUI() {
+  $('opt-target').value = settings.targetKb;
+  $('opt-format').value = settings.format;
+  $('opt-keep').checked = !!settings.keepDims;
+}
+const currentOpts = () => ({ targetBytes: settings.targetKb * 1000, format: settings.format, keepDims: settings.keepDims });
+
+/* =====================================================================
+ *  5. ÉTAT ET INTERFACE DES RÉSULTATS
+ * ===================================================================== */
+const items = [];       // { id, file, status, ... }
+let uid = 1;
+let generation = 0;     // incrémentée par "Tout effacer" pour ignorer les résultats tardifs
+
+function addNotice(msg, kind) {
+  const n = el('div', { class: 'notice' + (kind === 'error' ? ' error' : ''), role: 'status' },
+    el('span', { text: msg }),
+    el('button', { type: 'button', 'aria-label': 'Fermer', text: '×', onclick: () => n.remove() }));
+  $('notices').append(n);
+  setTimeout(() => n.remove(), 12000);
+}
+
+// Réception de fichiers (drop ou sélecteur)
+function handleFiles(fileList) {
+  const files = Array.from(fileList || []);
+  if (!files.length) return;
+  const rejected = [];
+  for (const f of files) {
+    const mime = detectMime(f);
+    if (!mime) { rejected.push(f.name); continue; }
+    if (f.size === 0) { addNotice('« ' + f.name + ' » est vide : ignoré.', 'error'); continue; }
+    // Certains navigateurs donnent un type vide : on le corrige d'après l'extension
+    const file = f.type === mime ? f : new File([f], f.name, { type: mime, lastModified: f.lastModified });
+    addItem(file);
+  }
+  if (rejected.length) {
+    const list = rejected.length > 3 ? rejected.slice(0, 3).join(', ') + '…' : rejected.join(', ');
+    addNotice(rejected.length + ' fichier' + (rejected.length > 1 ? 's' : '') + ' ignoré' + (rejected.length > 1 ? 's' : '')
+      + ' (' + list + ') : seuls les formats JPG, PNG et WebP sont acceptés.');
+  }
+}
+
+function addItem(file) {
+  const item = {
+    id: uid++, file, status: 'queue', pct: 0, text: 'En attente…', result: null, resultUrl: null,
+    origUrl: URL.createObjectURL(file), error: null, gen: generation, ui: {},
+  };
+  items.push(item);
+  buildCard(item);
+  $('results').hidden = false;
+  startItem(item);
+  refreshSummary();
+}
+
+function buildCard(item) {
+  const ui = item.ui;
+  ui.img = el('img', { alt: '', loading: 'lazy', decoding: 'async', src: item.origUrl, onerror: (e) => { e.target.style.visibility = 'hidden'; } });
+  ui.name = el('span', { class: 'name', text: item.file.name, title: item.file.name });
+  ui.badge = el('span', { class: 'badge' });
+  ui.sizes = el('div', { class: 'sizes' });
+  ui.meta = el('div', { class: 'meta' });
+  ui.note = el('div', { class: 'note' });
+  ui.err = el('div', { class: 'errmsg' });
+  ui.bar = el('div', { class: 'bar' }, (ui.barFill = el('i')));
+  ui.btnCmp = el('button', { class: 'btn small', type: 'button', text: '◐ Comparer', onclick: () => openCompare(item) });
+  ui.btnDl = el('button', { class: 'btn small primary', type: 'button', text: '⬇ Télécharger', onclick: () => downloadBlob(item.result.blob, outputName(item)) });
+  ui.actions = el('div', { class: 'actions' }, ui.btnCmp, ui.btnDl);
+  ui.remove = el('button', { class: 'remove', type: 'button', 'aria-label': 'Retirer ' + item.file.name, text: '×', onclick: () => removeItem(item) });
+  ui.root = el('li', { class: 'card' },
+    el('div', { class: 'thumb' }, ui.img),
+    el('div', { class: 'info' },
+      el('div', { class: 'name-row' }, ui.name, ui.badge),
+      ui.sizes, ui.bar, ui.meta, ui.note, ui.err, ui.actions),
+    ui.remove);
+  $('list').append(ui.root);
+  renderCard(item);
+}
+
+// Met à jour l'affichage d'une carte selon son état
+function renderCard(item) {
+  const ui = item.ui, r = item.result;
+  const busy = item.status === 'queue' || item.status === 'working';
+  ui.bar.hidden = !busy;
+  ui.bar.classList.toggle('indeterminate', item.status === 'queue');
+  ui.barFill.style.width = item.status === 'working' ? item.pct + '%' : '';
+  ui.actions.hidden = item.status !== 'done';
+  ui.err.textContent = item.status === 'error' ? item.error : '';
+  ui.note.textContent = r && r.notes.length ? r.notes.join(' ') : '';
+  ui.meta.replaceChildren();
+  ui.sizes.replaceChildren();
+
+  if (busy) {
+    ui.badge.className = 'badge'; ui.badge.replaceChildren(el('span', { class: 'spin' }), ' ' + (item.status === 'queue' ? 'En attente' : 'Compression'));
+    ui.sizes.append(fmtSize(item.file.size), el('span', { class: 'arrow', text: ' · ' }), item.text);
+    return;
+  }
+  if (item.status === 'error') {
+    ui.badge.className = 'badge err'; ui.badge.textContent = 'Erreur';
+    ui.sizes.append(fmtSize(item.file.size));
+    return;
+  }
+  // Terminé
+  const gain = Math.round((1 - r.blob.size / item.file.size) * 100);
+  ui.badge.className = 'badge ' + (r.overTarget ? 'warn' : 'ok');
+  ui.badge.textContent = r.intact ? (r.overTarget ? 'Original conservé' : 'Déjà léger') : (r.overTarget ? 'Cible non atteinte' : 'Terminé');
+  ui.sizes.append(fmtSize(item.file.size), el('span', { class: 'arrow', text: '→' }), el('b', { text: fmtSize(r.blob.size) }));
+  if (!r.intact) ui.sizes.append(el('span', { class: 'gain', text: '−' + Math.max(0, gain) + ' %' }));
+  const dims = (r.width !== r.origW || r.height !== r.origH)
+    ? r.origW + '×' + r.origH + ' → ' + r.width + '×' + r.height : r.width + '×' + r.height;
+  const fmt = { 'image/webp': 'WebP', 'image/jpeg': 'JPEG', 'image/png': 'PNG' }[r.mime] || r.mime;
+  ui.meta.append(
+    el('span', { text: 'Dimensions : ' + dims + ' px' }),
+    el('span', { text: r.quality != null ? 'Qualité : ' + Math.round(r.quality * 100) + ' %' : (r.intact ? 'Qualité : inchangée' : 'Sans perte') }),
+    el('span', { text: 'Format : ' + fmt }));
+  ui.btnCmp.hidden = r.intact;       // rien à comparer si l'image n'a pas été touchée
+  if (r.intact && !r.overTarget) ui.note.textContent = 'Déjà sous la taille cible : laissée intacte.';
+}
+
+function removeItem(item) {
+  item.status = 'removed';
+  const i = items.indexOf(item);
+  if (i >= 0) items.splice(i, 1);
+  URL.revokeObjectURL(item.origUrl);
+  if (item.resultUrl) URL.revokeObjectURL(item.resultUrl);
+  item.ui.root.remove();
+  if (!items.length) $('results').hidden = true;
+  refreshSummary();
+}
+
+function clearAll() {
+  generation++;
+  items.slice().forEach(removeItem);
+  $('notices').replaceChildren();
+  $('file-input').value = '';
+}
+
+// Lance (ou relance) la compression d'une image
+function startItem(item) {
+  const gen = generation;
+  item.status = 'queue'; item.pct = 0; item.text = 'En attente…'; item.error = null;
+  renderCard(item);
+  compressFile(item.file, currentOpts(), (p) => {
+    if (item.status === 'removed') return;
+    item.status = 'working'; item.pct = p.pct; item.text = p.text;
+    renderCard(item);
+    refreshSummary(true);
+  }, () => item.status === 'removed' || gen !== generation)
+    .then((res) => {
+      if (!res || item.status === 'removed') return;
+      item.result = res;
+      if (item.resultUrl) URL.revokeObjectURL(item.resultUrl);
+      item.resultUrl = res.intact ? item.origUrl : URL.createObjectURL(res.blob);
+      item.ui.img.src = item.resultUrl;
+      item.status = 'done';
+    })
+    .catch((err) => {
+      if (item.status === 'removed') return;
+      item.status = 'error';
+      item.error = (err && err.message) || 'Erreur inattendue.';
+    })
+    .finally(() => { if (item.status !== 'removed') { renderCard(item); refreshSummary(); } });
+}
+
+function refreshSummary(progressOnly) {
+  const total = items.length;
+  const done = items.filter((i) => i.status === 'done');
+  const failed = items.filter((i) => i.status === 'error').length;
+  const finished = done.length + failed;
+  // Progression globale (les images en cours comptent au prorata)
+  const part = items.reduce((s, i) => s + (i.status === 'done' || i.status === 'error' ? 1 : i.status === 'working' ? i.pct / 100 : 0), 0);
+  $('global-bar').style.width = total ? Math.round((part / total) * 100) + '%' : '0';
+  const allDone = total > 0 && finished === total;
+  $('btn-zip').disabled = !done.length || typeof JSZip === 'undefined';
+  $('btn-reprocess').disabled = !total || !allDone;
+  if (progressOnly) return;
+
+  const before = done.reduce((s, i) => s + i.file.size, 0);
+  const after = done.reduce((s, i) => s + i.result.blob.size, 0);
+  const s = $('summary');
+  s.replaceChildren();
+  if (!total) return;
+  if (!allDone) {
+    s.append(el('b', { text: finished + ' / ' + total }), ' traitée' + (finished > 1 ? 's' : '') + '…');
+  } else {
+    s.append(el('b', { text: done.length + ' image' + (done.length > 1 ? 's' : '') }),
+      ' · ' + fmtSize(before) + ' → ', el('b', { text: fmtSize(after) }),
+      before ? ' (−' + Math.round((1 - after / before) * 100) + ' %)' : '',
+      failed ? ' · ' + failed + ' en erreur' : '');
+  }
+}
+
+/* =====================================================================
+ *  6. EXPORT ZIP
+ * ===================================================================== */
+async function downloadZip() {
+  const done = items.filter((i) => i.status === 'done');
+  if (!done.length) return;
+  if (typeof JSZip === 'undefined') { addNotice('JSZip n\'a pas pu être chargé (connexion ?). Téléchargez les images une par une.', 'error'); return; }
+  const btn = $('btn-zip'), label = btn.textContent;
+  btn.disabled = true;
+  try {
+    const zip = new JSZip();
+    const used = new Set();
+    for (const it of done) {
+      // Évite les doublons de noms dans l'archive
+      let name = outputName(it), n = 1;
+      while (used.has(name.toLowerCase())) { const [b, e] = splitName(outputName(it)); name = b + '-' + (++n) + '.' + e; }
+      used.add(name.toLowerCase());
+      zip.file(name, it.result.blob);
+    }
+    const blob = await zip.generateAsync({ type: 'blob', compression: 'STORE' }, (m) => {
+      btn.textContent = 'Création du ZIP… ' + Math.round(m.percent) + ' %';
+    });
+    downloadBlob(blob, 'images-compressees.zip');
+  } catch (e) {
+    addNotice('Impossible de créer le ZIP : ' + ((e && e.message) || 'erreur inconnue'), 'error');
+  } finally {
+    btn.textContent = label;
+    refreshSummary(true);
+  }
+}
+
+/* =====================================================================
+ *  7. COMPARAISON AVANT / APRÈS
+ * ===================================================================== */
+const dlg = $('compare');
+function setSplit(pct) {
+  pct = Math.max(0, Math.min(100, pct));
+  $('cmp-before').style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
+  $('cmp-divider').style.left = pct + '%';
+  $('cmp-range').value = pct;
+}
+function openCompare(item) {
+  const r = item.result;
+  $('cmp-title').textContent = item.file.name;
+  $('cmp-before').src = item.origUrl;
+  $('cmp-after').src = item.resultUrl;
+  const stage = $('cmp-stage');
+  stage.style.aspectRatio = r.width + ' / ' + r.height;
+  $('cmp-left').textContent = 'Avant : ' + fmtSize(item.file.size) + ' · ' + r.origW + '×' + r.origH;
+  $('cmp-right').textContent = 'Après : ' + fmtSize(r.blob.size) + ' · ' + r.width + '×' + r.height
+    + (r.quality != null ? ' · Q ' + Math.round(r.quality * 100) + ' %' : '');
+  setSplit(50);
+  if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+}
+function closeCompare() {
+  if (typeof dlg.close === 'function') dlg.close(); else dlg.removeAttribute('open');
+  $('cmp-before').removeAttribute('src'); $('cmp-after').removeAttribute('src');
+}
+(function initCompare() {
+  const stage = $('cmp-stage');
+  let dragging = false;
+  const move = (e) => { const b = stage.getBoundingClientRect(); setSplit(((e.clientX - b.left) / b.width) * 100); };
+  stage.addEventListener('pointerdown', (e) => { dragging = true; stage.setPointerCapture(e.pointerId); move(e); });
+  stage.addEventListener('pointermove', (e) => { if (dragging) move(e); });
+  stage.addEventListener('pointerup', () => { dragging = false; });
+  stage.addEventListener('pointercancel', () => { dragging = false; });
+  $('cmp-range').addEventListener('input', (e) => setSplit(+e.target.value));
+  $('cmp-close').addEventListener('click', closeCompare);
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) closeCompare(); }); // clic hors contenu
+  dlg.addEventListener('close', () => { $('cmp-before').removeAttribute('src'); $('cmp-after').removeAttribute('src'); });
+})();
+
+/* =====================================================================
+ *  8. ÉVÉNEMENTS ET DÉMARRAGE
+ * ===================================================================== */
+(function init() {
+  // Compatibilité navigateur
+  if (!CAN_MAIN) {
+    const c = $('compat');
+    c.hidden = false;
+    c.textContent = 'Votre navigateur est trop ancien pour cet outil (createImageBitmap / canvas requis). Utilisez une version récente de Chrome, Edge, Firefox ou Safari.';
+    $('dropzone').style.display = 'none'; $('settings').style.display = 'none';
+    return;
+  }
+  initPool();
+  applySettingsToUI();
+
+  const dz = $('dropzone'), input = $('file-input');
+  dz.addEventListener('click', () => input.click());
+  dz.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); input.click(); } });
+  input.addEventListener('change', () => { handleFiles(input.files); input.value = ''; });
+
+  // Retour visuel pendant le survol (compteur pour gérer les dragenter/leave imbriqués)
+  let depth = 0;
+  dz.addEventListener('dragenter', (e) => { e.preventDefault(); depth++; dz.classList.add('dragover'); });
+  dz.addEventListener('dragover', (e) => { e.preventDefault(); if (e.dataTransfer) e.dataTransfer.dropEffect = 'copy'; });
+  dz.addEventListener('dragleave', () => { depth = Math.max(0, depth - 1); if (!depth) dz.classList.remove('dragover'); });
+  dz.addEventListener('drop', (e) => {
+    e.preventDefault(); depth = 0; dz.classList.remove('dragover');
+    handleFiles(e.dataTransfer && e.dataTransfer.files);
+  });
+  // Un dépôt en dehors de la zone ne doit pas faire quitter la page
+  ['dragover', 'drop'].forEach((t) => window.addEventListener(t, (e) => e.preventDefault()));
+
+  ['opt-target', 'opt-format', 'opt-keep'].forEach((id) => $(id).addEventListener('change', readSettings));
+  $('btn-reprocess').addEventListener('click', () => {
+    readSettings(); applySettingsToUI();
+    items.forEach((it) => { if (it.status === 'done' || it.status === 'error') startItem(it); });
+    refreshSummary();
+  });
+  $('btn-zip').addEventListener('click', downloadZip);
+  $('btn-clear').addEventListener('click', clearAll);
+})();
+</script>
+</body>
+</html>
