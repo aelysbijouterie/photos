@@ -273,7 +273,11 @@
           <option value="webp">WebP (meilleur rapport qualité/poids)</option>
           <option value="jpeg">JPEG (compatibilité maximale)</option>
         </select>
-        <small>Les PNG transparents restent en WebP (ou PNG) pour garder la transparence.</small>
+        <small>Sans mise au carré, les PNG transparents restent en WebP (ou PNG).</small>
+      </div>
+      <div class="field">
+        <span class="label">Cadrage</span>
+        <label class="check"><input id="opt-square" type="checkbox" checked><span>Mettre au carré sur fond blanc<small>Les photos non carrées sont centrées sans être rognées ; les transparences deviennent blanches.</small></span></label>
       </div>
       <div class="field">
         <span class="label">Dimensions</span>
@@ -360,14 +364,16 @@ async function coreCompress(file, o, env, progress) {
   }, extra);
 
   // --- Image déjà assez légère : on la laisse strictement intacte ---
-  if (file.size <= o.targetBytes) {
+  const needSquare = !!o.square && W !== H;   // image à mettre au carré (fond blanc)
+  if (file.size <= o.targetBytes && !needSquare) {
     bmp.close && bmp.close();
     return result({ blob: file, mime: file.type, intact: true });
   }
 
   // --- Détection de la transparence (sur une version réduite, pour la vitesse) ---
   let hasAlpha = false;
-  if (file.type === 'image/png' || file.type === 'image/webp') {
+  // (inutile en mode carré : tout est posé sur fond blanc)
+  if (!o.square && (file.type === 'image/png' || file.type === 'image/webp')) {
     const k = Math.min(1, 1024 / Math.max(W, H));
     const sw = Math.max(1, Math.round(W * k)), sh = Math.max(1, Math.round(H * k));
     const c = env.createCanvas(sw, sh);
@@ -399,13 +405,15 @@ async function coreCompress(file, o, env, progress) {
   if (lossless) notes.push('PNG sans perte : seules les dimensions peuvent baisser.');
 
   // --- Dessin à une échelle donnée (toujours depuis l'original) ---
-  const render = (w, h) => {
-    const c = env.createCanvas(w, h);
+  // cw×ch = taille du canvas ; dw×dh = taille de l'image dessinée, centrée dans le canvas
+  const render = (cw, ch, dw, dh) => {
+    const c = env.createCanvas(cw, ch);
     const x = c.getContext('2d');
-    if (mime === 'image/jpeg') { x.fillStyle = '#fff'; x.fillRect(0, 0, w, h); } // JPEG : pas d'alpha
+    // Fond blanc : obligatoire en JPEG (pas d'alpha) et pour les marges du carré
+    if (mime === 'image/jpeg' || o.square) { x.fillStyle = '#fff'; x.fillRect(0, 0, cw, ch); }
     x.imageSmoothingEnabled = true;
     x.imageSmoothingQuality = 'high';
-    x.drawImage(bmp, 0, 0, w, h);
+    x.drawImage(bmp, Math.round((cw - dw) / 2), Math.round((ch - dh) / 2), dw, dh);
     return c;
   };
   const encode = async (c, q) => {
@@ -418,9 +426,11 @@ async function coreCompress(file, o, env, progress) {
   // Renvoie { best } (plus haute qualité sous la cible) ou { fail } (meilleure tentative ratée)
   const attempt = async (k) => {
     const scale = Math.pow(STEP, k);
-    const w = Math.max(1, Math.round(W * scale)), h = Math.max(1, Math.round(H * scale));
+    const dw = Math.max(1, Math.round(W * scale)), dh = Math.max(1, Math.round(H * scale));
+    // En mode carré, le canvas est un carré dont le côté = le plus grand côté de l'image
+    const w = o.square ? Math.max(dw, dh) : dw, h = o.square ? w : dh;
     const tag = k ? ' · ' + w + '×' + h : '';
-    const canvas = render(w, h);
+    const canvas = render(w, h, dw, dh);
     if (lossless) {
       report('PNG ' + w + '×' + h + '…');
       const b = await encode(canvas);
@@ -472,13 +482,14 @@ async function coreCompress(file, o, env, progress) {
       found = r.best; k--;
     }
     bmp.close && bmp.close();
+    if (needSquare) notes.unshift('Mise au carré (' + found.w + '×' + found.h + ') : image centrée sur fond blanc, sans rognage.');
     if (k > 0) notes.push('Dimensions réduites de ' + Math.round((1 - Math.pow(STEP, k)) * 100) + ' % pour atteindre la cible.');
     return result({ blob: found.blob, mime, width: found.w, height: found.h, quality: found.q, notes });
   }
 
   // Cible inatteignable : si le résultat n'est pas plus léger que l'original, on garde l'original
   bmp.close && bmp.close();
-  if (fail.blob.size >= file.size) {
+  if (fail.blob.size >= file.size && !needSquare) {
     notes.push('Cible inatteignable : original conservé.');
     return result({ blob: file, mime: file.type, intact: true, overTarget: true, notes });
   }
@@ -657,7 +668,7 @@ function downloadBlob(blob, name) {
 /* =====================================================================
  *  4. RÉGLAGES
  * ===================================================================== */
-const settings = { targetKb: 100, format: 'webp', keepDims: false };
+const settings = { targetKb: 100, format: 'webp', keepDims: false, square: true };
 try { Object.assign(settings, JSON.parse(localStorage.getItem('compressor-settings') || '{}')); } catch (_) {}
 
 function readSettings() {
@@ -666,14 +677,16 @@ function readSettings() {
   settings.targetKb = Math.min(5000, Math.max(10, kb));
   settings.format = $('opt-format').value === 'jpeg' ? 'jpeg' : 'webp';
   settings.keepDims = $('opt-keep').checked;
+  settings.square = $('opt-square').checked;
   try { localStorage.setItem('compressor-settings', JSON.stringify(settings)); } catch (_) {}
 }
 function applySettingsToUI() {
   $('opt-target').value = settings.targetKb;
   $('opt-format').value = settings.format;
   $('opt-keep').checked = !!settings.keepDims;
+  $('opt-square').checked = settings.square !== false;
 }
-const currentOpts = () => ({ targetBytes: settings.targetKb * 1000, format: settings.format, keepDims: settings.keepDims });
+const currentOpts = () => ({ targetBytes: settings.targetKb * 1000, format: settings.format, keepDims: settings.keepDims, square: settings.square !== false });
 
 /* =====================================================================
  *  5. ÉTAT ET INTERFACE DES RÉSULTATS
@@ -907,6 +920,7 @@ function openCompare(item) {
   $('cmp-after').src = item.resultUrl;
   const stage = $('cmp-stage');
   stage.style.aspectRatio = r.width + ' / ' + r.height;
+  stage.style.background = (r.width === r.height && r.origW !== r.origH) ? '#fff' : ''; // marges blanches du carré
   $('cmp-left').textContent = 'Avant : ' + fmtSize(item.file.size) + ' · ' + r.origW + '×' + r.origH;
   $('cmp-right').textContent = 'Après : ' + fmtSize(r.blob.size) + ' · ' + r.width + '×' + r.height
     + (r.quality != null ? ' · Q ' + Math.round(r.quality * 100) + ' %' : '');
@@ -963,7 +977,7 @@ function closeCompare() {
   // Un dépôt en dehors de la zone ne doit pas faire quitter la page
   ['dragover', 'drop'].forEach((t) => window.addEventListener(t, (e) => e.preventDefault()));
 
-  ['opt-target', 'opt-format', 'opt-keep'].forEach((id) => $(id).addEventListener('change', readSettings));
+  ['opt-target', 'opt-format', 'opt-keep', 'opt-square'].forEach((id) => $(id).addEventListener('change', readSettings));
   $('btn-reprocess').addEventListener('click', () => {
     readSettings(); applySettingsToUI();
     items.forEach((it) => { if (it.status === 'done' || it.status === 'error') startItem(it); });
