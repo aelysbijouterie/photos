@@ -273,7 +273,7 @@
           <option value="webp">WebP (meilleur rapport qualité/poids)</option>
           <option value="jpeg">JPEG (compatibilité maximale)</option>
         </select>
-        <small>Sans mise au carré, les PNG transparents restent en WebP (ou PNG).</small>
+        <small>JPEG : les WebP/PNG sont convertis (transparence remplacée par du blanc). WebP : les PNG transparents gardent leur transparence.</small>
       </div>
       <div class="field">
         <span class="label">Cadrage</span>
@@ -365,7 +365,9 @@ async function coreCompress(file, o, env, progress) {
 
   // --- Image déjà assez légère : on la laisse strictement intacte ---
   const needSquare = !!o.square && W !== H;   // image à mettre au carré (fond blanc)
-  if (file.size <= o.targetBytes && !needSquare) {
+  // Format JPEG demandé alors que la source n'en est pas un (WebP, PNG) : conversion obligatoire
+  const needConvert = o.format === 'jpeg' && file.type !== 'image/jpeg';
+  if (file.size <= o.targetBytes && !needSquare && !needConvert) {
     bmp.close && bmp.close();
     return result({ blob: file, mime: file.type, intact: true });
   }
@@ -373,7 +375,8 @@ async function coreCompress(file, o, env, progress) {
   // --- Détection de la transparence (sur une version réduite, pour la vitesse) ---
   let hasAlpha = false;
   // (inutile en mode carré : tout est posé sur fond blanc)
-  if (!o.square && (file.type === 'image/png' || file.type === 'image/webp')) {
+  // (inutile aussi en sortie JPEG : la transparence est aplatie sur fond blanc)
+  if (!o.square && o.format !== 'jpeg' && (file.type === 'image/png' || file.type === 'image/webp')) {
     const k = Math.min(1, 1024 / Math.max(W, H));
     const sw = Math.max(1, Math.round(W * k)), sh = Math.max(1, Math.round(H * k));
     const c = env.createCanvas(sw, sh);
@@ -489,7 +492,7 @@ async function coreCompress(file, o, env, progress) {
 
   // Cible inatteignable : si le résultat n'est pas plus léger que l'original, on garde l'original
   bmp.close && bmp.close();
-  if (fail.blob.size >= file.size && !needSquare) {
+  if (fail.blob.size >= file.size && !needSquare && !needConvert) {
     notes.push('Cible inatteignable : original conservé.');
     return result({ blob: file, mime: file.type, intact: true, overTarget: true, notes });
   }

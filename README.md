@@ -6,7 +6,7 @@ Outil web en une seule page (`index.html`) qui compresse vos photos **sous 100 K
 
 - Glisser-déposer (ou clic) de plusieurs fichiers JPG, PNG, WebP ; les autres formats sont refusés avec un message.
 - Pour chaque image : recherche dichotomique de la **qualité la plus haute** (de 95 % à 50 %) qui passe sous la cible. Les dimensions ne sont réduites (par paliers de 10 %) qu'en dernier recours, puis la recherche de qualité reprend.
-- Une image déjà sous la cible est laissée intacte.
+- Une image déjà sous la cible est laissée intacte. Exception : avec le format de sortie JPEG, les WebP et PNG sont toujours convertis en JPEG (transparence aplatie sur fond blanc).
 - Les images non carrées sont mises **au carré** (côté = plus grand côté), centrées sur **fond blanc**, sans aucun rognage (option « Mettre au carré sur fond blanc », activée par défaut). Une image non carrée déjà légère est donc aussi traitée ; une image carrée déjà légère reste intacte.
 - L'orientation EXIF est respectée. Si la mise au carré est désactivée, la transparence des PNG est conservée (WebP, ou PNG si le navigateur n'encode pas le WebP) ; sinon elle est aplatie sur fond blanc.
 - Calcul dans des Web Workers (`OffscreenCanvas`), avec repli automatique sur le thread principal si le navigateur ne les gère pas.
