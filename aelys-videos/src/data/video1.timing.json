@@ -498,7 +498,7 @@
       {
        "phrase": "classement",
        "action": "le podium se construit",
-       "t": 13.044
+       "t": 12.594
       },
       {
        "phrase": "attribuée",
@@ -637,11 +637,11 @@
     {
      "w": "un",
      "s": 12.418,
-     "e": 13.044
+     "e": 12.594
     },
     {
      "w": "classement",
-     "s": 13.044,
+     "s": 12.594,
      "e": 13.397
     },
     {
