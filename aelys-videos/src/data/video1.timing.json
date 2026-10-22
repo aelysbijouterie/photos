@@ -1,0 +1,2103 @@
+{
+ "video": 1,
+ "title": "Comprendre le fonctionnement",
+ "scenes": [
+  {
+   "n": 1,
+   "title": "Introduction",
+   "lead": 1.2,
+   "tail": 2.8,
+   "adur": 9.355,
+   "dur": 13.355,
+   "audio": "voiceover/v1/scene01.mp3",
+   "shots": [
+    {
+     "id": "v1_1_1",
+     "t0": 0.0,
+     "t1": 4.693,
+     "vo": "Vous avez peut-être remarqué que des commandes passées sur aelys.fr",
+     "cues": [
+      {
+       "phrase": "aelys.fr",
+       "action": "halo doré sur le nom du site",
+       "t": 3.917
+      }
+     ]
+    },
+    {
+     "id": "v1_1_2",
+     "t0": 4.693,
+     "t1": 6.11,
+     "vo": "arrivent jusqu'à vous.",
+     "cues": [
+      {
+       "phrase": "jusqu'à vous",
+       "action": "la ligne se trace vers le magasin du spectateur",
+       "t": 5.185
+      }
+     ]
+    },
+    {
+     "id": "v1_1_3",
+     "t0": 6.11,
+     "t1": 13.355,
+     "vo": "Dans cette première vidéo, nous allons vous expliquer comment fonctionnent les commandes internet.",
+     "cues": [
+      {
+       "phrase": "première vidéo",
+       "action": "« Vidéo 1 » apparaît",
+       "t": 6.606
+      },
+      {
+       "phrase": "commandes internet",
+       "action": "le titre se complète",
+       "t": 9.354
+      }
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Vous",
+     "s": 1.2,
+     "e": 1.381
+    },
+    {
+     "w": "avez",
+     "s": 1.381,
+     "e": 1.743
+    },
+    {
+     "w": "peut-être",
+     "s": 1.743,
+     "e": 2.106
+    },
+    {
+     "w": "remarqué",
+     "s": 2.106,
+     "e": 2.649
+    },
+    {
+     "w": "que",
+     "s": 2.649,
+     "e": 2.83
+    },
+    {
+     "w": "des",
+     "s": 2.83,
+     "e": 3.012
+    },
+    {
+     "w": "commandes",
+     "s": 3.012,
+     "e": 3.374
+    },
+    {
+     "w": "passées",
+     "s": 3.374,
+     "e": 3.736
+    },
+    {
+     "w": "sur",
+     "s": 3.736,
+     "e": 3.917
+    },
+    {
+     "w": "aelys.fr",
+     "s": 3.917,
+     "e": 4.823
+    },
+    {
+     "w": "arrivent",
+     "s": 4.823,
+     "e": 5.185
+    },
+    {
+     "w": "jusqu'à",
+     "s": 5.185,
+     "e": 5.729
+    },
+    {
+     "w": "vous.",
+     "s": 5.729,
+     "e": 5.91
+    },
+    {
+     "w": "Dans",
+     "s": 6.24,
+     "e": 6.423
+    },
+    {
+     "w": "cette",
+     "s": 6.423,
+     "e": 6.606
+    },
+    {
+     "w": "première",
+     "s": 6.606,
+     "e": 6.973
+    },
+    {
+     "w": "vidéo,",
+     "s": 6.973,
+     "e": 7.339
+    },
+    {
+     "w": "nous",
+     "s": 7.339,
+     "e": 7.522
+    },
+    {
+     "w": "allons",
+     "s": 7.522,
+     "e": 7.889
+    },
+    {
+     "w": "vous",
+     "s": 7.889,
+     "e": 8.072
+    },
+    {
+     "w": "expliquer",
+     "s": 8.072,
+     "e": 8.621
+    },
+    {
+     "w": "comment",
+     "s": 8.621,
+     "e": 8.805
+    },
+    {
+     "w": "fonctionnent",
+     "s": 8.805,
+     "e": 9.171
+    },
+    {
+     "w": "les",
+     "s": 9.171,
+     "e": 9.354
+    },
+    {
+     "w": "commandes",
+     "s": 9.354,
+     "e": 9.72
+    },
+    {
+     "w": "internet.",
+     "s": 9.72,
+     "e": 10.27
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Un stock partagé",
+   "lead": 0.4,
+   "tail": 0.5,
+   "adur": 14.965,
+   "dur": 15.865,
+   "audio": "voiceover/v1/scene02.mp3",
+   "shots": [
+    {
+     "id": "v1_2_1",
+     "t0": 0.0,
+     "t1": 5.775,
+     "vo": "Premier point essentiel : le site aelys.fr ne dispose pas de stock dédié.",
+     "cues": [
+      {
+       "phrase": "pas de stock dédié",
+       "action": "croix rouge sur « Stock web »",
+       "t": 4.726
+      }
+     ]
+    },
+    {
+     "id": "v1_2_2",
+     "t0": 5.775,
+     "t1": 10.275,
+     "vo": "Son stock, c'est le stock de l'ensemble du réseau, c'est-à-dire celui des magasins.",
+     "cues": [
+      {
+       "phrase": "de l'ensemble du réseau",
+       "action": "l'équation s'écrit à l'écran",
+       "t": 7.037
+      },
+      {
+       "phrase": "celui des magasins",
+       "action": "les magasins s'allument",
+       "t": 9.098
+      }
+     ]
+    },
+    {
+     "id": "v1_2_3",
+     "t0": 10.275,
+     "t1": 15.865,
+     "vo": "Cela signifie que ce sont les équipes en magasin qui traitent les commandes internet.",
+     "cues": [
+      {
+       "phrase": "équipes en magasin",
+       "action": "les deux personnages apparaissent",
+       "t": 12.252
+      }
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Premier",
+     "s": 0.685,
+     "e": 1.145
+    },
+    {
+     "w": "point",
+     "s": 1.145,
+     "e": 1.375
+    },
+    {
+     "w": "essentiel :",
+     "s": 1.375,
+     "e": 2.065
+    },
+    {
+     "w": "le",
+     "s": 2.225,
+     "e": 2.452
+    },
+    {
+     "w": "site",
+     "s": 2.452,
+     "e": 2.68
+    },
+    {
+     "w": "aelys.fr",
+     "s": 2.68,
+     "e": 3.816
+    },
+    {
+     "w": "ne",
+     "s": 3.816,
+     "e": 4.044
+    },
+    {
+     "w": "dispose",
+     "s": 4.044,
+     "e": 4.498
+    },
+    {
+     "w": "pas",
+     "s": 4.498,
+     "e": 4.726
+    },
+    {
+     "w": "de",
+     "s": 4.726,
+     "e": 4.953
+    },
+    {
+     "w": "stock",
+     "s": 4.953,
+     "e": 5.18
+    },
+    {
+     "w": "dédié.",
+     "s": 5.18,
+     "e": 5.635
+    },
+    {
+     "w": "Son",
+     "s": 5.905,
+     "e": 6.131
+    },
+    {
+     "w": "stock,",
+     "s": 6.131,
+     "e": 6.358
+    },
+    {
+     "w": "c'est",
+     "s": 6.358,
+     "e": 6.584
+    },
+    {
+     "w": "le",
+     "s": 6.584,
+     "e": 6.81
+    },
+    {
+     "w": "stock",
+     "s": 6.81,
+     "e": 7.037
+    },
+    {
+     "w": "de",
+     "s": 7.037,
+     "e": 7.263
+    },
+    {
+     "w": "l'ensemble",
+     "s": 7.263,
+     "e": 7.716
+    },
+    {
+     "w": "du",
+     "s": 7.716,
+     "e": 7.942
+    },
+    {
+     "w": "réseau,",
+     "s": 7.942,
+     "e": 8.395
+    },
+    {
+     "w": "c'est-à-dire",
+     "s": 8.565,
+     "e": 9.098
+    },
+    {
+     "w": "celui",
+     "s": 9.098,
+     "e": 9.454
+    },
+    {
+     "w": "des",
+     "s": 9.454,
+     "e": 9.632
+    },
+    {
+     "w": "magasins.",
+     "s": 9.632,
+     "e": 10.165
+    },
+    {
+     "w": "Cela",
+     "s": 10.405,
+     "e": 10.815
+    },
+    {
+     "w": "signifie",
+     "s": 10.815,
+     "e": 11.431
+    },
+    {
+     "w": "que",
+     "s": 11.431,
+     "e": 11.636
+    },
+    {
+     "w": "ce",
+     "s": 11.636,
+     "e": 11.842
+    },
+    {
+     "w": "sont",
+     "s": 11.842,
+     "e": 12.047
+    },
+    {
+     "w": "les",
+     "s": 12.047,
+     "e": 12.252
+    },
+    {
+     "w": "équipes",
+     "s": 12.252,
+     "e": 12.662
+    },
+    {
+     "w": "en",
+     "s": 12.662,
+     "e": 12.868
+    },
+    {
+     "w": "magasin",
+     "s": 12.868,
+     "e": 13.483
+    },
+    {
+     "w": "qui",
+     "s": 13.483,
+     "e": 13.688
+    },
+    {
+     "w": "traitent",
+     "s": 13.688,
+     "e": 13.894
+    },
+    {
+     "w": "les",
+     "s": 13.894,
+     "e": 14.099
+    },
+    {
+     "w": "commandes",
+     "s": 14.099,
+     "e": 14.509
+    },
+    {
+     "w": "internet.",
+     "s": 14.509,
+     "e": 15.125
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Le ranking",
+   "lead": 0.4,
+   "tail": 0.5,
+   "adur": 14.085,
+   "dur": 14.985,
+   "audio": "voiceover/v1/scene03.mp3",
+   "shots": [
+    {
+     "id": "v1_3_1",
+     "t0": 0.0,
+     "t1": 4.22,
+     "vo": "Mais comment le système choisit-il quel magasin doit traiter une commande ?",
+     "cues": [
+      {
+       "phrase": "quel magasin",
+       "action": "le point d'interrogation apparaît",
+       "t": 2.173
+      }
+     ]
+    },
+    {
+     "id": "v1_3_2",
+     "t0": 4.22,
+     "t1": 6.33,
+     "vo": "Grâce à un système de ranking.",
+     "cues": [
+      {
+       "phrase": "ranking",
+       "action": "le mot RANKING apparaît en cut",
+       "t": 5.723
+      }
+     ]
+    },
+    {
+     "id": "v1_3_3",
+     "t0": 6.33,
+     "t1": 8.66,
+     "vo": "Le stock de la centrale est prioritaire.",
+     "cues": [
+      {
+       "phrase": "prioritaire",
+       "action": "badge « 1 » doré",
+       "t": 7.895
+      }
+     ]
+    },
+    {
+     "id": "v1_3_4",
+     "t0": 8.66,
+     "t1": 14.985,
+     "vo": "Ensuite, un classement a été établi entre les magasins : la commande est attribuée en suivant ce classement.",
+     "cues": [
+      {
+       "phrase": "classement",
+       "action": "le podium se construit",
+       "t": 9.319
+      },
+      {
+       "phrase": "attribuée",
+       "action": "le colis tombe sur le n°1",
+       "t": 13.185
+      }
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Mais",
+     "s": 0.64,
+     "e": 0.832
+    },
+    {
+     "w": "comment",
+     "s": 0.832,
+     "e": 1.023
+    },
+    {
+     "w": "le",
+     "s": 1.023,
+     "e": 1.215
+    },
+    {
+     "w": "système",
+     "s": 1.215,
+     "e": 1.598
+    },
+    {
+     "w": "choisit-il",
+     "s": 1.598,
+     "e": 2.173
+    },
+    {
+     "w": "quel",
+     "s": 2.173,
+     "e": 2.365
+    },
+    {
+     "w": "magasin",
+     "s": 2.365,
+     "e": 2.94
+    },
+    {
+     "w": "doit",
+     "s": 2.94,
+     "e": 3.132
+    },
+    {
+     "w": "traiter",
+     "s": 3.132,
+     "e": 3.515
+    },
+    {
+     "w": "une",
+     "s": 3.515,
+     "e": 3.707
+    },
+    {
+     "w": "commande ?",
+     "s": 3.707,
+     "e": 4.09
+    },
+    {
+     "w": "Grâce",
+     "s": 4.35,
+     "e": 4.579
+    },
+    {
+     "w": "à",
+     "s": 4.579,
+     "e": 4.808
+    },
+    {
+     "w": "un",
+     "s": 4.808,
+     "e": 5.036
+    },
+    {
+     "w": "système",
+     "s": 5.036,
+     "e": 5.494
+    },
+    {
+     "w": "de",
+     "s": 5.494,
+     "e": 5.723
+    },
+    {
+     "w": "ranking.",
+     "s": 5.723,
+     "e": 6.18
+    },
+    {
+     "w": "Le",
+     "s": 6.46,
+     "e": 6.665
+    },
+    {
+     "w": "stock",
+     "s": 6.665,
+     "e": 6.87
+    },
+    {
+     "w": "de",
+     "s": 6.87,
+     "e": 7.075
+    },
+    {
+     "w": "la",
+     "s": 7.075,
+     "e": 7.28
+    },
+    {
+     "w": "centrale",
+     "s": 7.28,
+     "e": 7.69
+    },
+    {
+     "w": "est",
+     "s": 7.69,
+     "e": 7.895
+    },
+    {
+     "w": "prioritaire.",
+     "s": 7.895,
+     "e": 8.51
+    },
+    {
+     "w": "Ensuite,",
+     "s": 8.79,
+     "e": 9.143
+    },
+    {
+     "w": "un",
+     "s": 9.143,
+     "e": 9.319
+    },
+    {
+     "w": "classement",
+     "s": 9.319,
+     "e": 9.671
+    },
+    {
+     "w": "a",
+     "s": 9.671,
+     "e": 9.848
+    },
+    {
+     "w": "été",
+     "s": 9.848,
+     "e": 10.2
+    },
+    {
+     "w": "établi",
+     "s": 10.2,
+     "e": 10.729
+    },
+    {
+     "w": "entre",
+     "s": 10.729,
+     "e": 10.905
+    },
+    {
+     "w": "les",
+     "s": 10.905,
+     "e": 11.081
+    },
+    {
+     "w": "magasins :",
+     "s": 11.081,
+     "e": 11.61
+    },
+    {
+     "w": "la",
+     "s": 11.85,
+     "e": 12.041
+    },
+    {
+     "w": "commande",
+     "s": 12.041,
+     "e": 12.422
+    },
+    {
+     "w": "est",
+     "s": 12.422,
+     "e": 12.613
+    },
+    {
+     "w": "attribuée",
+     "s": 12.613,
+     "e": 13.185
+    },
+    {
+     "w": "en",
+     "s": 13.185,
+     "e": 13.376
+    },
+    {
+     "w": "suivant",
+     "s": 13.376,
+     "e": 13.758
+    },
+    {
+     "w": "ce",
+     "s": 13.758,
+     "e": 13.948
+    },
+    {
+     "w": "classement.",
+     "s": 13.948,
+     "e": 14.33
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Commandes multi-produits",
+   "lead": 0.4,
+   "tail": 0.5,
+   "adur": 13.26,
+   "dur": 14.16,
+   "audio": "voiceover/v1/scene04.mp3",
+   "shots": [
+    {
+     "id": "v1_4_1",
+     "t0": 0.0,
+     "t1": 2.595,
+     "vo": "Dans le cas d'une commande avec plusieurs produits,",
+     "cues": [
+      {
+       "phrase": "plusieurs produits",
+       "action": "A, B, C apparaissent un par un",
+       "t": 1.908
+      }
+     ]
+    },
+    {
+     "id": "v1_4_2",
+     "t0": 2.595,
+     "t1": 7.665,
+     "vo": "elle est envoyée au magasin qui dispose de tous les produits, ou à défaut de la majorité d'entre eux.",
+     "cues": [
+      {
+       "phrase": "la majorité",
+       "action": "le magasin 1 se met en surbrillance",
+       "t": 6.406
+      }
+     ]
+    },
+    {
+     "id": "v1_4_3",
+     "t0": 7.665,
+     "t1": 10.475,
+     "vo": "Une fois que ce magasin a traité les produits qu'il a en stock,",
+     "cues": [
+      {
+       "phrase": "traité",
+       "action": "coche verte sur A puis B",
+       "t": 8.995
+      }
+     ]
+    },
+    {
+     "id": "v1_4_4",
+     "t0": 10.475,
+     "t1": 14.16,
+     "vo": "le reste de la commande est envoyé à un autre magasin.",
+     "cues": [
+      {
+       "phrase": "un autre magasin",
+       "action": "magasin 2 s'allume",
+       "t": 12.538
+      }
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Dans",
+     "s": 0.555,
+     "e": 0.724
+    },
+    {
+     "w": "le",
+     "s": 0.724,
+     "e": 0.893
+    },
+    {
+     "w": "cas",
+     "s": 0.893,
+     "e": 1.063
+    },
+    {
+     "w": "d'une",
+     "s": 1.063,
+     "e": 1.232
+    },
+    {
+     "w": "commande",
+     "s": 1.232,
+     "e": 1.57
+    },
+    {
+     "w": "avec",
+     "s": 1.57,
+     "e": 1.908
+    },
+    {
+     "w": "plusieurs",
+     "s": 1.908,
+     "e": 2.247
+    },
+    {
+     "w": "produits,",
+     "s": 2.247,
+     "e": 2.585
+    },
+    {
+     "w": "elle",
+     "s": 2.725,
+     "e": 2.893
+    },
+    {
+     "w": "est",
+     "s": 2.893,
+     "e": 3.061
+    },
+    {
+     "w": "envoyée",
+     "s": 3.061,
+     "e": 3.398
+    },
+    {
+     "w": "au",
+     "s": 3.398,
+     "e": 3.566
+    },
+    {
+     "w": "magasin",
+     "s": 3.566,
+     "e": 4.07
+    },
+    {
+     "w": "qui",
+     "s": 4.07,
+     "e": 4.238
+    },
+    {
+     "w": "dispose",
+     "s": 4.238,
+     "e": 4.574
+    },
+    {
+     "w": "de",
+     "s": 4.574,
+     "e": 4.743
+    },
+    {
+     "w": "tous",
+     "s": 4.743,
+     "e": 4.911
+    },
+    {
+     "w": "les",
+     "s": 4.911,
+     "e": 5.079
+    },
+    {
+     "w": "produits,",
+     "s": 5.079,
+     "e": 5.415
+    },
+    {
+     "w": "ou",
+     "s": 5.635,
+     "e": 5.789
+    },
+    {
+     "w": "à",
+     "s": 5.789,
+     "e": 5.943
+    },
+    {
+     "w": "défaut",
+     "s": 5.943,
+     "e": 6.252
+    },
+    {
+     "w": "de",
+     "s": 6.252,
+     "e": 6.406
+    },
+    {
+     "w": "la",
+     "s": 6.406,
+     "e": 6.56
+    },
+    {
+     "w": "majorité",
+     "s": 6.56,
+     "e": 7.177
+    },
+    {
+     "w": "d'entre",
+     "s": 7.177,
+     "e": 7.331
+    },
+    {
+     "w": "eux.",
+     "s": 7.331,
+     "e": 7.485
+    },
+    {
+     "w": "Une",
+     "s": 7.795,
+     "e": 7.945
+    },
+    {
+     "w": "fois",
+     "s": 7.945,
+     "e": 8.095
+    },
+    {
+     "w": "que",
+     "s": 8.095,
+     "e": 8.245
+    },
+    {
+     "w": "ce",
+     "s": 8.245,
+     "e": 8.395
+    },
+    {
+     "w": "magasin",
+     "s": 8.395,
+     "e": 8.845
+    },
+    {
+     "w": "a",
+     "s": 8.845,
+     "e": 8.995
+    },
+    {
+     "w": "traité",
+     "s": 8.995,
+     "e": 9.295
+    },
+    {
+     "w": "les",
+     "s": 9.295,
+     "e": 9.445
+    },
+    {
+     "w": "produits",
+     "s": 9.445,
+     "e": 9.745
+    },
+    {
+     "w": "qu'il",
+     "s": 9.745,
+     "e": 10.045
+    },
+    {
+     "w": "a",
+     "s": 10.045,
+     "e": 10.195
+    },
+    {
+     "w": "en",
+     "s": 10.195,
+     "e": 10.345
+    },
+    {
+     "w": "stock,",
+     "s": 10.345,
+     "e": 10.495
+    },
+    {
+     "w": "le",
+     "s": 10.605,
+     "e": 10.798
+    },
+    {
+     "w": "reste",
+     "s": 10.798,
+     "e": 10.992
+    },
+    {
+     "w": "de",
+     "s": 10.992,
+     "e": 11.185
+    },
+    {
+     "w": "la",
+     "s": 11.185,
+     "e": 11.378
+    },
+    {
+     "w": "commande",
+     "s": 11.378,
+     "e": 11.765
+    },
+    {
+     "w": "est",
+     "s": 11.765,
+     "e": 11.958
+    },
+    {
+     "w": "envoyé",
+     "s": 11.958,
+     "e": 12.345
+    },
+    {
+     "w": "à",
+     "s": 12.345,
+     "e": 12.538
+    },
+    {
+     "w": "un",
+     "s": 12.538,
+     "e": 12.732
+    },
+    {
+     "w": "autre",
+     "s": 12.732,
+     "e": 12.925
+    },
+    {
+     "w": "magasin.",
+     "s": 12.925,
+     "e": 13.505
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Le fonctionnement côté stock",
+   "lead": 0.4,
+   "tail": 1.2,
+   "adur": 42.94,
+   "dur": 44.54,
+   "audio": "voiceover/v1/scene05.mp3",
+   "shots": [
+    {
+     "id": "v1_5_1",
+     "t0": 0.0,
+     "t1": 2.685,
+     "vo": "Voyons maintenant ce qui se passe en coulisses.",
+     "cues": [
+      {
+       "phrase": "en coulisses",
+       "action": "le titre se révèle",
+       "t": 1.988
+      }
+     ]
+    },
+    {
+     "id": "v1_5_2",
+     "t0": 2.685,
+     "t1": 6.575,
+     "vo": "Lorsque vous validez une commande, un fichier est envoyé à Odéis.",
+     "cues": [
+      {
+       "phrase": "validez",
+       "action": "le bouton Valider s'enfonce",
+       "t": 3.42
+      },
+      {
+       "phrase": "fichier",
+       "action": "le document apparaît",
+       "t": 4.832
+      },
+      {
+       "phrase": "Odéis",
+       "action": "le bloc Odéis s'allume",
+       "t": 6.042
+      }
+     ]
+    },
+    {
+     "id": "v1_5_3",
+     "t0": 6.575,
+     "t1": 15.775,
+     "vo": "Odéis récupère le numéro de votre magasin, la référence fournisseur commandée et la référence Odéis que vous avez scannée, puis vérifie que les informations concordent.",
+     "cues": [
+      {
+       "phrase": "numéro de votre magasin",
+       "action": "champ 1 + coche",
+       "t": 7.759
+      },
+      {
+       "phrase": "référence fournisseur",
+       "action": "champ 2 + coche",
+       "t": 9.46
+      },
+      {
+       "phrase": "référence Odéis",
+       "action": "champ 3 + coche",
+       "t": 11.382
+      },
+      {
+       "phrase": "concordent",
+       "action": "tampon « OK »",
+       "t": 15.265
+      }
+     ]
+    },
+    {
+     "id": "v1_5_4",
+     "t0": 15.775,
+     "t1": 23.325,
+     "vo": "Si tout est correct, Odéis effectue automatiquement un transfert de la référence scannée vers le magasin 101, qui est le magasin web.",
+     "cues": [
+      {
+       "phrase": "transfert",
+       "action": "le colis part",
+       "t": 19.04
+      },
+      {
+       "phrase": "magasin 101",
+       "action": "badge 101 apparaît",
+       "t": 21.065
+      }
+     ]
+    },
+    {
+     "id": "v1_5_5",
+     "t0": 23.325,
+     "t1": 33.505,
+     "vo": "Le magasin 101 intègre le produit et enregistre la vente automatiquement. Résultat : le produit n'est plus dans le stock de votre magasin, et c'est le magasin 101 qui a facturé la vente.",
+     "cues": [
+      {
+       "phrase": "enregistre la vente",
+       "action": "ticket de vente à droite",
+       "t": 25.73
+      },
+      {
+       "phrase": "n'est plus dans le stock",
+       "action": "le bijou se grise, −1",
+       "t": 29.257
+      },
+      {
+       "phrase": "facturé",
+       "action": "mention « facturé par le 101 »",
+       "t": 32.911
+      }
+     ]
+    },
+    {
+     "id": "v1_5_6",
+     "t0": 33.505,
+     "t1": 40.785,
+     "vo": "Pour les commandes multi-produits, le fichier n'est envoyé à Odéis que lorsque tous les magasins concernés ont scanné tous les produits de la commande.",
+     "cues": [
+      {
+       "phrase": "tous les magasins",
+       "action": "les 4 magasins apparaissent",
+       "t": 37.256
+      },
+      {
+       "phrase": "scanné tous les produits",
+       "action": "la barre se remplit",
+       "t": 38.885
+      }
+     ]
+    },
+    {
+     "id": "v1_5_7",
+     "t0": 40.785,
+     "t1": 44.54,
+     "vo": "C'est à ce moment-là que les transferts sont effectués.",
+     "cues": [
+      {
+       "phrase": "ce moment-là",
+       "action": "la barre passe à 100 %",
+       "t": 41.241
+      }
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Voyons",
+     "s": 0.555,
+     "e": 0.734
+    },
+    {
+     "w": "maintenant",
+     "s": 0.734,
+     "e": 1.271
+    },
+    {
+     "w": "ce",
+     "s": 1.271,
+     "e": 1.45
+    },
+    {
+     "w": "qui",
+     "s": 1.45,
+     "e": 1.63
+    },
+    {
+     "w": "se",
+     "s": 1.63,
+     "e": 1.809
+    },
+    {
+     "w": "passe",
+     "s": 1.809,
+     "e": 1.988
+    },
+    {
+     "w": "en",
+     "s": 1.988,
+     "e": 2.167
+    },
+    {
+     "w": "coulisses.",
+     "s": 2.167,
+     "e": 2.525
+    },
+    {
+     "w": "Lorsque",
+     "s": 2.815,
+     "e": 3.218
+    },
+    {
+     "w": "vous",
+     "s": 3.218,
+     "e": 3.42
+    },
+    {
+     "w": "validez",
+     "s": 3.42,
+     "e": 4.025
+    },
+    {
+     "w": "une",
+     "s": 4.025,
+     "e": 4.227
+    },
+    {
+     "w": "commande,",
+     "s": 4.227,
+     "e": 4.63
+    },
+    {
+     "w": "un",
+     "s": 4.63,
+     "e": 4.832
+    },
+    {
+     "w": "fichier",
+     "s": 4.832,
+     "e": 5.235
+    },
+    {
+     "w": "est",
+     "s": 5.235,
+     "e": 5.437
+    },
+    {
+     "w": "envoyé",
+     "s": 5.437,
+     "e": 5.84
+    },
+    {
+     "w": "à",
+     "s": 5.84,
+     "e": 6.042
+    },
+    {
+     "w": "Odéis.",
+     "s": 6.042,
+     "e": 6.445
+    },
+    {
+     "w": "Odéis",
+     "s": 6.705,
+     "e": 7.056
+    },
+    {
+     "w": "récupère",
+     "s": 7.056,
+     "e": 7.584
+    },
+    {
+     "w": "le",
+     "s": 7.584,
+     "e": 7.759
+    },
+    {
+     "w": "numéro",
+     "s": 7.759,
+     "e": 8.286
+    },
+    {
+     "w": "de",
+     "s": 8.286,
+     "e": 8.462
+    },
+    {
+     "w": "votre",
+     "s": 8.462,
+     "e": 8.638
+    },
+    {
+     "w": "magasin,",
+     "s": 8.638,
+     "e": 9.165
+    },
+    {
+     "w": "la",
+     "s": 9.285,
+     "e": 9.46
+    },
+    {
+     "w": "référence",
+     "s": 9.46,
+     "e": 9.984
+    },
+    {
+     "w": "fournisseur",
+     "s": 9.984,
+     "e": 10.508
+    },
+    {
+     "w": "commandée",
+     "s": 10.508,
+     "e": 11.033
+    },
+    {
+     "w": "et",
+     "s": 11.033,
+     "e": 11.208
+    },
+    {
+     "w": "la",
+     "s": 11.208,
+     "e": 11.382
+    },
+    {
+     "w": "référence",
+     "s": 11.382,
+     "e": 11.907
+    },
+    {
+     "w": "Odéis",
+     "s": 11.907,
+     "e": 12.256
+    },
+    {
+     "w": "que",
+     "s": 12.256,
+     "e": 12.431
+    },
+    {
+     "w": "vous",
+     "s": 12.431,
+     "e": 12.606
+    },
+    {
+     "w": "avez",
+     "s": 12.606,
+     "e": 12.955
+    },
+    {
+     "w": "scannée,",
+     "s": 12.955,
+     "e": 13.305
+    },
+    {
+     "w": "puis",
+     "s": 13.465,
+     "e": 13.645
+    },
+    {
+     "w": "vérifie",
+     "s": 13.645,
+     "e": 14.185
+    },
+    {
+     "w": "que",
+     "s": 14.185,
+     "e": 14.365
+    },
+    {
+     "w": "les",
+     "s": 14.365,
+     "e": 14.545
+    },
+    {
+     "w": "informations",
+     "s": 14.545,
+     "e": 15.265
+    },
+    {
+     "w": "concordent.",
+     "s": 15.265,
+     "e": 15.625
+    },
+    {
+     "w": "Si",
+     "s": 15.905,
+     "e": 16.099
+    },
+    {
+     "w": "tout",
+     "s": 16.099,
+     "e": 16.293
+    },
+    {
+     "w": "est",
+     "s": 16.293,
+     "e": 16.487
+    },
+    {
+     "w": "correct,",
+     "s": 16.487,
+     "e": 16.875
+    },
+    {
+     "w": "Odéis",
+     "s": 17.015,
+     "e": 17.383
+    },
+    {
+     "w": "effectue",
+     "s": 17.383,
+     "e": 17.935
+    },
+    {
+     "w": "automatiquement",
+     "s": 17.935,
+     "e": 18.856
+    },
+    {
+     "w": "un",
+     "s": 18.856,
+     "e": 19.04
+    },
+    {
+     "w": "transfert",
+     "s": 19.04,
+     "e": 19.408
+    },
+    {
+     "w": "de",
+     "s": 19.408,
+     "e": 19.592
+    },
+    {
+     "w": "la",
+     "s": 19.592,
+     "e": 19.776
+    },
+    {
+     "w": "référence",
+     "s": 19.776,
+     "e": 20.328
+    },
+    {
+     "w": "scannée",
+     "s": 20.328,
+     "e": 20.696
+    },
+    {
+     "w": "vers",
+     "s": 20.696,
+     "e": 20.881
+    },
+    {
+     "w": "le",
+     "s": 20.881,
+     "e": 21.065
+    },
+    {
+     "w": "magasin",
+     "s": 21.065,
+     "e": 21.617
+    },
+    {
+     "w": "101,",
+     "s": 21.617,
+     "e": 21.985
+    },
+    {
+     "w": "qui",
+     "s": 22.145,
+     "e": 22.294
+    },
+    {
+     "w": "est",
+     "s": 22.294,
+     "e": 22.442
+    },
+    {
+     "w": "le",
+     "s": 22.442,
+     "e": 22.591
+    },
+    {
+     "w": "magasin",
+     "s": 22.591,
+     "e": 23.036
+    },
+    {
+     "w": "web.",
+     "s": 23.036,
+     "e": 23.185
+    },
+    {
+     "w": "Le",
+     "s": 23.455,
+     "e": 23.645
+    },
+    {
+     "w": "magasin",
+     "s": 23.645,
+     "e": 24.213
+    },
+    {
+     "w": "101",
+     "s": 24.213,
+     "e": 24.592
+    },
+    {
+     "w": "intègre",
+     "s": 24.592,
+     "e": 24.971
+    },
+    {
+     "w": "le",
+     "s": 24.971,
+     "e": 25.161
+    },
+    {
+     "w": "produit",
+     "s": 25.161,
+     "e": 25.54
+    },
+    {
+     "w": "et",
+     "s": 25.54,
+     "e": 25.73
+    },
+    {
+     "w": "enregistre",
+     "s": 25.73,
+     "e": 26.298
+    },
+    {
+     "w": "la",
+     "s": 26.298,
+     "e": 26.488
+    },
+    {
+     "w": "vente",
+     "s": 26.488,
+     "e": 26.677
+    },
+    {
+     "w": "automatiquement.",
+     "s": 26.677,
+     "e": 27.625
+    },
+    {
+     "w": "Résultat :",
+     "s": 27.855,
+     "e": 28.445
+    },
+    {
+     "w": "le",
+     "s": 28.565,
+     "e": 28.738
+    },
+    {
+     "w": "produit",
+     "s": 28.738,
+     "e": 29.084
+    },
+    {
+     "w": "n'est",
+     "s": 29.084,
+     "e": 29.257
+    },
+    {
+     "w": "plus",
+     "s": 29.257,
+     "e": 29.43
+    },
+    {
+     "w": "dans",
+     "s": 29.43,
+     "e": 29.603
+    },
+    {
+     "w": "le",
+     "s": 29.603,
+     "e": 29.777
+    },
+    {
+     "w": "stock",
+     "s": 29.777,
+     "e": 29.95
+    },
+    {
+     "w": "de",
+     "s": 29.95,
+     "e": 30.123
+    },
+    {
+     "w": "votre",
+     "s": 30.123,
+     "e": 30.296
+    },
+    {
+     "w": "magasin,",
+     "s": 30.296,
+     "e": 30.815
+    },
+    {
+     "w": "et",
+     "s": 30.935,
+     "e": 31.087
+    },
+    {
+     "w": "c'est",
+     "s": 31.087,
+     "e": 31.239
+    },
+    {
+     "w": "le",
+     "s": 31.239,
+     "e": 31.391
+    },
+    {
+     "w": "magasin",
+     "s": 31.391,
+     "e": 31.847
+    },
+    {
+     "w": "101",
+     "s": 31.847,
+     "e": 32.151
+    },
+    {
+     "w": "qui",
+     "s": 32.151,
+     "e": 32.303
+    },
+    {
+     "w": "a",
+     "s": 32.303,
+     "e": 32.455
+    },
+    {
+     "w": "facturé",
+     "s": 32.455,
+     "e": 32.911
+    },
+    {
+     "w": "la",
+     "s": 32.911,
+     "e": 33.063
+    },
+    {
+     "w": "vente.",
+     "s": 33.063,
+     "e": 33.215
+    },
+    {
+     "w": "Pour",
+     "s": 33.635,
+     "e": 33.816
+    },
+    {
+     "w": "les",
+     "s": 33.816,
+     "e": 33.997
+    },
+    {
+     "w": "commandes",
+     "s": 33.997,
+     "e": 34.359
+    },
+    {
+     "w": "multi-produits,",
+     "s": 34.359,
+     "e": 35.083
+    },
+    {
+     "w": "le",
+     "s": 35.083,
+     "e": 35.264
+    },
+    {
+     "w": "fichier",
+     "s": 35.264,
+     "e": 35.626
+    },
+    {
+     "w": "n'est",
+     "s": 35.626,
+     "e": 35.807
+    },
+    {
+     "w": "envoyé",
+     "s": 35.807,
+     "e": 36.169
+    },
+    {
+     "w": "à",
+     "s": 36.169,
+     "e": 36.35
+    },
+    {
+     "w": "Odéis",
+     "s": 36.35,
+     "e": 36.712
+    },
+    {
+     "w": "que",
+     "s": 36.712,
+     "e": 36.893
+    },
+    {
+     "w": "lorsque",
+     "s": 36.893,
+     "e": 37.256
+    },
+    {
+     "w": "tous",
+     "s": 37.256,
+     "e": 37.437
+    },
+    {
+     "w": "les",
+     "s": 37.437,
+     "e": 37.618
+    },
+    {
+     "w": "magasins",
+     "s": 37.618,
+     "e": 38.161
+    },
+    {
+     "w": "concernés",
+     "s": 38.161,
+     "e": 38.704
+    },
+    {
+     "w": "ont",
+     "s": 38.704,
+     "e": 38.885
+    },
+    {
+     "w": "scanné",
+     "s": 38.885,
+     "e": 39.247
+    },
+    {
+     "w": "tous",
+     "s": 39.247,
+     "e": 39.428
+    },
+    {
+     "w": "les",
+     "s": 39.428,
+     "e": 39.609
+    },
+    {
+     "w": "produits",
+     "s": 39.609,
+     "e": 39.971
+    },
+    {
+     "w": "de",
+     "s": 39.971,
+     "e": 40.152
+    },
+    {
+     "w": "la",
+     "s": 40.152,
+     "e": 40.333
+    },
+    {
+     "w": "commande.",
+     "s": 40.333,
+     "e": 40.695
+    },
+    {
+     "w": "C'est",
+     "s": 40.915,
+     "e": 41.078
+    },
+    {
+     "w": "à",
+     "s": 41.078,
+     "e": 41.241
+    },
+    {
+     "w": "ce",
+     "s": 41.241,
+     "e": 41.404
+    },
+    {
+     "w": "moment-là",
+     "s": 41.404,
+     "e": 41.892
+    },
+    {
+     "w": "que",
+     "s": 41.892,
+     "e": 42.055
+    },
+    {
+     "w": "les",
+     "s": 42.055,
+     "e": 42.218
+    },
+    {
+     "w": "transferts",
+     "s": 42.218,
+     "e": 42.544
+    },
+    {
+     "w": "sont",
+     "s": 42.544,
+     "e": 42.706
+    },
+    {
+     "w": "effectués.",
+     "s": 42.706,
+     "e": 43.195
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Conclusion",
+   "lead": 0.4,
+   "tail": 1.2,
+   "adur": 13.75,
+   "dur": 15.35,
+   "audio": "voiceover/v1/scene06.mp3",
+   "shots": [
+    {
+     "id": "v1_6_1",
+     "t0": 0.0,
+     "t1": 9.835,
+     "vo": "Pour résumer : le stock du site, c'est le stock du réseau, les commandes sont attribuées selon un classement, et chaque validation met automatiquement à jour les stocks et la facturation.",
+     "cues": [
+      {
+       "phrase": "stock du réseau",
+       "action": "pictogramme 1",
+       "t": 2.82
+      },
+      {
+       "phrase": "classement",
+       "action": "pictogramme 2",
+       "t": 5.975
+      },
+      {
+       "phrase": "met automatiquement à jour",
+       "action": "pictogramme 3",
+       "t": 7.279
+      }
+     ]
+    },
+    {
+     "id": "v1_6_2",
+     "t0": 9.835,
+     "t1": 15.35,
+     "vo": "Dans la vidéo suivante, nous voyons ensemble comment traiter concrètement une commande.",
+     "cues": [
+      {
+       "phrase": "vidéo suivante",
+       "action": "« Vidéo 2 » s'affiche",
+       "t": 10.384
+      }
+     ]
+    }
+   ],
+   "words": [
+    {
+     "w": "Pour",
+     "s": 0.545,
+     "e": 0.69
+    },
+    {
+     "w": "résumer :",
+     "s": 0.69,
+     "e": 1.125
+    },
+    {
+     "w": "le",
+     "s": 1.315,
+     "e": 1.53
+    },
+    {
+     "w": "stock",
+     "s": 1.53,
+     "e": 1.745
+    },
+    {
+     "w": "du",
+     "s": 1.745,
+     "e": 1.96
+    },
+    {
+     "w": "site,",
+     "s": 1.96,
+     "e": 2.175
+    },
+    {
+     "w": "c'est",
+     "s": 2.175,
+     "e": 2.39
+    },
+    {
+     "w": "le",
+     "s": 2.39,
+     "e": 2.605
+    },
+    {
+     "w": "stock",
+     "s": 2.605,
+     "e": 2.82
+    },
+    {
+     "w": "du",
+     "s": 2.82,
+     "e": 3.035
+    },
+    {
+     "w": "réseau,",
+     "s": 3.035,
+     "e": 3.465
+    },
+    {
+     "w": "les",
+     "s": 3.635,
+     "e": 3.817
+    },
+    {
+     "w": "commandes",
+     "s": 3.817,
+     "e": 4.18
+    },
+    {
+     "w": "sont",
+     "s": 4.18,
+     "e": 4.362
+    },
+    {
+     "w": "attribuées",
+     "s": 4.362,
+     "e": 4.907
+    },
+    {
+     "w": "selon",
+     "s": 4.907,
+     "e": 5.27
+    },
+    {
+     "w": "un",
+     "s": 5.27,
+     "e": 5.452
+    },
+    {
+     "w": "classement,",
+     "s": 5.452,
+     "e": 5.815
+    },
+    {
+     "w": "et",
+     "s": 5.975,
+     "e": 6.138
+    },
+    {
+     "w": "chaque",
+     "s": 6.138,
+     "e": 6.464
+    },
+    {
+     "w": "validation",
+     "s": 6.464,
+     "e": 7.116
+    },
+    {
+     "w": "met",
+     "s": 7.116,
+     "e": 7.279
+    },
+    {
+     "w": "automatiquement",
+     "s": 7.279,
+     "e": 8.095
+    },
+    {
+     "w": "à",
+     "s": 8.095,
+     "e": 8.258
+    },
+    {
+     "w": "jour",
+     "s": 8.258,
+     "e": 8.421
+    },
+    {
+     "w": "les",
+     "s": 8.421,
+     "e": 8.584
+    },
+    {
+     "w": "stocks",
+     "s": 8.584,
+     "e": 8.747
+    },
+    {
+     "w": "et",
+     "s": 8.747,
+     "e": 8.91
+    },
+    {
+     "w": "la",
+     "s": 8.91,
+     "e": 9.073
+    },
+    {
+     "w": "facturation.",
+     "s": 9.073,
+     "e": 9.725
+    },
+    {
+     "w": "Dans",
+     "s": 9.965,
+     "e": 10.174
+    },
+    {
+     "w": "la",
+     "s": 10.174,
+     "e": 10.384
+    },
+    {
+     "w": "vidéo",
+     "s": 10.384,
+     "e": 10.803
+    },
+    {
+     "w": "suivante,",
+     "s": 10.803,
+     "e": 11.222
+    },
+    {
+     "w": "nous",
+     "s": 11.222,
+     "e": 11.431
+    },
+    {
+     "w": "voyons",
+     "s": 11.431,
+     "e": 11.641
+    },
+    {
+     "w": "ensemble",
+     "s": 11.641,
+     "e": 12.06
+    },
+    {
+     "w": "comment",
+     "s": 12.06,
+     "e": 12.269
+    },
+    {
+     "w": "traiter",
+     "s": 12.269,
+     "e": 12.688
+    },
+    {
+     "w": "concrètement",
+     "s": 12.688,
+     "e": 13.317
+    },
+    {
+     "w": "une",
+     "s": 13.317,
+     "e": 13.526
+    },
+    {
+     "w": "commande.",
+     "s": 13.526,
+     "e": 13.945
+    }
+   ]
+  }
+ ]
+}
