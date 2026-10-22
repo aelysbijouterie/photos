@@ -31,3 +31,10 @@ export const cueT = (s: SceneTiming, id: string, i: number) => {
   if (!sh || !sh.cues[i]) throw new Error(`Déclencheur inconnu : ${id}#${i}`);
   return sh.cues[i].t;
 };
+
+/** Fin (en secondes de la scène) du premier mot égal à `text` dans la voix off. */
+export const wordEnd = (s: SceneTiming, text: string) => {
+  const w = s.words.find((x) => x.w === text);
+  if (!w) throw new Error(`Mot inconnu : ${text}`);
+  return w.e;
+};

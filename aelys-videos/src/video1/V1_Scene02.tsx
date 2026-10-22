@@ -1,7 +1,7 @@
 import React from 'react';
 import {colors, fonts} from '../theme';
 import {timings} from '../scenes.config';
-import {cueT, shotT} from '../timing';
+import {cueT, shotT, wordEnd} from '../timing';
 import {SceneShell} from '../components/SceneShell';
 import {useClock} from '../components/useClock';
 import {KeyText} from '../components/KeyText';
@@ -14,10 +14,11 @@ import {ParcelTile, ShopTile} from './parts';
 import {video1 as txt} from '../content.fr';
 
 const sc = timings.video1.scenes[1];
-const T2 = shotT(sc, 'v1_2_2');
+// Le réseau n'apparaît qu'une fois la phrase « …celui des magasins. » terminée : pendant la voix, on reste sur « Stock web » barré.
+const T2 = wordEnd(sc, 'magasins.') + 0.2;
 const T3 = shotT(sc, 'v1_2_3');
 const C_NOSTOCK = cueT(sc, 'v1_2_1', 0); // « pas de stock dédié »
-const C_EQUATION = cueT(sc, 'v1_2_2', 0); // « de l'ensemble du réseau »
+const C_EQUATION = T2 + 0.5; // le réseau s'allume, puis l'équation s'écrit
 const C_TEAM = cueT(sc, 'v1_2_3', 0); // « équipes en magasin »
 
 const SiteTile: React.FC<{x: number; opacity?: number; scale?: number}> = ({x, opacity = 1, scale = 1}) => (
