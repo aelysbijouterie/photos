@@ -13,6 +13,8 @@ export type SceneTiming = {
   audio: string;
   shots: Shot[];
   words: Word[];
+  /** Séquences vidéo du client (lecture normale) : instant de départ dans la scène et durée. */
+  clips?: {id: string; t0: number; dur: number}[];
 };
 export type VideoTiming = {video: number; title: string; scenes: SceneTiming[]};
 
