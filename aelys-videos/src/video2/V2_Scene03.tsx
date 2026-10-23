@@ -88,7 +88,6 @@ export const V2_Scene03: React.FC = () => {
   const checkScan = prog(t, C('v2_4_5', 2) - 0.2, C('v2_4_5', 2) + 0.3);
   const cross = prog(t, C('v2_4_6cc', 1) - 0.2, C('v2_4_6cc', 1) + 0.3);
   const bl = prog(t, C('v2_4_6cc', 0) + 2.4, C('v2_4_6cc', 0) + 3.0);
-  const clipCcEnd = TCC + 4.6;
 
   // e-réservation
   const erA = E_TAB - 0.2;
@@ -101,7 +100,7 @@ export const V2_Scene03: React.FC = () => {
     {...ER_SUPPR, color: colors.red, from: E_NOSTOCK, pulse: true},
   ];
   const mail = prog(t, C('v2_2_6', 1), C('v2_2_6', 1) + 1.3);
-  const ring = prog(t, C('v2_2_7', 0) - 3.2, C('v2_2_7', 0) + 0.2);
+  const ring = prog(t, TB7 + 0.5, C('v2_2_7', 0) + 1.0);
 
   const sfx = [
     {t: C('v2_4_1', 0), name: 'pop' as const, volume: 0.25},
@@ -128,7 +127,7 @@ export const V2_Scene03: React.FC = () => {
     {t: C('v2_2_6', 0), name: 'click' as const, volume: 0.3},
     {t: C('v2_2_6', 1), name: 'whoosh' as const, volume: 0.22},
     {t: C('v2_2_6', 2), name: 'ding' as const, volume: 0.25},
-    {t: C('v2_2_7', 0) - 3.2, name: 'tick' as const, volume: 0.15},
+    {t: TB7 + 0.5, name: 'tick' as const, volume: 0.15},
     {t: C('v2_2_7', 1), name: 'pop' as const, volume: 0.28},
     {t: C('v2_2_7', 2), name: 'stamp' as const, volume: 0.3},
     {t: C('v2_2_9', 0), name: 'ding' as const, volume: 0.25},
@@ -328,7 +327,8 @@ export const V2_Scene03: React.FC = () => {
       </AbsoluteFill>
       {/* ── C (suite) : seul le bon de livraison */}
       <AbsoluteFill style={{opacity: pCC}}>
-        <ClipAt at={TCC + 0.2} dur={4.5} x={60} y={200} w={1000} src="media/clip_imp_3.mp4" kind="video" sw={1280} sh={720} sceneT={t} appear={TCC + 0.2} out={clipCcEnd - 0.4} />
+        <Screen x={60} y={170} w={840} src="media/cc_one_button.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={TCC + 0.2}
+          highlights={[{x: 574, y: 592, w: 130, h: 36, color: G, from: TCC + 1.0, pulse: true}]} />
         <Tile x={1480} y={290} size={170} state="lit">
           <PrinterIcon size={86} strokeWidth={1.6} />
         </Tile>
@@ -344,7 +344,7 @@ export const V2_Scene03: React.FC = () => {
         <div style={{position: 'absolute', left: 1240 + 50, top: 590 - 130, width: 62, height: 62, borderRadius: 31, background: colors.ok, color: colors.white, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${bl})`}}>
           <CheckIcon size={40} strokeWidth={3.6} />
         </div>
-        <KeyText text={txt.s4.onlyBl} t={t} at={clipCcEnd - 0.2} x={560} y={430} size={48} color={G} />
+        <KeyText text={txt.s4.onlyBl} t={t} at={C('v2_4_6cc', 0)} x={480} y={745} size={46} color={G} />
       </AbsoluteFill>
     </SceneShell>
   );

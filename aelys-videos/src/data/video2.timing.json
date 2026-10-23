@@ -219,128 +219,128 @@
    "title": "L'interface et ses 3 onglets",
    "lead": 0.8,
    "tail": 1.0,
-   "adur": 52.416,
-   "dur": 54.216,
+   "adur": 51.345,
+   "dur": 53.145,
    "audio": "voiceover/v2/scene02.mp3",
    "shots": [
     {
      "id": "v2_2_1",
      "t0": 0.0,
-     "t1": 5.3,
+     "t1": 4.911,
      "vo": "Sur chacun de vos PC, vous disposez d'une interface de commande.",
      "cues": [
       {
        "phrase": "interface de commande",
        "action": "l'icône est surlignée",
-       "t": 2.976
+       "t": 2.813
       }
      ]
     },
     {
      "id": "v2_2_2",
-     "t0": 5.3,
-     "t1": 8.095,
+     "t0": 4.911,
+     "t1": 7.882,
      "vo": "Elle comporte 3 onglets.",
      "cues": [
       {
        "phrase": "3 onglets",
        "action": "onglet bleu, puis orange, puis vert",
-       "t": 6.299
+       "t": 6.462
       }
      ]
     },
     {
      "id": "v2_2_3",
-     "t0": 8.095,
-     "t1": 12.96,
+     "t0": 7.882,
+     "t1": 12.801,
      "vo": "L'onglet « À envoyer » regroupe les commandes à expédier au client.",
      "cues": [
       {
        "phrase": "à expédier au client",
        "action": "le colis part vers le client",
-       "t": 11.281
+       "t": 11.299
       }
      ]
     },
     {
      "id": "v2_2_4",
-     "t0": 12.96,
-     "t1": 24.755,
+     "t0": 12.801,
+     "t1": 23.395,
      "vo": "Elles peuvent partir en lettre suivie, en Colissimo à domicile avec signature, en Colissimo point relais, ou en express avec Chronopost.",
      "cues": [
       {
        "phrase": "lettre suivie",
        "action": "carte 1",
-       "t": 14.398
+       "t": 14.656
       },
       {
        "phrase": "à domicile",
        "action": "carte 2",
-       "t": 16.551
+       "t": 16.564
       },
       {
        "phrase": "point relais",
        "action": "carte 3",
-       "t": 19.743
+       "t": 19.276
       },
       {
        "phrase": "Chronopost",
        "action": "carte 4",
-       "t": 22.045
+       "t": 21.445
       }
      ]
     },
     {
      "id": "v2_2_5",
-     "t0": 24.755,
-     "t1": 39.15,
+     "t0": 23.395,
+     "t1": 37.585,
      "vo": "L'onglet « e-réservation » concerne les demandes de réservation. Le client souhaite qu'on lui mette l'article de côté : il n'a pas réglé sa commande, il veut venir l'essayer en magasin et l'acheter sur place.",
      "cues": [
       {
        "phrase": "onglet « e-réservation »",
        "action": "l'onglet réel « En e-réservation » s'allume en orange, badge « 1 » (vidéo reçue 0-4 s)",
-       "t": 25.425
+       "t": 24.95
       },
       {
        "phrase": "mette l'article de côté",
        "action": "animation : Hélène a réservé sur son smartphone, l'article est mis de côté",
-       "t": 31.323
+       "t": 30.648
       },
       {
        "phrase": "n'a pas réglé",
        "action": "mention « non réglé »",
-       "t": 33.491
+       "t": 32.342
       }
      ]
     },
     {
      "id": "v2_2_8",
-     "t0": 39.15,
-     "t1": 49.375,
+     "t0": 37.585,
+     "t1": 48.085,
      "vo": "Enfin, l'onglet « Click & Collect ». Le client a passé commande sur le site et réglé en ligne, et il vient retirer sa commande en magasin.",
      "cues": [
       {
        "phrase": "réglé en ligne",
        "action": "coche « payé »",
-       "t": 45.63
+       "t": 45.236
       },
       {
        "phrase": "retirer",
        "action": "le client entre dans le magasin",
-       "t": 46.938
+       "t": 46.543
       }
      ]
     },
     {
      "id": "v2_2_7",
-     "t0": 49.375,
-     "t1": 54.216,
+     "t0": 48.085,
+     "t1": 53.145,
      "vo": "Voyons maintenant comment traiter chacun de ces trois onglets.",
      "cues": [
       {
        "phrase": "traiter chacun",
        "action": "la première pastille se détache",
-       "t": 51.015
+       "t": 50.315
       }
      ]
     }
@@ -348,573 +348,573 @@
    "words": [
     {
      "w": "Sur",
-     "s": 0.925,
-     "e": 1.111
+     "s": 0.86,
+     "e": 1.015
     },
     {
      "w": "chacun",
-     "s": 1.111,
-     "e": 1.484
+     "s": 1.032,
+     "e": 1.343
     },
     {
      "w": "de",
-     "s": 1.484,
-     "e": 1.671
+     "s": 1.377,
+     "e": 1.481
     },
     {
      "w": "vos",
-     "s": 1.671,
-     "e": 1.857
+     "s": 1.492,
+     "e": 1.647
     },
     {
      "w": "PC,",
-     "s": 1.857,
-     "e": 2.044
+     "s": 1.664,
+     "e": 1.871
     },
     {
      "w": "vous",
-     "s": 2.044,
-     "e": 2.23
+     "s": 1.894,
+     "e": 2.101
     },
     {
      "w": "disposez",
-     "s": 2.23,
-     "e": 2.79
+     "s": 2.124,
+     "e": 2.538
     },
     {
      "w": "d'une",
-     "s": 2.79,
-     "e": 2.976
+     "s": 2.584,
+     "e": 2.79
     },
     {
      "w": "interface",
-     "s": 2.976,
-     "e": 3.536
+     "s": 2.813,
+     "e": 3.279
     },
     {
      "w": "de",
-     "s": 3.536,
-     "e": 3.722
+     "s": 3.331,
+     "e": 3.434
     },
     {
      "w": "commande.",
-     "s": 3.722,
-     "e": 4.095
+     "s": 3.445,
+     "e": 3.963
     },
     {
      "w": "Elle",
-     "s": 5.629,
-     "e": 5.852
+     "s": 5.742,
+     "e": 5.958
     },
     {
      "w": "comporte",
-     "s": 5.852,
-     "e": 6.299
+     "s": 5.982,
+     "e": 6.414
     },
     {
      "w": "3",
-     "s": 6.299,
-     "e": 6.522
+     "s": 6.462,
+     "e": 6.516
     },
     {
      "w": "onglets.",
      "s": 6.522,
-     "e": 6.969
+     "e": 7.008
     },
     {
      "w": "L'onglet",
-     "s": 8.429,
-     "e": 8.836
+     "s": 8.642,
+     "e": 9.023
     },
     {
      "w": "« À",
-     "s": 8.836,
-     "e": 9.04
+     "s": 9.065,
+     "e": 9.119
     },
     {
      "w": "envoyer »",
-     "s": 9.04,
-     "e": 9.448
+     "s": 9.125,
+     "e": 9.506
     },
     {
      "w": "regroupe",
-     "s": 9.448,
-     "e": 9.855
+     "s": 9.548,
+     "e": 9.983
     },
     {
      "w": "les",
-     "s": 9.855,
-     "e": 10.059
+     "s": 10.031,
+     "e": 10.194
     },
     {
      "w": "commandes",
-     "s": 10.059,
-     "e": 10.466
+     "s": 10.212,
+     "e": 10.701
     },
     {
      "w": "à",
-     "s": 10.466,
-     "e": 10.67
+     "s": 10.755,
+     "e": 10.81
     },
     {
      "w": "expédier",
-     "s": 10.67,
-     "e": 11.281
+     "s": 10.816,
+     "e": 11.25
     },
     {
      "w": "au",
-     "s": 11.281,
-     "e": 11.485
+     "s": 11.299,
+     "e": 11.407
     },
     {
      "w": "client.",
-     "s": 11.485,
-     "e": 11.689
+     "s": 11.419,
+     "e": 11.854
     },
     {
      "w": "Elles",
-     "s": 13.285,
-     "e": 13.508
+     "s": 13.639,
+     "e": 13.868
     },
     {
      "w": "peuvent",
-     "s": 13.508,
-     "e": 13.73
+     "s": 13.893,
+     "e": 14.214
     },
     {
      "w": "partir",
-     "s": 13.73,
-     "e": 14.175
+     "s": 14.249,
+     "e": 14.524
     },
     {
      "w": "en",
-     "s": 14.175,
-     "e": 14.398
+     "s": 14.555,
+     "e": 14.646
     },
     {
      "w": "lettre",
-     "s": 14.398,
-     "e": 14.62
+     "s": 14.656,
+     "e": 14.931
     },
     {
      "w": "suivie,",
-     "s": 14.62,
-     "e": 15.065
+     "s": 14.962,
+     "e": 15.328
     },
     {
      "w": "en",
-     "s": 15.665,
-     "e": 15.842
+     "s": 15.819,
+     "e": 15.941
     },
     {
      "w": "Colissimo",
-     "s": 15.842,
-     "e": 16.551
+     "s": 15.954,
+     "e": 16.503
     },
     {
      "w": "à",
-     "s": 16.551,
-     "e": 16.728
+     "s": 16.564,
+     "e": 16.625
     },
     {
      "w": "domicile",
-     "s": 16.728,
-     "e": 17.259
+     "s": 16.631,
+     "e": 17.119
     },
     {
      "w": "avec",
-     "s": 17.259,
-     "e": 17.614
+     "s": 17.173,
+     "e": 17.417
     },
     {
      "w": "signature,",
-     "s": 17.614,
-     "e": 18.145
+     "s": 17.444,
+     "e": 18.114
     },
     {
      "w": "en",
-     "s": 18.855,
-     "e": 19.033
+     "s": 18.639,
+     "e": 18.743
     },
     {
      "w": "Colissimo",
-     "s": 19.033,
-     "e": 19.743
+     "s": 18.755,
+     "e": 19.224
     },
     {
      "w": "point",
-     "s": 19.743,
-     "e": 19.92
+     "s": 19.276,
+     "e": 19.537
     },
     {
      "w": "relais,",
-     "s": 19.92,
-     "e": 20.275
+     "s": 19.565,
+     "e": 19.982
     },
     {
      "w": "ou",
-     "s": 20.865,
-     "e": 21.062
+     "s": 20.479,
+     "e": 20.595
     },
     {
      "w": "en",
-     "s": 21.062,
-     "e": 21.259
+     "s": 20.608,
+     "e": 20.724
     },
     {
      "w": "express",
-     "s": 21.259,
-     "e": 21.652
+     "s": 20.737,
+     "e": 21.143
     },
     {
      "w": "avec",
-     "s": 21.652,
-     "e": 22.045
+     "s": 21.188,
+     "e": 21.42
     },
     {
      "w": "Chronopost.",
-     "s": 22.045,
-     "e": 22.635
+     "s": 21.445,
+     "e": 22.141
     },
     {
      "w": "L'onglet",
-     "s": 25.08,
-     "e": 25.425
+     "s": 24.511,
+     "e": 24.906
     },
     {
      "w": "«",
-     "s": 25.425,
-     "e": 25.598
+     "s": 24.95,
+     "e": 25.007
     },
     {
      "w": "e-réservation",
-     "s": 25.598,
-     "e": 26.633
+     "s": 25.013,
+     "e": 25.69
     },
     {
      "w": "»",
-     "s": 26.633,
-     "e": 26.805
+     "s": 25.766,
+     "e": 25.822
     },
     {
      "w": "concerne",
-     "s": 26.805,
-     "e": 27.15
+     "s": 25.828,
+     "e": 26.28
     },
     {
      "w": "les",
-     "s": 27.15,
-     "e": 27.323
+     "s": 26.33,
+     "e": 26.499
     },
     {
      "w": "demandes",
-     "s": 27.323,
-     "e": 27.668
+     "s": 26.518,
+     "e": 26.97
     },
     {
      "w": "de",
-     "s": 27.668,
-     "e": 27.84
+     "s": 27.02,
+     "e": 27.133
     },
     {
      "w": "réservation.",
-     "s": 27.84,
-     "e": 28.53
+     "s": 27.146,
+     "e": 27.879
     },
     {
      "w": "Le",
-     "s": 30.163,
-     "e": 30.329
+     "s": 29.524,
+     "e": 29.612
     },
     {
      "w": "client",
-     "s": 30.329,
-     "e": 30.495
+     "s": 29.622,
+     "e": 29.886
     },
     {
      "w": "souhaite",
-     "s": 30.495,
-     "e": 30.826
+     "s": 29.915,
+     "e": 30.267
     },
     {
      "w": "qu'on",
-     "s": 30.826,
-     "e": 31.157
+     "s": 30.306,
+     "e": 30.482
     },
     {
      "w": "lui",
-     "s": 31.157,
-     "e": 31.323
+     "s": 30.502,
+     "e": 30.634
     },
     {
      "w": "mette",
-     "s": 31.323,
-     "e": 31.489
+     "s": 30.648,
+     "e": 30.868
     },
     {
      "w": "l'article",
-     "s": 31.489,
-     "e": 31.82
+     "s": 30.893,
+     "e": 31.245
     },
     {
      "w": "de",
-     "s": 31.82,
-     "e": 31.986
+     "s": 31.284,
+     "e": 31.372
     },
     {
      "w": "côté",
-     "s": 31.986,
-     "e": 32.317
+     "s": 31.382,
+     "e": 31.558
     },
     {
      "w": ":",
-     "s": 32.317,
-     "e": 32.483
+     "s": 31.577,
+     "e": 31.709
     },
     {
      "w": "il",
-     "s": 33.313,
-     "e": 33.491
+     "s": 32.224,
+     "e": 32.33
     },
     {
      "w": "n'a",
-     "s": 33.491,
-     "e": 33.668
+     "s": 32.342,
+     "e": 32.448
     },
     {
      "w": "pas",
-     "s": 33.668,
-     "e": 33.846
+     "s": 32.46,
+     "e": 32.619
     },
     {
      "w": "réglé",
-     "s": 33.846,
-     "e": 34.201
+     "s": 32.636,
+     "e": 32.901
     },
     {
      "w": "sa",
-     "s": 34.201,
-     "e": 34.378
+     "s": 32.931,
+     "e": 33.037
     },
     {
      "w": "commande,",
-     "s": 34.378,
-     "e": 34.733
+     "s": 33.048,
+     "e": 33.578
     },
     {
      "w": "il",
-     "s": 34.733,
-     "e": 35.361
+     "s": 33.637,
+     "e": 33.743
     },
     {
      "w": "veut",
-     "s": 35.361,
-     "e": 35.538
+     "s": 33.755,
+     "e": 33.967
     },
     {
      "w": "venir",
-     "s": 35.538,
-     "e": 35.893
+     "s": 33.991,
+     "e": 34.256
     },
     {
      "w": "l'essayer",
-     "s": 35.893,
-     "e": 36.248
+     "s": 34.285,
+     "e": 34.709
     },
     {
      "w": "en",
-     "s": 36.248,
-     "e": 36.426
+     "s": 34.756,
+     "e": 34.862
     },
     {
      "w": "magasin",
-     "s": 36.426,
-     "e": 36.958
+     "s": 34.874,
+     "e": 35.245
     },
     {
      "w": "et",
-     "s": 36.958,
-     "e": 37.136
+     "s": 35.286,
+     "e": 35.392
     },
     {
      "w": "l'acheter",
-     "s": 37.136,
-     "e": 37.668
+     "s": 35.404,
+     "e": 35.828
     },
     {
      "w": "sur",
-     "s": 37.668,
-     "e": 37.846
+     "s": 35.875,
+     "e": 36.034
     },
     {
      "w": "place.",
-     "s": 37.846,
-     "e": 38.023
+     "s": 36.052,
+     "e": 36.423
     },
     {
      "w": "Enfin,",
-     "s": 39.48,
-     "e": 39.9
+     "s": 38.646,
+     "e": 39.109
     },
     {
      "w": "l'onglet",
-     "s": 40.47,
-     "e": 40.921
+     "s": 39.161,
+     "e": 39.624
     },
     {
      "w": "« Click &",
-     "s": 40.921,
-     "e": 41.146
+     "s": 39.676,
+     "e": 40.007
     },
     {
      "w": "Collect ».",
-     "s": 41.146,
-     "e": 41.597
+     "s": 40.043,
+     "e": 40.639
     },
     {
      "w": "Le",
-     "s": 41.597,
-     "e": 41.823
+     "s": 42.086,
+     "e": 42.189
     },
     {
      "w": "client",
-     "s": 41.823,
-     "e": 42.048
+     "s": 42.201,
+     "e": 42.511
     },
     {
      "w": "a",
-     "s": 42.048,
-     "e": 42.274
+     "s": 42.545,
+     "e": 42.597
     },
     {
      "w": "passé",
-     "s": 42.274,
-     "e": 42.725
+     "s": 42.603,
+     "e": 42.861
     },
     {
      "w": "commande",
-     "s": 42.725,
-     "e": 43.176
+     "s": 42.89,
+     "e": 43.303
     },
     {
      "w": "sur",
-     "s": 43.176,
-     "e": 43.401
+     "s": 43.349,
+     "e": 43.505
     },
     {
      "w": "le",
-     "s": 43.401,
-     "e": 43.627
+     "s": 43.522,
+     "e": 43.625
     },
     {
      "w": "site",
-     "s": 43.627,
-     "e": 43.852
+     "s": 43.637,
+     "e": 43.843
     },
     {
      "w": "et",
-     "s": 43.852,
-     "e": 44.078
+     "s": 43.866,
+     "e": 43.97
     },
     {
      "w": "réglé",
-     "s": 44.078,
-     "e": 44.529
+     "s": 43.981,
+     "e": 44.24
     },
     {
      "w": "en",
-     "s": 44.529,
-     "e": 44.754
+     "s": 44.269,
+     "e": 44.372
     },
     {
      "w": "ligne,",
-     "s": 44.754,
-     "e": 44.98
+     "s": 44.383,
+     "e": 44.745
     },
     {
      "w": "et",
-     "s": 45.63,
-     "e": 45.775
+     "s": 45.236,
+     "e": 45.326
     },
     {
      "w": "il",
-     "s": 45.775,
-     "e": 45.92
+     "s": 45.336,
+     "e": 45.427
     },
     {
      "w": "vient",
-     "s": 45.92,
-     "e": 46.066
+     "s": 45.437,
+     "e": 45.663
     },
     {
      "w": "retirer",
-     "s": 46.066,
-     "e": 46.502
+     "s": 45.688,
+     "e": 46.005
     },
     {
      "w": "sa",
-     "s": 46.502,
-     "e": 46.647
+     "s": 46.04,
+     "e": 46.13
     },
     {
      "w": "commande",
-     "s": 46.647,
-     "e": 46.938
+     "s": 46.14,
+     "e": 46.502
     },
     {
      "w": "en",
-     "s": 46.938,
-     "e": 47.083
+     "s": 46.543,
+     "e": 46.633
     },
     {
      "w": "magasin.",
-     "s": 47.083,
-     "e": 47.52
+     "s": 46.643,
+     "e": 47.05
     },
     {
      "w": "Voyons",
-     "s": 49.725,
-     "e": 50.021
+     "s": 49.004,
+     "e": 49.305
     },
     {
      "w": "maintenant",
-     "s": 50.062,
-     "e": 50.555
+     "s": 49.346,
+     "e": 49.847
     },
     {
      "w": "comment",
-     "s": 50.623,
-     "e": 50.968
+     "s": 49.916,
+     "e": 50.267
     },
     {
      "w": "traiter",
-     "s": 51.015,
-     "e": 51.361
+     "s": 50.315,
+     "e": 50.666
     },
     {
      "w": "chacun",
-     "s": 51.408,
-     "e": 51.704
+     "s": 50.714,
+     "e": 51.015
     },
     {
      "w": "de",
-     "s": 51.744,
-     "e": 51.843
+     "s": 51.056,
+     "e": 51.156
     },
     {
      "w": "ces",
-     "s": 51.857,
-     "e": 52.005
+     "s": 51.17,
+     "e": 51.32
     },
     {
      "w": "trois",
-     "s": 52.025,
-     "e": 52.272
+     "s": 51.34,
+     "e": 51.591
     },
     {
      "w": "onglets.",
-     "s": 52.305,
-     "e": 52.799
+     "s": 51.625,
+     "e": 52.127
     }
    ]
   },
@@ -923,341 +923,341 @@
    "title": "Traiter chacun des 3 onglets",
    "lead": 1.0,
    "tail": 1.5,
-   "adur": 154.994,
-   "dur": 157.494,
+   "adur": 147.13,
+   "dur": 149.63,
    "audio": "voiceover/v2/scene03.mp3",
    "shots": [
     {
      "id": "v2_4_1",
      "t0": 0.0,
-     "t1": 3.936,
+     "t1": 3.995,
      "vo": "Commençons par l'onglet « À envoyer ».",
      "cues": [
       {
        "phrase": "À envoyer",
        "action": "pastille bleue puis la frise des étapes",
-       "t": 2.793
+       "t": 2.524
       }
      ]
     },
     {
      "id": "v2_4_2",
-     "t0": 3.936,
-     "t1": 11.681,
+     "t0": 3.995,
+     "t1": 12.745,
      "vo": "Étape 1. Cliquez sur « Voir la commande ». La commande s'ouvre dans une fenêtre internet.",
      "cues": [
       {
        "phrase": "Étape 1",
        "action": "le cercle 1 s'allume",
-       "t": 4.041
+       "t": 4.765
       },
       {
        "phrase": "Voir la commande",
        "action": "curseur sur le bouton",
-       "t": 7.024
+       "t": 7.74
       }
      ]
     },
     {
      "id": "v2_4_3",
-     "t0": 11.681,
-     "t1": 26.416,
+     "t0": 12.745,
+     "t1": 26.799,
      "vo": "Étape 2. Copiez la référence web, puis collez-la dans Odéis, dans « Interro », dans le champ « Ancienne référence ». Vous obtenez ainsi la référence Odéis attendue pour la commande, celle qui commence par 398.",
      "cues": [
       {
        "phrase": "Copiez",
        "action": "la référence est sélectionnée",
-       "t": 14.011
+       "t": 15.455
       },
       {
        "phrase": "collez-la",
        "action": "elle glisse dans Odéis",
-       "t": 15.694
+       "t": 17.11
       },
       {
        "phrase": "398",
        "action": "surbrillance dorée",
-       "t": 23.068
+       "t": 26.066
       }
      ]
     },
     {
      "id": "v2_4_4",
-     "t0": 26.416,
-     "t1": 31.636,
+     "t0": 26.799,
+     "t1": 31.959,
      "vo": "Étape 3. Allez chercher le produit en vitrine.",
      "cues": [
       {
        "phrase": "vitrine",
        "action": "la vitrine est surlignée",
-       "t": 30.061
+       "t": 30.717
       },
       {
        "phrase": "produit",
        "action": "le bijou est pris",
-       "t": 29.593
+       "t": 30.294
       }
      ]
     },
     {
      "id": "v2_4_r1",
-     "t0": 31.636,
-     "t1": 51.346,
+     "t0": 31.959,
+     "t1": 44.119,
      "vo": "Attention : si vous ne pouvez pas traiter la commande, parce que le produit est défectueux, réservé pour un autre client, ou absent du stock à cause d'un problème d'étiquetage ou d'inventaire, il existe une solution.",
      "cues": [
       {
        "phrase": "défectueux",
        "action": "carte 1",
-       "t": 38.461
+       "t": 36.891
       },
       {
        "phrase": "réservé",
        "action": "carte 2",
-       "t": 39.703
+       "t": 37.572
       },
       {
        "phrase": "absent du stock",
        "action": "carte 3",
-       "t": 42.267
+       "t": 39.613
       }
      ]
     },
     {
      "id": "v2_4_r2",
-     "t0": 51.346,
-     "t1": 58.941,
+     "t0": 44.119,
+     "t1": 50.749,
      "vo": "Dans ce cas, cliquez sur « Refuser », puis sur « Valider » pour confirmer votre choix.",
      "cues": [
       {
        "phrase": "Refuser",
        "action": "le 1 rouge apparaît",
-       "t": 53.456
+       "t": 46.176
       },
       {
        "phrase": "Valider",
        "action": "le 2 vert apparaît",
-       "t": 55.239
+       "t": 47.688
       }
      ]
     },
     {
      "id": "v2_4_r3",
-     "t0": 58.941,
-     "t1": 66.521,
+     "t0": 50.749,
+     "t1": 57.188,
      "vo": "La commande est alors transmise au prochain magasin qui a le produit en stock, selon le ranking.",
      "cues": [
       {
        "phrase": "prochain magasin",
        "action": "le magasin suivant s'allume",
-       "t": 61.045
+       "t": 53.259
       },
       {
        "phrase": "ranking",
        "action": "le mot « ranking » apparaît",
-       "t": 64.466
+       "t": 55.7
       }
      ]
     },
     {
      "id": "v2_4_5",
-     "t0": 66.521,
-     "t1": 75.306,
+     "t0": 57.188,
+     "t1": 67.224,
      "vo": "Étape 4. Scannez l'étiquette du produit, ou recopiez-la à la main dans le champ « Étiquette », puis cliquez sur « Valider ».",
      "cues": [
       {
        "phrase": "Scannez",
        "action": "le faisceau lit l'étiquette",
-       "t": 68.989
+       "t": 60.187
       },
       {
        "phrase": "Étiquette",
        "action": "le champ se remplit",
-       "t": 70.037
+       "t": 61.195
       },
       {
        "phrase": "Valider",
        "action": "clic + coche verte",
-       "t": 74.89
+       "t": 65.603
       }
      ]
     },
     {
      "id": "v2_4_6",
-     "t0": 75.306,
-     "t1": 81.661,
+     "t0": 67.224,
+     "t1": 73.722,
      "vo": "Étape 5. Imprimez le bon de livraison et l'étiquette de transport.",
      "cues": [
       {
        "phrase": "Imprimez",
        "action": "l'imprimante démarre",
-       "t": 78.248
+       "t": 70.281
       }
      ]
     },
     {
      "id": "v2_2_5a",
-     "t0": 81.661,
-     "t1": 84.714,
+     "t0": 73.722,
+     "t1": 77.575,
      "vo": "Passons à l'onglet « e-réservation ».",
      "cues": [
       {
        "phrase": "e-réservation",
        "action": "pastille orange, l'onglet s'allume",
-       "t": 83.188
+       "t": 75.705
       }
      ]
     },
     {
      "id": "v2_2_5b",
-     "t0": 84.714,
-     "t1": 93.674,
+     "t0": 77.575,
+     "t1": 86.033,
      "vo": "Lorsque vous cliquez sur voir la commande, vous pouvez visualiser pour quel produit le client a fait une demande de réservation.",
      "cues": [
       {
        "phrase": "cliquez sur voir la commande",
        "action": "clic sur « Voir la commande », la page de la réservation s'ouvre (vidéo reçue 10-14 s)",
-       "t": 86.511
+       "t": 79.002
       },
       {
        "phrase": "pour quel produit",
        "action": "la photo et la fiche de l'article, survol de la photo",
-       "t": 89.86
+       "t": 82.066
       }
      ]
     },
     {
      "id": "v2_2_5c",
-     "t0": 93.674,
-     "t1": 102.014,
+     "t0": 86.033,
+     "t1": 93.991,
      "vo": "En haut à droite de l'écran, vous avez accès aux informations du client si vous souhaitez le contacter concernant sa réservation.",
      "cues": [
       {
        "phrase": "En haut à droite",
        "action": "zoom sur le bloc client en haut à droite (nom, téléphone, e-mail)",
-       "t": 94.739
+       "t": 87.072
       }
      ]
     },
     {
      "id": "v2_2_5d",
-     "t0": 102.014,
-     "t1": 109.584,
+     "t0": 93.991,
+     "t1": 101.168,
      "vo": "Si vous disposez du produit, vous cliquez sur valider et vous imprimez le bon de livraison associé.",
      "cues": [
       {
        "phrase": "cliquez sur valider",
        "action": "le curseur va sur « Valider et imprimer le bon de réservation » et clique (vidéo reçue 18-22,9 s)",
-       "t": 105.143
+       "t": 96.806
       },
       {
        "phrase": "imprimez",
        "action": "le bon s'imprime",
-       "t": 106.548
+       "t": 98.475
       }
      ]
     },
     {
      "id": "v2_2_5e",
-     "t0": 109.584,
-     "t1": 116.249,
+     "t0": 101.168,
+     "t1": 107.11,
      "vo": "Si vous ne disposez pas du produit, vous cliquez sur « refuser la réservation ».",
      "cues": [
       {
        "phrase": "Si vous ne disposez pas",
        "action": "arrêt sur image, le bouton « Supprimer la réservation » s'entoure de rouge",
-       "t": 110.525
+       "t": 102.117
       },
       {
        "phrase": "refuser la réservation",
        "action": "le bouton « Supprimer la réservation » clignote",
-       "t": 113.156
+       "t": 104.79
       }
      ]
     },
     {
      "id": "v2_2_6",
-     "t0": 116.249,
-     "t1": 126.689,
+     "t0": 107.11,
+     "t1": 116.708,
      "vo": "Lorsque vous validez la réservation, le client reçoit alors un e-mail pour l'inviter à venir essayer son ou ses produits sous 48 heures.",
      "cues": [
       {
        "phrase": "validez la réservation",
        "action": "clic sur « Valider et imprimer le bon de réservation »",
-       "t": 117.059
+       "t": 108.727
       },
       {
        "phrase": "e-mail",
        "action": "l'e-mail s'envole vers le client",
-       "t": 120.243
+       "t": 111.56
       },
       {
        "phrase": "48 heures",
        "action": "la pastille « 48 h » apparaît",
-       "t": 123.417
+       "t": 114.854
       }
      ]
     },
     {
      "id": "v2_2_7",
-     "t0": 126.689,
-     "t1": 138.269,
+     "t0": 116.708,
+     "t1": 128.638,
      "vo": "Passé ce délai, si le client n'est pas venu, vous pouvez remettre le bijou en vitrine. Attention : il n'y a pas de rappel, ni pour le client, ni pour le magasin.",
      "cues": [
       {
        "phrase": "Passé ce délai",
        "action": "l'anneau atteint 0",
-       "t": 127.019
+       "t": 117.844
       },
       {
        "phrase": "en vitrine",
        "action": "le bijou revient",
-       "t": 130.742
+       "t": 121.511
       },
       {
        "phrase": "pas de rappel",
        "action": "cloche barrée",
-       "t": 134.443
+       "t": 125.147
       }
      ]
     },
     {
      "id": "v2_2_9",
-     "t0": 138.269,
-     "t1": 146.953,
-     "vo": "Terminons avec l'onglet « Click & Collect ». Le traitement est identique à celui des commandes « À envoyer », sauf qu'il n'y a pas de transporteur à gérer.",
+     "t0": 128.638,
+     "t1": 139.541,
+     "vo": "Terminons avec l'onglet « Click & Collect ».",
      "cues": [
       {
        "phrase": "Click & Collect",
        "action": "pastille verte",
-       "t": 140.167
+       "t": 131.063
       },
       {
        "phrase": "identique",
        "action": "les 4 étapes apparaissent",
-       "t": 142.642
+       "t": 134.335
       },
       {
        "phrase": "pas de transporteur",
        "action": "le camion est barré",
-       "t": 145.842
+       "t": 137.546
       }
      ]
     },
     {
      "id": "v2_4_6cc",
-     "t0": 146.953,
-     "t1": 157.494,
+     "t0": 139.541,
+     "t1": 149.63,
      "vo": "Pour une commande Click & Collect, seul le bon de livraison est à imprimer, puisque c'est le client qui vient récupérer sa commande : il n'y a pas de transporteur.",
      "cues": [
       {
        "phrase": "Click & Collect",
        "action": "le bandeau vert apparaît",
-       "t": 148.523
+       "t": 141.294
       },
       {
        "phrase": "pas de transporteur",
        "action": "l'étiquette est barrée",
-       "t": 155.388
+       "t": 147.397
       }
      ]
     }
@@ -1265,1723 +1265,1663 @@
    "words": [
     {
      "w": "Commençons",
-     "s": 1.35,
-     "e": 1.985
+     "s": 1.05,
+     "e": 1.699
     },
     {
      "w": "par",
-     "s": 2.071,
-     "e": 2.262
+     "s": 1.787,
+     "e": 1.982
     },
     {
      "w": "l'onglet",
-     "s": 2.288,
-     "e": 2.732
+     "s": 2.008,
+     "e": 2.462
     },
     {
      "w": "« À",
-     "s": 2.793,
-     "e": 2.856
+     "s": 2.524,
+     "e": 2.589
     },
     {
      "w": "envoyer ».",
-     "s": 2.865,
-     "e": 3.499
+     "s": 2.598,
+     "e": 3.247
     },
     {
      "w": "Étape",
-     "s": 4.041,
-     "e": 4.468
+     "s": 4.765,
+     "e": 5.114
     },
     {
      "w": "1.",
-     "s": 4.468,
-     "e": 4.681
+     "s": 5.153,
+     "e": 5.362
     },
     {
      "w": "Cliquez",
-     "s": 6.151,
-     "e": 6.588
+     "s": 6.765,
+     "e": 7.204
     },
     {
      "w": "sur",
-     "s": 6.588,
-     "e": 6.806
+     "s": 7.253,
+     "e": 7.441
     },
     {
      "w": "« Voir",
-     "s": 6.806,
-     "e": 7.024
+     "s": 7.461,
+     "e": 7.712
     },
     {
      "w": "la",
-     "s": 7.024,
-     "e": 7.243
+     "s": 7.74,
+     "e": 7.865
     },
     {
      "w": "commande ».",
-     "s": 7.243,
-     "e": 7.679
+     "s": 7.879,
+     "e": 8.506
     },
     {
      "w": "La",
-     "s": 7.679,
-     "e": 7.898
+     "s": 9.955,
+     "e": 10.044
     },
     {
      "w": "commande",
-     "s": 7.898,
-     "e": 8.334
+     "s": 10.054,
+     "e": 10.408
     },
     {
      "w": "s'ouvre",
-     "s": 8.334,
-     "e": 8.553
+     "s": 10.448,
+     "e": 10.714
     },
     {
      "w": "dans",
-     "s": 8.553,
-     "e": 8.771
+     "s": 10.743,
+     "e": 10.921
     },
     {
      "w": "une",
-     "s": 8.771,
-     "e": 8.989
+     "s": 10.94,
+     "e": 11.073
     },
     {
      "w": "fenêtre",
-     "s": 8.989,
-     "e": 9.426
+     "s": 11.088,
+     "e": 11.398
     },
     {
      "w": "internet.",
-     "s": 9.426,
-     "e": 10.081
+     "s": 11.433,
+     "e": 11.876
     },
     {
      "w": "Étape",
-     "s": 12.011,
-     "e": 12.296
+     "s": 13.505,
+     "e": 13.826
     },
     {
      "w": "2.",
-     "s": 12.296,
-     "e": 12.581
+     "s": 13.861,
+     "e": 14.054
     },
     {
      "w": "Copiez",
-     "s": 14.011,
-     "e": 14.319
+     "s": 15.455,
+     "e": 15.799
     },
     {
      "w": "la",
-     "s": 14.319,
-     "e": 14.474
+     "s": 15.837,
+     "e": 15.952
     },
     {
      "w": "référence",
-     "s": 14.474,
-     "e": 14.936
+     "s": 15.964,
+     "e": 16.48
     },
     {
      "w": "web,",
-     "s": 14.936,
-     "e": 15.54
+     "s": 16.537,
+     "e": 16.823
     },
     {
      "w": "puis",
-     "s": 15.54,
-     "e": 15.694
+     "s": 16.855,
+     "e": 17.084
     },
     {
      "w": "collez-la",
-     "s": 15.694,
-     "e": 16.157
+     "s": 17.11,
+     "e": 17.568
     },
     {
      "w": "dans",
-     "s": 16.157,
-     "e": 16.311
+     "s": 17.619,
+     "e": 17.848
     },
     {
      "w": "Odéis,",
-     "s": 16.311,
-     "e": 16.619
+     "s": 17.873,
+     "e": 18.274
     },
     {
      "w": "dans",
-     "s": 16.619,
-     "e": 17.223
+     "s": 18.319,
+     "e": 18.548
     },
     {
      "w": "« Interro »,",
-     "s": 17.223,
-     "e": 17.686
+     "s": 18.573,
+     "e": 19.089
     },
     {
      "w": "dans",
-     "s": 17.686,
-     "e": 17.84
+     "s": 19.146,
+     "e": 19.375
     },
     {
      "w": "le",
-     "s": 17.84,
-     "e": 17.994
+     "s": 19.401,
+     "e": 19.515
     },
     {
      "w": "champ",
-     "s": 17.994,
-     "e": 18.148
+     "s": 19.528,
+     "e": 19.814
     },
     {
      "w": "« Ancienne",
-     "s": 18.148,
-     "e": 18.456
+     "s": 19.846,
+     "e": 20.304
     },
     {
      "w": "référence ».",
-     "s": 18.456,
-     "e": 18.919
+     "s": 20.355,
+     "e": 20.985
     },
     {
      "w": "Vous",
-     "s": 18.919,
-     "e": 19.073
+     "s": 22.919,
+     "e": 23.112
     },
     {
      "w": "obtenez",
-     "s": 19.073,
-     "e": 19.535
+     "s": 23.134,
+     "e": 23.471
     },
     {
      "w": "ainsi",
-     "s": 19.535,
-     "e": 19.844
+     "s": 23.509,
+     "e": 23.75
     },
     {
      "w": "la",
-     "s": 19.844,
-     "e": 19.998
+     "s": 23.776,
+     "e": 23.873
     },
     {
      "w": "référence",
-     "s": 19.998,
-     "e": 20.46
+     "s": 23.884,
+     "e": 24.317
     },
     {
      "w": "Odéis",
-     "s": 20.46,
-     "e": 20.768
+     "s": 24.366,
+     "e": 24.607
     },
     {
      "w": "attendue",
-     "s": 20.768,
-     "e": 21.231
+     "s": 24.634,
+     "e": 25.019
     },
     {
      "w": "pour",
-     "s": 21.231,
-     "e": 21.385
+     "s": 25.062,
+     "e": 25.255
     },
     {
      "w": "la",
-     "s": 21.385,
-     "e": 21.539
+     "s": 25.276,
+     "e": 25.373
     },
     {
      "w": "commande,",
-     "s": 21.539,
-     "e": 21.847
-    },
-    {
-     "w": "celle",
-     "s": 21.847,
-     "e": 22.002
-    },
-    {
-     "w": "qui",
-     "s": 22.002,
-     "e": 22.156
-    },
-    {
-     "w": "commence",
-     "s": 22.156,
-     "e": 22.914
-    },
-    {
-     "w": "par",
-     "s": 22.914,
-     "e": 23.068
-    },
-    {
-     "w": "398.",
-     "s": 23.068,
-     "e": 24.301
+     "s": 25.384,
+     "e": 25.866
     },
     {
      "w": "Étape",
-     "s": 26.743,
-     "e": 27.156
+     "s": 27.619,
+     "e": 27.951
     },
     {
      "w": "3.",
-     "s": 27.156,
-     "e": 27.363
+     "s": 27.988,
+     "e": 28.187
     },
     {
      "w": "Allez",
-     "s": 28.813,
-     "e": 29.125
+     "s": 29.589,
+     "e": 29.801
     },
     {
      "w": "chercher",
-     "s": 29.125,
-     "e": 29.437
+     "s": 29.824,
+     "e": 30.162
     },
     {
      "w": "le",
-     "s": 29.437,
-     "e": 29.593
+     "s": 30.2,
+     "e": 30.284
     },
     {
      "w": "produit",
-     "s": 29.593,
-     "e": 29.905
+     "s": 30.294,
+     "e": 30.59
     },
     {
      "w": "en",
-     "s": 29.905,
-     "e": 30.061
+     "s": 30.623,
+     "e": 30.707
     },
     {
      "w": "vitrine.",
-     "s": 30.061,
-     "e": 30.373
+     "s": 30.717,
+     "e": 31.097
     },
     {
      "w": "Attention",
-     "s": 31.963,
-     "e": 33.255
+     "s": 32.719,
+     "e": 33.05
     },
     {
      "w": ":",
-     "s": 33.255,
-     "e": 33.52
+     "s": 33.087,
+     "e": 33.197
     },
     {
      "w": "si",
-     "s": 33.52,
-     "e": 33.784
+     "s": 33.709,
+     "e": 33.812
     },
     {
      "w": "vous",
-     "s": 33.784,
-     "e": 34.048
+     "s": 33.823,
+     "e": 34.027
     },
     {
      "w": "ne",
-     "s": 34.048,
-     "e": 34.312
+     "s": 34.05,
+     "e": 34.152
     },
     {
      "w": "pouvez",
-     "s": 34.312,
-     "e": 34.84
+     "s": 34.164,
+     "e": 34.471
     },
     {
      "w": "pas",
-     "s": 34.84,
-     "e": 35.105
+     "s": 34.505,
+     "e": 34.658
     },
     {
      "w": "traiter",
-     "s": 35.105,
-     "e": 35.633
+     "s": 34.675,
+     "e": 35.033
     },
     {
      "w": "la",
-     "s": 35.633,
-     "e": 35.897
+     "s": 35.073,
+     "e": 35.175
     },
     {
      "w": "commande,",
-     "s": 35.897,
-     "e": 36.426
+     "s": 35.186,
+     "e": 35.698
     },
     {
      "w": "parce",
-     "s": 36.426,
-     "e": 37.14
+     "s": 35.754,
+     "e": 36.01
     },
     {
      "w": "que",
-     "s": 37.14,
-     "e": 37.404
+     "s": 36.038,
+     "e": 36.192
     },
     {
      "w": "le",
-     "s": 37.404,
-     "e": 37.668
+     "s": 36.209,
+     "e": 36.311
     },
     {
      "w": "produit",
-     "s": 37.668,
-     "e": 38.196
+     "s": 36.322,
+     "e": 36.68
     },
     {
      "w": "est",
-     "s": 38.196,
-     "e": 38.461
+     "s": 36.72,
+     "e": 36.874
     },
     {
      "w": "défectueux,",
-     "s": 38.461,
-     "e": 39.703
+     "s": 36.891,
+     "e": 37.504
     },
     {
      "w": "réservé",
-     "s": 39.703,
-     "e": 40.496
+     "s": 37.572,
+     "e": 37.93
     },
     {
      "w": "pour",
-     "s": 40.496,
-     "e": 40.76
+     "s": 37.97,
+     "e": 38.174
     },
     {
      "w": "un",
-     "s": 40.76,
-     "e": 41.024
+     "s": 38.197,
+     "e": 38.299
     },
     {
      "w": "autre",
-     "s": 41.024,
-     "e": 41.738
+     "s": 38.311,
+     "e": 38.566
     },
     {
      "w": "client,",
-     "s": 41.738,
-     "e": 42.002
+     "s": 38.595,
+     "e": 39.004
     },
     {
      "w": "ou",
-     "s": 42.002,
-     "e": 42.267
+     "s": 39.499,
+     "e": 39.602
     },
     {
      "w": "absent",
-     "s": 42.267,
-     "e": 42.531
+     "s": 39.613,
+     "e": 39.922
     },
     {
      "w": "du",
-     "s": 42.531,
-     "e": 42.795
+     "s": 39.956,
+     "e": 40.059
     },
     {
      "w": "stock",
-     "s": 42.795,
-     "e": 43.059
+     "s": 40.07,
+     "e": 40.327
     },
     {
      "w": "à",
-     "s": 43.059,
-     "e": 43.323
+     "s": 40.355,
+     "e": 40.407
     },
     {
      "w": "cause",
-     "s": 43.323,
-     "e": 43.588
+     "s": 40.412,
+     "e": 40.669
     },
     {
      "w": "d'un",
-     "s": 43.588,
-     "e": 43.852
+     "s": 40.698,
+     "e": 40.852
     },
     {
      "w": "problème",
-     "s": 43.852,
-     "e": 44.38
+     "s": 40.869,
+     "e": 41.28
     },
     {
      "w": "d'étiquetage",
-     "s": 44.38,
-     "e": 45.437
+     "s": 41.325,
+     "e": 41.89
     },
     {
      "w": "ou",
-     "s": 45.437,
-     "e": 45.701
+     "s": 41.953,
+     "e": 42.056
     },
     {
      "w": "d'inventaire,",
-     "s": 45.701,
-     "e": 46.944
-    },
-    {
-     "w": "il",
-     "s": 46.944,
-     "e": 47.208
-    },
-    {
-     "w": "existe",
-     "s": 47.208,
-     "e": 47.736
-    },
-    {
-     "w": "une",
-     "s": 47.736,
-     "e": 48.0
-    },
-    {
-     "w": "solution.",
-     "s": 48.0,
-     "e": 48.793
-    },
-    {
-     "w": "Dans",
-     "s": 51.673,
-     "e": 51.863
-    },
-    {
-     "w": "ce",
-     "s": 51.863,
-     "e": 52.054
-    },
-    {
-     "w": "cas,",
-     "s": 52.054,
-     "e": 52.244
+     "s": 42.067,
+     "e": 42.735
     },
     {
      "w": "cliquez",
-     "s": 52.244,
-     "e": 52.625
+     "s": 45.369,
+     "e": 45.831
     },
     {
      "w": "sur",
-     "s": 52.625,
-     "e": 53.265
+     "s": 45.882,
+     "e": 46.08
     },
     {
      "w": "«",
-     "s": 53.265,
-     "e": 53.456
+     "s": 46.102,
+     "e": 46.168
     },
     {
      "w": "Refuser",
-     "s": 53.456,
-     "e": 54.027
+     "s": 46.176,
+     "e": 46.638
     },
     {
      "w": "»,",
-     "s": 54.027,
-     "e": 54.217
+     "s": 46.689,
+     "e": 46.887
     },
     {
      "w": "puis",
-     "s": 54.217,
-     "e": 54.408
+     "s": 47.179,
+     "e": 47.408
     },
     {
      "w": "sur",
-     "s": 54.408,
-     "e": 55.048
+     "s": 47.434,
+     "e": 47.605
     },
     {
      "w": "«",
-     "s": 55.048,
-     "e": 55.239
+     "s": 47.624,
+     "e": 47.682
     },
     {
      "w": "Valider",
-     "s": 55.239,
-     "e": 55.81
+     "s": 47.688,
+     "e": 48.089
     },
     {
      "w": "»",
-     "s": 55.81,
-     "e": 56.0
+     "s": 48.134,
+     "e": 48.191
     },
     {
      "w": "pour",
-     "s": 56.0,
-     "e": 56.191
+     "s": 48.197,
+     "e": 48.427
     },
     {
      "w": "confirmer",
-     "s": 56.191,
-     "e": 56.762
+     "s": 48.452,
+     "e": 48.968
     },
     {
      "w": "votre",
-     "s": 56.762,
-     "e": 56.952
+     "s": 49.025,
+     "e": 49.311
     },
     {
      "w": "choix.",
-     "s": 56.952,
-     "e": 57.143
+     "s": 49.343,
+     "e": 49.744
     },
     {
      "w": "La",
-     "s": 59.263,
-     "e": 59.461
+     "s": 51.65,
+     "e": 51.75
     },
     {
      "w": "commande",
-     "s": 59.461,
-     "e": 59.857
+     "s": 51.761,
+     "e": 52.16
     },
     {
      "w": "est",
-     "s": 59.857,
-     "e": 60.055
+     "s": 52.205,
+     "e": 52.355
     },
     {
      "w": "alors",
-     "s": 60.055,
-     "e": 60.451
+     "s": 52.371,
+     "e": 52.621
     },
     {
      "w": "transmise",
-     "s": 60.451,
-     "e": 60.847
+     "s": 52.649,
+     "e": 53.098
     },
     {
      "w": "au",
-     "s": 60.847,
-     "e": 61.045
+     "s": 53.148,
+     "e": 53.248
     },
     {
      "w": "prochain",
-     "s": 61.045,
-     "e": 61.441
+     "s": 53.259,
+     "e": 53.659
     },
     {
      "w": "magasin",
-     "s": 61.441,
-     "e": 62.036
+     "s": 53.703,
+     "e": 54.052
     },
     {
      "w": "qui",
-     "s": 62.036,
-     "e": 62.234
+     "s": 54.091,
+     "e": 54.241
     },
     {
      "w": "a",
-     "s": 62.234,
-     "e": 62.432
+     "s": 54.258,
+     "e": 54.308
     },
     {
      "w": "le",
-     "s": 62.432,
-     "e": 62.63
+     "s": 54.313,
+     "e": 54.413
     },
     {
      "w": "produit",
-     "s": 62.63,
-     "e": 63.026
+     "s": 54.424,
+     "e": 54.774
     },
     {
      "w": "en",
-     "s": 63.026,
-     "e": 63.224
+     "s": 54.813,
+     "e": 54.913
     },
     {
      "w": "stock,",
-     "s": 63.224,
-     "e": 63.422
+     "s": 54.924,
+     "e": 55.273
     },
     {
      "w": "selon",
-     "s": 63.422,
-     "e": 64.268
+     "s": 55.312,
+     "e": 55.562
     },
     {
      "w": "le",
-     "s": 64.268,
-     "e": 64.466
+     "s": 55.59,
+     "e": 55.689
     },
     {
      "w": "ranking.",
-     "s": 64.466,
-     "e": 64.863
+     "s": 55.7,
+     "e": 56.15
     },
     {
      "w": "Étape",
-     "s": 66.849,
-     "e": 67.209
+     "s": 58.117,
+     "e": 58.505
     },
     {
      "w": "4.",
-     "s": 67.209,
-     "e": 67.569
+     "s": 58.548,
+     "e": 58.781
     },
     {
      "w": "Scannez",
-     "s": 68.989,
-     "e": 69.408
+     "s": 60.187,
+     "e": 60.56
     },
     {
      "w": "l'étiquette",
-     "s": 69.408,
-     "e": 70.037
+     "s": 60.602,
+     "e": 61.135
     },
     {
      "w": "du",
-     "s": 70.037,
-     "e": 70.247
+     "s": 61.195,
+     "e": 61.301
     },
     {
      "w": "produit,",
-     "s": 70.247,
-     "e": 71.116
+     "s": 61.313,
+     "e": 61.793
     },
     {
      "w": "ou",
-     "s": 71.116,
-     "e": 71.326
+     "s": 61.847,
+     "e": 61.953
     },
     {
      "w": "recopiez-la",
-     "s": 71.326,
-     "e": 72.165
+     "s": 61.965,
+     "e": 62.499
     },
     {
      "w": "à",
-     "s": 72.165,
-     "e": 72.374
+     "s": 62.558,
+     "e": 62.611
     },
     {
      "w": "la",
-     "s": 72.374,
-     "e": 72.584
+     "s": 62.617,
+     "e": 62.724
     },
     {
      "w": "main",
-     "s": 72.584,
-     "e": 72.794
+     "s": 62.736,
+     "e": 62.949
     },
     {
      "w": "dans",
-     "s": 72.794,
-     "e": 73.003
+     "s": 62.973,
+     "e": 63.186
     },
     {
      "w": "le",
-     "s": 73.003,
-     "e": 73.213
+     "s": 63.21,
+     "e": 63.317
     },
     {
      "w": "champ",
-     "s": 73.213,
-     "e": 73.423
+     "s": 63.328,
+     "e": 63.595
     },
     {
      "w": "« Étiquette »,",
-     "s": 73.423,
-     "e": 74.052
+     "s": 63.625,
+     "e": 64.212
     },
     {
      "w": "puis",
-     "s": 74.052,
-     "e": 74.261
+     "s": 64.727,
+     "e": 64.952
     },
     {
      "w": "cliquez",
-     "s": 74.261,
-     "e": 74.681
+     "s": 64.977,
+     "e": 65.372
     },
     {
      "w": "sur",
-     "s": 74.681,
-     "e": 74.89
+     "s": 65.416,
+     "e": 65.585
     },
     {
      "w": "« Valider ».",
-     "s": 74.89,
-     "e": 75.52
+     "s": 65.603,
+     "e": 66.111
     },
     {
      "w": "Étape",
-     "s": 75.52,
-     "e": 75.939
+     "s": 68.221,
+     "e": 68.604
     },
     {
      "w": "5.",
-     "s": 75.939,
-     "e": 76.149
+     "s": 68.646,
+     "e": 68.876
     },
     {
      "w": "Imprimez",
-     "s": 78.248,
-     "e": 78.736
+     "s": 70.281,
+     "e": 70.662
     },
     {
      "w": "le",
-     "s": 78.736,
-     "e": 78.898
+     "s": 70.704,
+     "e": 70.799
     },
     {
      "w": "bon",
-     "s": 78.898,
-     "e": 79.061
+     "s": 70.81,
+     "e": 70.952
     },
     {
      "w": "de",
-     "s": 79.061,
-     "e": 79.223
+     "s": 70.968,
+     "e": 71.063
     },
     {
      "w": "livraison",
-     "s": 79.223,
-     "e": 79.711
+     "s": 71.074,
+     "e": 71.502
     },
     {
      "w": "et",
-     "s": 79.711,
-     "e": 79.873
+     "s": 71.55,
+     "e": 71.645
     },
     {
      "w": "l'étiquette",
-     "s": 79.873,
-     "e": 80.361
+     "s": 71.655,
+     "e": 72.131
     },
     {
      "w": "de",
-     "s": 80.361,
-     "e": 80.523
+     "s": 72.184,
+     "e": 72.279
     },
     {
      "w": "transport.",
-     "s": 80.523,
-     "e": 80.848
+     "s": 72.29,
+     "e": 72.813
     },
     {
      "w": "Passons",
-     "s": 82.011,
-     "e": 82.494
+     "s": 74.504,
+     "e": 74.997
     },
     {
      "w": "à",
-     "s": 82.56,
-     "e": 82.629
+     "s": 75.065,
+     "e": 75.135
     },
     {
      "w": "l'onglet",
-     "s": 82.638,
-     "e": 83.122
+     "s": 75.145,
+     "e": 75.638
     },
     {
      "w": "« e-réservation ».",
-     "s": 83.188,
-     "e": 84.223
+     "s": 75.705,
+     "e": 76.763
     },
     {
      "w": "Lorsque",
-     "s": 85.845,
-     "e": 86.289
+     "s": 78.354,
+     "e": 78.725
     },
     {
      "w": "vous",
-     "s": 86.289,
-     "e": 86.511
+     "s": 78.766,
+     "e": 78.978
     },
     {
      "w": "cliquez",
-     "s": 86.511,
-     "e": 86.955
+     "s": 79.002,
+     "e": 79.373
     },
     {
      "w": "sur",
-     "s": 86.955,
-     "e": 87.177
+     "s": 79.414,
+     "e": 79.573
     },
     {
      "w": "voir",
-     "s": 87.177,
-     "e": 87.399
+     "s": 79.591,
+     "e": 79.803
     },
     {
      "w": "la",
-     "s": 87.399,
-     "e": 87.621
+     "s": 79.827,
+     "e": 79.933
     },
     {
      "w": "commande,",
-     "s": 87.621,
-     "e": 88.065
+     "s": 79.944,
+     "e": 80.475
     },
     {
      "w": "vous",
-     "s": 88.655,
-     "e": 88.827
+     "s": 80.984,
+     "e": 81.178
     },
     {
      "w": "pouvez",
-     "s": 88.827,
-     "e": 89.171
+     "s": 81.2,
+     "e": 81.492
     },
     {
      "w": "visualiser",
-     "s": 89.171,
-     "e": 89.86
+     "s": 81.525,
+     "e": 82.012
     },
     {
      "w": "pour",
-     "s": 89.86,
-     "e": 90.032
+     "s": 82.066,
+     "e": 82.261
     },
     {
      "w": "quel",
-     "s": 90.032,
-     "e": 90.204
+     "s": 82.282,
+     "e": 82.477
     },
     {
      "w": "produit",
-     "s": 90.204,
-     "e": 90.549
+     "s": 82.499,
+     "e": 82.84
     },
     {
      "w": "le",
-     "s": 90.549,
-     "e": 90.721
+     "s": 82.877,
+     "e": 82.975
     },
     {
      "w": "client",
-     "s": 90.721,
-     "e": 90.893
+     "s": 82.986,
+     "e": 83.278
     },
     {
      "w": "a",
-     "s": 90.893,
-     "e": 91.065
+     "s": 83.31,
+     "e": 83.359
     },
     {
      "w": "fait",
-     "s": 91.065,
-     "e": 91.237
+     "s": 83.364,
+     "e": 83.559
     },
     {
      "w": "une",
-     "s": 91.237,
-     "e": 91.409
+     "s": 83.581,
+     "e": 83.727
     },
     {
      "w": "demande",
-     "s": 91.409,
-     "e": 91.754
+     "s": 83.743,
+     "e": 84.084
     },
     {
      "w": "de",
-     "s": 91.754,
-     "e": 91.926
+     "s": 84.122,
+     "e": 84.219
     },
     {
      "w": "réservation.",
-     "s": 91.926,
-     "e": 92.615
+     "s": 84.23,
+     "e": 84.863
     },
     {
      "w": "En",
-     "s": 94.739,
-     "e": 94.902
+     "s": 87.072,
+     "e": 87.167
     },
     {
      "w": "haut",
-     "s": 94.902,
-     "e": 95.064
+     "s": 87.178,
+     "e": 87.369
     },
     {
      "w": "à",
-     "s": 95.064,
-     "e": 95.226
+     "s": 87.39,
+     "e": 87.438
     },
     {
      "w": "droite",
-     "s": 95.226,
-     "e": 95.388
+     "s": 87.443,
+     "e": 87.73
     },
     {
      "w": "de",
-     "s": 95.388,
-     "e": 95.551
+     "s": 87.762,
+     "e": 87.857
     },
     {
      "w": "l'écran,",
-     "s": 95.551,
-     "e": 95.875
+     "s": 87.868,
+     "e": 88.25
     },
     {
      "w": "vous",
-     "s": 95.875,
-     "e": 96.037
+     "s": 88.293,
+     "e": 88.484
     },
     {
      "w": "avez",
-     "s": 96.037,
-     "e": 96.812
+     "s": 88.505,
+     "e": 88.696
     },
     {
      "w": "accès",
-     "s": 96.812,
-     "e": 97.136
+     "s": 88.718,
+     "e": 88.956
     },
     {
      "w": "aux",
-     "s": 97.136,
-     "e": 97.298
+     "s": 88.983,
+     "e": 89.126
     },
     {
      "w": "informations",
-     "s": 97.298,
-     "e": 97.947
+     "s": 89.142,
+     "e": 89.716
     },
     {
      "w": "du",
-     "s": 97.947,
-     "e": 98.109
+     "s": 89.779,
+     "e": 89.875
     },
     {
      "w": "client",
-     "s": 98.109,
-     "e": 98.272
+     "s": 89.886,
+     "e": 90.172
     },
     {
      "w": "si",
-     "s": 98.272,
-     "e": 98.434
+     "s": 90.204,
+     "e": 90.3
     },
     {
      "w": "vous",
-     "s": 98.434,
-     "e": 98.596
+     "s": 90.31,
+     "e": 90.501
     },
     {
      "w": "souhaitez",
-     "s": 98.596,
-     "e": 99.083
+     "s": 90.523,
+     "e": 90.953
     },
     {
      "w": "le",
-     "s": 99.083,
-     "e": 99.245
+     "s": 91.0,
+     "e": 91.096
     },
     {
      "w": "contacter",
-     "s": 99.245,
-     "e": 99.732
+     "s": 91.107,
+     "e": 91.537
     },
     {
      "w": "concernant",
-     "s": 99.732,
-     "e": 100.218
+     "s": 91.584,
+     "e": 92.062
     },
     {
      "w": "sa",
-     "s": 100.218,
-     "e": 100.381
+     "s": 92.115,
+     "e": 92.211
     },
     {
      "w": "réservation.",
-     "s": 100.381,
-     "e": 101.029
+     "s": 92.222,
+     "e": 92.843
     },
     {
      "w": "Si",
-     "s": 103.007,
-     "e": 103.182
+     "s": 95.009,
+     "e": 95.121
     },
     {
      "w": "vous",
-     "s": 103.182,
-     "e": 103.357
+     "s": 95.133,
+     "e": 95.356
     },
     {
      "w": "disposez",
-     "s": 103.357,
-     "e": 103.882
+     "s": 95.381,
+     "e": 95.827
     },
     {
      "w": "du",
-     "s": 103.882,
-     "e": 104.057
+     "s": 95.877,
+     "e": 95.988
     },
     {
      "w": "produit,",
-     "s": 104.057,
-     "e": 104.407
+     "s": 96.001,
+     "e": 96.502
     },
     {
      "w": "vous",
-     "s": 104.967,
-     "e": 105.143
+     "s": 96.558,
+     "e": 96.781
     },
     {
      "w": "cliquez",
-     "s": 105.143,
-     "e": 105.494
+     "s": 96.806,
+     "e": 97.196
     },
     {
      "w": "sur",
-     "s": 105.494,
-     "e": 105.67
+     "s": 97.24,
+     "e": 97.407
     },
     {
      "w": "valider",
-     "s": 105.67,
-     "e": 106.197
+     "s": 97.426,
+     "e": 97.816
     },
     {
      "w": "et",
-     "s": 106.197,
-     "e": 106.373
+     "s": 98.169,
+     "e": 98.261
     },
     {
      "w": "vous",
-     "s": 106.373,
-     "e": 106.548
+     "s": 98.271,
+     "e": 98.455
     },
     {
      "w": "imprimez",
-     "s": 106.548,
-     "e": 107.076
+     "s": 98.475,
+     "e": 98.843
     },
     {
      "w": "le",
-     "s": 107.076,
-     "e": 107.251
+     "s": 98.884,
+     "e": 98.976
     },
     {
      "w": "bon",
-     "s": 107.251,
-     "e": 107.427
+     "s": 98.986,
+     "e": 99.124
     },
     {
      "w": "de",
-     "s": 107.427,
-     "e": 107.603
+     "s": 99.139,
+     "e": 99.231
     },
     {
      "w": "livraison",
-     "s": 107.603,
-     "e": 108.13
+     "s": 99.241,
+     "e": 99.654
     },
     {
      "w": "associé.",
-     "s": 108.13,
-     "e": 108.657
+     "s": 99.7,
+     "e": 100.113
     },
     {
      "w": "Si",
-     "s": 110.525,
-     "e": 110.695
+     "s": 102.117,
+     "e": 102.224
     },
     {
      "w": "vous",
-     "s": 110.695,
-     "e": 110.865
+     "s": 102.236,
+     "e": 102.45
     },
     {
      "w": "ne",
-     "s": 110.865,
-     "e": 111.035
+     "s": 102.473,
+     "e": 102.58
     },
     {
      "w": "disposez",
-     "s": 111.035,
-     "e": 111.545
+     "s": 102.592,
+     "e": 103.02
     },
     {
      "w": "pas",
-     "s": 111.545,
-     "e": 111.715
+     "s": 103.068,
+     "e": 103.228
     },
     {
      "w": "du",
-     "s": 111.715,
-     "e": 111.885
+     "s": 103.246,
+     "e": 103.353
     },
     {
      "w": "produit,",
-     "s": 111.885,
-     "e": 112.225
+     "s": 103.365,
+     "e": 103.846
     },
     {
      "w": "vous",
-     "s": 112.345,
-     "e": 112.507
+     "s": 103.899,
+     "e": 104.113
     },
     {
      "w": "cliquez",
-     "s": 112.507,
-     "e": 112.831
+     "s": 104.137,
+     "e": 104.511
     },
     {
      "w": "sur",
-     "s": 112.831,
-     "e": 112.994
+     "s": 104.553,
+     "e": 104.713
     },
     {
      "w": "«",
-     "s": 112.994,
-     "e": 113.156
+     "s": 104.731,
+     "e": 104.785
     },
     {
      "w": "refuser",
-     "s": 113.156,
-     "e": 113.642
+     "s": 104.79,
+     "e": 105.165
     },
     {
      "w": "la",
-     "s": 113.642,
-     "e": 113.804
+     "s": 105.206,
+     "e": 105.313
     },
     {
      "w": "réservation",
-     "s": 113.804,
-     "e": 114.453
+     "s": 105.325,
+     "e": 105.913
     },
     {
      "w": "».",
-     "s": 114.453,
-     "e": 114.615
+     "s": 105.979,
+     "e": 106.139
     },
     {
      "w": "Lorsque",
-     "s": 116.577,
-     "e": 116.898
+     "s": 108.003,
+     "e": 108.418
     },
     {
      "w": "vous",
-     "s": 116.898,
-     "e": 117.059
+     "s": 108.464,
+     "e": 108.701
     },
     {
      "w": "validez",
-     "s": 117.059,
-     "e": 117.542
+     "s": 108.727,
+     "e": 109.142
     },
     {
      "w": "la",
-     "s": 117.542,
-     "e": 117.703
+     "s": 109.188,
+     "e": 109.307
     },
     {
      "w": "réservation,",
-     "s": 117.703,
-     "e": 118.347
+     "s": 109.32,
+     "e": 110.091
     },
     {
      "w": "le",
-     "s": 118.937,
-     "e": 119.123
+     "s": 110.176,
+     "e": 110.295
     },
     {
      "w": "client",
-     "s": 119.123,
-     "e": 119.31
+     "s": 110.308,
+     "e": 110.664
     },
     {
      "w": "reçoit",
-     "s": 119.31,
-     "e": 119.683
+     "s": 110.704,
+     "e": 111.059
     },
     {
      "w": "alors",
-     "s": 119.683,
-     "e": 120.057
+     "s": 111.099,
+     "e": 111.395
     },
     {
      "w": "un",
-     "s": 120.057,
-     "e": 120.243
+     "s": 111.428,
+     "e": 111.547
     },
     {
      "w": "e-mail",
-     "s": 120.243,
-     "e": 120.617
+     "s": 111.56,
+     "e": 111.856
     },
     {
      "w": "pour",
-     "s": 120.617,
-     "e": 120.803
+     "s": 111.889,
+     "e": 112.126
     },
     {
      "w": "l'inviter",
-     "s": 120.803,
-     "e": 121.363
+     "s": 112.153,
+     "e": 112.627
     },
     {
      "w": "à",
-     "s": 121.363,
-     "e": 121.55
+     "s": 112.68,
+     "e": 112.739
     },
     {
      "w": "venir",
-     "s": 121.55,
-     "e": 121.923
+     "s": 112.746,
+     "e": 113.042
     },
     {
      "w": "essayer",
-     "s": 121.923,
-     "e": 122.297
+     "s": 113.075,
+     "e": 113.49
     },
     {
      "w": "son",
-     "s": 122.297,
-     "e": 122.483
+     "s": 113.536,
+     "e": 113.714
     },
     {
      "w": "ou",
-     "s": 122.483,
-     "e": 122.67
+     "s": 113.734,
+     "e": 113.852
     },
     {
      "w": "ses",
-     "s": 122.67,
-     "e": 122.857
+     "s": 113.866,
+     "e": 114.043
     },
     {
      "w": "produits",
-     "s": 122.857,
-     "e": 123.23
+     "s": 114.063,
+     "e": 114.538
     },
     {
      "w": "sous",
-     "s": 123.23,
-     "e": 123.417
+     "s": 114.59,
+     "e": 114.827
     },
     {
      "w": "48",
-     "s": 123.417,
-     "e": 124.35
+     "s": 114.854,
+     "e": 114.972
     },
     {
      "w": "heures.",
-     "s": 124.35,
-     "e": 124.537
+     "s": 114.986,
+     "e": 115.46
     },
     {
      "w": "Passé",
-     "s": 127.019,
-     "e": 127.384
+     "s": 117.844,
+     "e": 118.109
     },
     {
      "w": "ce",
-     "s": 127.384,
-     "e": 127.566
+     "s": 118.139,
+     "e": 118.245
     },
     {
      "w": "délai,",
-     "s": 127.566,
-     "e": 127.931
+     "s": 118.256,
+     "e": 118.628
     },
     {
      "w": "si",
-     "s": 127.931,
-     "e": 128.114
+     "s": 118.669,
+     "e": 118.775
     },
     {
      "w": "le",
-     "s": 128.114,
-     "e": 128.296
+     "s": 118.787,
+     "e": 118.893
     },
     {
      "w": "client",
-     "s": 128.296,
-     "e": 128.479
+     "s": 118.904,
+     "e": 119.223
     },
     {
      "w": "n'est",
-     "s": 128.479,
-     "e": 128.661
+     "s": 119.258,
+     "e": 119.47
     },
     {
      "w": "pas",
-     "s": 128.661,
-     "e": 128.844
+     "s": 119.494,
+     "e": 119.653
     },
     {
      "w": "venu,",
-     "s": 128.844,
-     "e": 129.209
+     "s": 119.67,
+     "e": 119.989
     },
     {
      "w": "vous",
-     "s": 129.499,
-     "e": 129.654
+     "s": 120.324,
+     "e": 120.495
     },
     {
      "w": "pouvez",
-     "s": 129.654,
-     "e": 129.965
+     "s": 120.514,
+     "e": 120.77
     },
     {
      "w": "remettre",
-     "s": 129.965,
-     "e": 130.276
+     "s": 120.799,
+     "e": 121.141
     },
     {
      "w": "le",
-     "s": 130.276,
-     "e": 130.431
+     "s": 121.179,
+     "e": 121.264
     },
     {
      "w": "bijou",
-     "s": 130.431,
-     "e": 130.742
+     "s": 121.274,
+     "e": 121.488
     },
     {
      "w": "en",
-     "s": 130.742,
-     "e": 130.898
+     "s": 121.511,
+     "e": 121.597
     },
     {
      "w": "vitrine.",
-     "s": 130.898,
-     "e": 131.209
+     "s": 121.606,
+     "e": 121.991
     },
     {
      "w": "Attention :",
-     "s": 132.965,
-     "e": 133.495
+     "s": 123.659,
+     "e": 124.118
     },
     {
      "w": "il",
-     "s": 133.725,
-     "e": 133.905
+     "s": 124.669,
+     "e": 124.776
     },
     {
      "w": "n'y",
-     "s": 133.905,
-     "e": 134.084
+     "s": 124.788,
+     "e": 124.896
     },
     {
      "w": "a",
-     "s": 134.084,
-     "e": 134.263
+     "s": 124.908,
+     "e": 124.962
     },
     {
      "w": "pas",
-     "s": 134.263,
-     "e": 134.443
+     "s": 124.968,
+     "e": 125.129
     },
     {
      "w": "de",
-     "s": 134.443,
-     "e": 134.622
+     "s": 125.147,
+     "e": 125.255
     },
     {
      "w": "rappel,",
-     "s": 134.622,
-     "e": 134.981
+     "s": 125.267,
+     "e": 125.697
     },
     {
      "w": "ni",
-     "s": 134.981,
-     "e": 135.16
+     "s": 125.745,
+     "e": 125.853
     },
     {
      "w": "pour",
-     "s": 135.16,
-     "e": 135.34
+     "s": 125.865,
+     "e": 126.08
     },
     {
      "w": "le",
-     "s": 135.34,
-     "e": 135.519
+     "s": 126.104,
+     "e": 126.211
     },
     {
      "w": "client,",
-     "s": 135.519,
-     "e": 135.699
+     "s": 126.223,
+     "e": 126.654
     },
     {
      "w": "ni",
-     "s": 135.699,
-     "e": 135.878
+     "s": 126.702,
+     "e": 126.809
     },
     {
      "w": "pour",
-     "s": 135.878,
-     "e": 136.058
+     "s": 126.821,
+     "e": 127.037
     },
     {
      "w": "le",
-     "s": 136.058,
-     "e": 136.237
+     "s": 127.061,
+     "e": 127.168
     },
     {
      "w": "magasin.",
-     "s": 136.237,
-     "e": 136.775
+     "s": 127.18,
+     "e": 127.665
     },
     {
      "w": "Terminons",
-     "s": 138.619,
-     "e": 139.232
+     "s": 129.487,
+     "e": 130.111
     },
     {
      "w": "avec",
-     "s": 139.316,
-     "e": 139.588
+     "s": 130.196,
+     "e": 130.474
     },
     {
      "w": "l'onglet",
-     "s": 139.625,
-     "e": 140.102
+     "s": 130.511,
+     "e": 130.997
     },
     {
      "w": "« Click",
-     "s": 140.167,
-     "e": 140.507
+     "s": 131.063,
+     "e": 131.41
     },
     {
      "w": "&",
-     "s": 140.554,
-     "e": 140.554
+     "s": 131.457,
+     "e": 131.457
     },
     {
      "w": "Collect ».",
-     "s": 140.554,
-     "e": 141.235
+     "s": 131.457,
+     "e": 132.151
     },
     {
      "w": "Le",
-     "s": 142.002,
-     "e": 142.162
+     "s": 133.542,
+     "e": 133.637
     },
     {
      "w": "traitement",
-     "s": 142.162,
-     "e": 142.482
+     "s": 133.647,
+     "e": 134.123
     },
     {
      "w": "est",
-     "s": 142.482,
-     "e": 142.642
+     "s": 134.176,
+     "e": 134.319
     },
     {
      "w": "identique",
-     "s": 142.642,
-     "e": 143.282
+     "s": 134.335,
+     "e": 134.763
     },
     {
      "w": "à",
-     "s": 143.282,
-     "e": 143.442
+     "s": 134.811,
+     "e": 134.858
     },
     {
      "w": "celui",
-     "s": 143.442,
-     "e": 143.762
+     "s": 134.864,
+     "e": 135.102
     },
     {
      "w": "des",
-     "s": 143.762,
-     "e": 143.922
+     "s": 135.128,
+     "e": 135.271
     },
     {
      "w": "commandes",
-     "s": 143.922,
-     "e": 144.242
+     "s": 135.287,
+     "e": 135.715
     },
     {
      "w": "« À",
-     "s": 144.242,
-     "e": 144.402
+     "s": 135.763,
+     "e": 135.81
     },
     {
      "w": "envoyer »,",
-     "s": 144.402,
-     "e": 144.722
+     "s": 135.816,
+     "e": 136.244
     },
     {
      "w": "sauf",
-     "s": 144.722,
-     "e": 144.882
+     "s": 136.742,
+     "e": 136.923
     },
     {
      "w": "qu'il",
-     "s": 144.882,
-     "e": 145.202
+     "s": 136.943,
+     "e": 137.124
     },
     {
      "w": "n'y",
-     "s": 145.202,
-     "e": 145.362
+     "s": 137.144,
+     "e": 137.234
     },
     {
      "w": "a",
-     "s": 145.362,
-     "e": 145.522
+     "s": 137.244,
+     "e": 137.29
     },
     {
      "w": "pas",
-     "s": 145.522,
-     "e": 145.682
+     "s": 137.295,
+     "e": 137.43
     },
     {
      "w": "de",
-     "s": 145.682,
-     "e": 145.842
+     "s": 137.445,
+     "e": 137.536
     },
     {
      "w": "transporteur",
-     "s": 145.842,
-     "e": 146.322
+     "s": 137.546,
+     "e": 138.089
     },
     {
      "w": "à",
-     "s": 146.322,
-     "e": 146.482
+     "s": 138.149,
+     "e": 138.195
     },
     {
      "w": "gérer.",
-     "s": 146.482,
-     "e": 146.802
+     "s": 138.2,
+     "e": 138.516
     },
     {
      "w": "Pour",
-     "s": 147.784,
-     "e": 147.969
+     "s": 140.47,
+     "e": 140.668
     },
     {
      "w": "une",
-     "s": 147.969,
-     "e": 148.153
+     "s": 140.69,
+     "e": 140.838
     },
     {
      "w": "commande",
-     "s": 148.153,
-     "e": 148.523
+     "s": 140.854,
+     "e": 141.25
     },
     {
      "w": "Click &",
-     "s": 148.523,
-     "e": 148.708
+     "s": 141.294,
+     "e": 141.541
     },
     {
      "w": "Collect,",
-     "s": 148.708,
-     "e": 149.077
+     "s": 141.568,
+     "e": 142.013
     },
     {
      "w": "seul",
-     "s": 149.077,
-     "e": 149.712
+     "s": 142.063,
+     "e": 142.26
     },
     {
      "w": "le",
-     "s": 149.712,
-     "e": 149.897
+     "s": 142.282,
+     "e": 142.381
     },
     {
      "w": "bon",
-     "s": 149.897,
-     "e": 150.081
+     "s": 142.392,
+     "e": 142.54
     },
     {
      "w": "de",
-     "s": 150.081,
-     "e": 150.266
+     "s": 142.557,
+     "e": 142.656
     },
     {
      "w": "livraison",
-     "s": 150.266,
-     "e": 150.82
+     "s": 142.667,
+     "e": 143.112
     },
     {
      "w": "est",
-     "s": 150.82,
-     "e": 151.005
+     "s": 143.161,
+     "e": 143.309
     },
     {
      "w": "à",
-     "s": 151.005,
-     "e": 151.19
+     "s": 143.326,
+     "e": 143.375
     },
     {
      "w": "imprimer,",
-     "s": 151.19,
-     "e": 151.744
+     "s": 143.381,
+     "e": 143.875
     },
     {
      "w": "puisque",
-     "s": 152.394,
-     "e": 152.694
+     "s": 144.38,
+     "e": 144.653
     },
     {
      "w": "c'est",
-     "s": 152.694,
-     "e": 152.844
+     "s": 144.683,
+     "e": 144.839
     },
     {
      "w": "le",
-     "s": 152.844,
-     "e": 152.994
+     "s": 144.857,
+     "e": 144.935
     },
     {
      "w": "client",
-     "s": 152.994,
-     "e": 153.144
+     "s": 144.943,
+     "e": 145.177
     },
     {
      "w": "qui",
-     "s": 153.144,
-     "e": 153.294
+     "s": 145.203,
+     "e": 145.32
     },
     {
      "w": "vient",
-     "s": 153.294,
-     "e": 153.444
+     "s": 145.333,
+     "e": 145.528
     },
     {
      "w": "récupérer",
-     "s": 153.444,
-     "e": 154.044
+     "s": 145.55,
+     "e": 145.901
     },
     {
      "w": "sa",
-     "s": 154.044,
-     "e": 154.194
+     "s": 145.94,
+     "e": 146.018
     },
     {
      "w": "commande :",
-     "s": 154.194,
-     "e": 154.494
+     "s": 146.027,
+     "e": 146.417
     },
     {
      "w": "il",
-     "s": 154.694,
-     "e": 154.833
+     "s": 146.96,
+     "e": 147.039
     },
     {
      "w": "n'y",
-     "s": 154.833,
-     "e": 154.972
+     "s": 147.047,
+     "e": 147.126
     },
     {
      "w": "a",
-     "s": 154.972,
-     "e": 155.11
+     "s": 147.135,
+     "e": 147.174
     },
     {
      "w": "pas",
-     "s": 155.11,
-     "e": 155.249
+     "s": 147.179,
+     "e": 147.297
     },
     {
      "w": "de",
-     "s": 155.249,
-     "e": 155.388
+     "s": 147.31,
+     "e": 147.389
     },
     {
      "w": "transporteur.",
-     "s": 155.388,
-     "e": 155.804
+     "s": 147.397,
+     "e": 147.949
     }
    ]
   },
@@ -2990,66 +2930,66 @@
    "title": "Conclusion",
    "lead": 0.8,
    "tail": 2.0,
-   "adur": 23.356,
-   "dur": 26.156,
+   "adur": 22.902,
+   "dur": 25.702,
    "audio": "voiceover/v2/scene04.mp3",
    "shots": [
     {
      "id": "v2_5_1",
      "t0": 0.0,
-     "t1": 7.411,
+     "t1": 7.728,
      "vo": "Pour résumer : consultez les 3 onglets de l'interface de commande, et suivez les 5 premières étapes :",
      "cues": [
       {
        "phrase": "3 onglets",
        "action": "les 3 onglets apparaissent",
-       "t": 2.877
+       "t": 2.591
       }
      ]
     },
     {
      "id": "v2_5_2",
-     "t0": 7.411,
-     "t1": 19.261,
-     "vo": "ouvrir la commande, retrouver la référence Odéis, aller chercher le produit, le scanner et valider, puis imprimer vos documents.",
+     "t0": 7.728,
+     "t1": 17.944,
+     "vo": "et suivez les 5 premières étapes : ouvrir la commande, retrouver la référence Odéis, aller chercher le produit, le scanner et valider, puis imprimer vos documents.",
      "cues": [
       {
        "phrase": "ouvrir",
        "action": "picto 1",
-       "t": 8.012
+       "t": 9.147
       },
       {
        "phrase": "retrouver",
        "action": "picto 2",
-       "t": 9.793
+       "t": 10.519
       },
       {
        "phrase": "aller chercher",
        "action": "picto 3",
-       "t": 11.986
+       "t": 12.472
       },
       {
        "phrase": "scanner",
        "action": "picto 4",
-       "t": 14.099
+       "t": 14.305
       },
       {
        "phrase": "imprimer",
        "action": "picto 5",
-       "t": 16.256
+       "t": 16.075
       }
      ]
     },
     {
      "id": "v2_5_3",
-     "t0": 19.261,
-     "t1": 26.156,
+     "t0": 17.944,
+     "t1": 25.702,
      "vo": "Il ne reste plus qu'à préparer et expédier le colis : c'est l'objet de la vidéo suivante.",
      "cues": [
       {
        "phrase": "préparer et expédier",
        "action": "étapes 6 et 7 s'allument",
-       "t": 20.542
+       "t": 19.986
       }
      ]
     }
@@ -3057,268 +2997,268 @@
    "words": [
     {
      "w": "Pour",
-     "s": 1.15,
-     "e": 1.384
+     "s": 0.85,
+     "e": 1.086
     },
     {
      "w": "résumer",
-     "s": 1.416,
-     "e": 1.825
+     "s": 1.118,
+     "e": 1.53
     },
     {
      "w": ":",
-     "s": 1.881,
-     "e": 2.056
+     "s": 1.587,
+     "e": 1.764
     },
     {
      "w": "consultez",
-     "s": 2.08,
-     "e": 2.606
+     "s": 1.788,
+     "e": 2.318
     },
     {
      "w": "les",
-     "s": 2.677,
-     "e": 2.853
+     "s": 2.39,
+     "e": 2.567
     },
     {
      "w": "3",
-     "s": 2.877,
-     "e": 2.935
+     "s": 2.591,
+     "e": 2.65
     },
     {
      "w": "onglets",
-     "s": 2.943,
-     "e": 3.352
+     "s": 2.658,
+     "e": 3.071
     },
     {
      "w": "de",
-     "s": 3.408,
-     "e": 3.525
+     "s": 3.127,
+     "e": 3.245
     },
     {
      "w": "l'interface",
-     "s": 3.541,
-     "e": 4.125
+     "s": 3.261,
+     "e": 3.85
     },
     {
      "w": "de",
-     "s": 4.205,
-     "e": 4.322
+     "s": 3.931,
+     "e": 4.049
     },
     {
      "w": "commande,",
-     "s": 4.338,
-     "e": 4.981
+     "s": 4.065,
+     "e": 4.713
     },
     {
      "w": "et",
-     "s": 5.068,
-     "e": 5.185
+     "s": 4.801,
+     "e": 4.919
     },
     {
      "w": "suivez",
-     "s": 5.201,
-     "e": 5.552
+     "s": 4.935,
+     "e": 5.289
     },
     {
      "w": "les",
-     "s": 5.6,
-     "e": 5.775
+     "s": 5.337,
+     "e": 5.514
     },
     {
      "w": "5",
-     "s": 5.799,
-     "e": 5.857
+     "s": 5.538,
+     "e": 5.597
     },
     {
      "w": "premières",
-     "s": 5.865,
-     "e": 6.391
+     "s": 5.605,
+     "e": 6.136
     },
     {
      "w": "étapes",
-     "s": 6.463,
-     "e": 6.814
+     "s": 6.208,
+     "e": 6.562
     },
     {
      "w": ":",
-     "s": 6.861,
-     "e": 7.037
+     "s": 6.61,
+     "e": 6.787
     },
     {
      "w": "ouvrir",
-     "s": 7.616,
-     "e": 8.012
+     "s": 8.755,
+     "e": 9.108
     },
     {
      "w": "la",
-     "s": 8.012,
-     "e": 8.21
+     "s": 9.147,
+     "e": 9.265
     },
     {
      "w": "commande,",
-     "s": 8.21,
-     "e": 8.606
+     "s": 9.278,
+     "e": 9.866
     },
     {
      "w": "retrouver",
-     "s": 9.186,
-     "e": 9.793
+     "s": 9.931,
+     "e": 10.46
     },
     {
      "w": "la",
-     "s": 9.793,
-     "e": 9.995
+     "s": 10.519,
+     "e": 10.637
     },
     {
      "w": "référence",
-     "s": 9.995,
-     "e": 10.602
+     "s": 10.65,
+     "e": 11.179
     },
     {
      "w": "Odéis,",
-     "s": 10.602,
-     "e": 11.006
+     "s": 11.238,
+     "e": 11.649
     },
     {
      "w": "aller",
-     "s": 11.646,
-     "e": 11.986
+     "s": 12.145,
+     "e": 12.44
     },
     {
      "w": "chercher",
-     "s": 11.986,
-     "e": 12.326
+     "s": 12.472,
+     "e": 12.944
     },
     {
      "w": "le",
-     "s": 12.326,
-     "e": 12.496
+     "s": 12.996,
+     "e": 13.114
     },
     {
      "w": "produit,",
-     "s": 12.496,
-     "e": 12.836
+     "s": 13.127,
+     "e": 13.657
     },
     {
      "w": "le",
-     "s": 13.426,
-     "e": 13.65
+     "s": 13.716,
+     "e": 13.834
     },
     {
      "w": "scanner",
-     "s": 13.65,
-     "e": 14.099
+     "s": 13.847,
+     "e": 14.259
     },
     {
      "w": "et",
-     "s": 14.099,
-     "e": 14.323
+     "s": 14.305,
+     "e": 14.423
     },
     {
      "w": "valider,",
-     "s": 14.323,
-     "e": 14.996
+     "s": 14.436,
+     "e": 14.966
     },
     {
      "w": "puis",
-     "s": 15.606,
-     "e": 15.768
+     "s": 15.475,
+     "e": 15.655
     },
     {
      "w": "imprimer",
-     "s": 15.768,
-     "e": 16.256
+     "s": 15.675,
+     "e": 16.035
     },
     {
      "w": "vos",
-     "s": 16.256,
-     "e": 16.418
+     "s": 16.075,
+     "e": 16.21
     },
     {
      "w": "documents.",
-     "s": 16.418,
-     "e": 16.906
+     "s": 16.225,
+     "e": 16.72
     },
     {
      "w": "Il",
-     "s": 19.586,
-     "e": 19.745
+     "s": 19.052,
+     "e": 19.157
     },
     {
      "w": "ne",
-     "s": 19.745,
-     "e": 19.905
+     "s": 19.169,
+     "e": 19.274
     },
     {
      "w": "reste",
-     "s": 19.905,
-     "e": 20.064
+     "s": 19.286,
+     "e": 19.548
     },
     {
      "w": "plus",
-     "s": 20.064,
-     "e": 20.224
+     "s": 19.577,
+     "e": 19.788
     },
     {
      "w": "qu'à",
-     "s": 20.224,
-     "e": 20.542
+     "s": 19.811,
+     "e": 19.968
     },
     {
      "w": "préparer",
-     "s": 20.542,
-     "e": 21.02
+     "s": 19.986,
+     "e": 20.406
     },
     {
      "w": "et",
-     "s": 21.02,
-     "e": 21.18
+     "s": 20.453,
+     "e": 20.558
     },
     {
      "w": "expédier",
-     "s": 21.18,
-     "e": 21.658
+     "s": 20.57,
+     "e": 20.99
     },
     {
      "w": "le",
-     "s": 21.658,
-     "e": 21.817
+     "s": 21.037,
+     "e": 21.142
     },
     {
      "w": "colis :",
-     "s": 21.817,
-     "e": 22.136
+     "s": 21.153,
+     "e": 21.521
     },
     {
      "w": "c'est",
-     "s": 22.406,
-     "e": 22.576
+     "s": 22.062,
+     "e": 22.251
     },
     {
      "w": "l'objet",
-     "s": 22.576,
-     "e": 22.916
+     "s": 22.272,
+     "e": 22.555
     },
     {
      "w": "de",
-     "s": 22.916,
-     "e": 23.086
+     "s": 22.586,
+     "e": 22.681
     },
     {
      "w": "la",
-     "s": 23.086,
-     "e": 23.256
+     "s": 22.691,
+     "e": 22.785
     },
     {
      "w": "vidéo",
-     "s": 23.256,
-     "e": 23.596
+     "s": 22.796,
+     "e": 23.032
     },
     {
      "w": "suivante.",
-     "s": 23.596,
-     "e": 23.936
+     "s": 23.058,
+     "e": 23.53
     }
    ]
   }
