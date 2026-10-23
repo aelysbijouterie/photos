@@ -6,49 +6,49 @@
    "n": 1,
    "title": "Introduction",
    "lead": 0.8,
-   "tail": 2.4,
-   "adur": 8.62,
-   "dur": 11.82,
+   "tail": 1.5,
+   "adur": 8.329,
+   "dur": 10.629,
    "audio": "voiceover/v3/scene01.mp3",
    "shots": [
     {
-     "id": "v3_1_1",
+     "id": "p3_1_1",
      "t0": 0.0,
-     "t1": 6.292,
+     "t1": 5.43,
      "vo": "Vous avez scanné le produit, validé la commande et imprimé vos documents.",
      "cues": [
       {
        "phrase": "scanné",
        "action": "coche 1 à 3",
-       "t": 1.529
+       "t": 1.324
       },
       {
        "phrase": "validé",
        "action": "coche 4",
-       "t": 2.376
+       "t": 2.309
       },
       {
        "phrase": "imprimé",
        "action": "coche 5",
-       "t": 3.563
+       "t": 3.353
       }
      ]
     },
     {
-     "id": "v3_1_2",
-     "t0": 6.292,
-     "t1": 11.82,
+     "id": "p3_1_2",
+     "t0": 5.43,
+     "t1": 10.629,
      "vo": "Il est maintenant temps de préparer le colis, puis de l'expédier.",
      "cues": [
       {
        "phrase": "préparer le colis",
        "action": "étape 6 s'allume",
-       "t": 7.503
+       "t": 7.292
       },
       {
        "phrase": "l'expédier",
        "action": "étape 7 s'allume",
-       "t": 8.739
+       "t": 8.433
       }
      ]
     }
@@ -56,118 +56,118 @@
    "words": [
     {
      "w": "Vous",
-     "s": 1.02,
-     "e": 1.19
+     "s": 0.86,
+     "e": 1.069
     },
     {
      "w": "avez",
-     "s": 1.19,
-     "e": 1.529
+     "s": 1.092,
+     "e": 1.301
     },
     {
      "w": "scanné",
-     "s": 1.529,
-     "e": 1.868
+     "s": 1.324,
+     "e": 1.637
     },
     {
      "w": "le",
-     "s": 1.868,
-     "e": 2.037
+     "s": 1.672,
+     "e": 1.776
     },
     {
      "w": "produit,",
-     "s": 2.037,
-     "e": 2.376
+     "s": 1.788,
+     "e": 2.257
     },
     {
      "w": "validé",
-     "s": 2.376,
-     "e": 2.885
+     "s": 2.309,
+     "e": 2.622
     },
     {
      "w": "la",
-     "s": 2.885,
-     "e": 3.055
+     "s": 2.657,
+     "e": 2.761
     },
     {
      "w": "commande",
-     "s": 3.055,
-     "e": 3.394
+     "s": 2.773,
+     "e": 3.19
     },
     {
      "w": "et",
-     "s": 3.394,
-     "e": 3.563
+     "s": 3.237,
+     "e": 3.341
     },
     {
      "w": "imprimé",
-     "s": 3.563,
-     "e": 4.072
+     "s": 3.353,
+     "e": 3.718
     },
     {
      "w": "vos",
-     "s": 4.072,
-     "e": 4.241
+     "s": 3.758,
+     "e": 3.915
     },
     {
      "w": "documents.",
-     "s": 4.241,
-     "e": 4.75
+     "s": 3.932,
+     "e": 4.506
     },
     {
      "w": "Il",
-     "s": 6.422,
-     "e": 6.577
+     "s": 6.199,
+     "e": 6.289
     },
     {
      "w": "est",
-     "s": 6.577,
-     "e": 6.731
+     "s": 6.299,
+     "e": 6.433
     },
     {
      "w": "maintenant",
-     "s": 6.731,
-     "e": 7.194
+     "s": 6.448,
+     "e": 6.894
     },
     {
      "w": "temps",
-     "s": 7.194,
-     "e": 7.349
+     "s": 6.944,
+     "e": 7.167
     },
     {
      "w": "de",
-     "s": 7.349,
-     "e": 7.503
+     "s": 7.192,
+     "e": 7.282
     },
     {
      "w": "préparer",
-     "s": 7.503,
-     "e": 7.967
+     "s": 7.292,
+     "e": 7.649
     },
     {
      "w": "le",
-     "s": 7.967,
-     "e": 8.121
+     "s": 7.689,
+     "e": 7.778
     },
     {
      "w": "colis,",
-     "s": 8.121,
-     "e": 8.43
+     "s": 7.788,
+     "e": 8.101
     },
     {
      "w": "puis",
-     "s": 8.43,
-     "e": 8.584
+     "s": 8.135,
+     "e": 8.314
     },
     {
      "w": "de",
-     "s": 8.584,
-     "e": 8.739
+     "s": 8.334,
+     "e": 8.423
     },
     {
      "w": "l'expédier.",
-     "s": 8.739,
-     "e": 9.202
+     "s": 8.433,
+     "e": 8.925
     }
    ]
   },
@@ -176,74 +176,74 @@
    "title": "Quel emballage choisir ?",
    "lead": 0.8,
    "tail": 1.5,
-   "adur": 25.835,
-   "dur": 28.135,
+   "adur": 26.319,
+   "dur": 28.619,
    "audio": "voiceover/v3/scene02.mp3",
    "shots": [
     {
-     "id": "v3_2_1",
+     "id": "p3_2_1",
      "t0": 0.0,
-     "t1": 7.063,
-     "vo": "La préparation du colis dépend du type de commande. Deux cas de figure pour les commandes à envoyer :",
+     "t1": 7.463,
+     "vo": "La préparation du colis dépend du type de commande. Deux cas de figure pour les commandes à envoyer :",
      "cues": [
       {
        "phrase": "deux cas de figure",
        "action": "le colis se scinde",
-       "t": 4.953
+       "t": 4.843
       }
      ]
     },
     {
-     "id": "v3_2_2",
-     "t0": 7.063,
-     "t1": 13.333,
+     "id": "p3_2_2",
+     "t0": 7.463,
+     "t1": 14.212,
      "vo": "l'enveloppe bulle, utilisée pour les lettres suivies et pour les commandes d'un seul produit de faible valeur,",
      "cues": [
       {
        "phrase": "lettres suivies",
        "action": "pastille 1",
-       "t": 9.74
+       "t": 9.869
       },
       {
        "phrase": "faible valeur",
        "action": "pastille 2",
-       "t": 12.204
+       "t": 12.489
       }
      ]
     },
     {
-     "id": "v3_2_3",
-     "t0": 13.333,
-     "t1": 22.123,
+     "id": "p3_2_3",
+     "t0": 14.212,
+     "t1": 21.575,
      "vo": "et le carton d'expédition, utilisé pour les commandes multi-produits, les montres et les bijoux en or.",
      "cues": [
       {
        "phrase": "multi-produits",
        "action": "pastille 1",
-       "t": 16.803
+       "t": 18.224
       },
       {
        "phrase": "montres",
        "action": "pastille 2",
-       "t": 18.244
+       "t": 19.251
       },
       {
        "phrase": "bijoux en or",
        "action": "pastille 3",
-       "t": 18.818
+       "t": 19.936
       }
      ]
     },
     {
-     "id": "v3_2_4",
-     "t0": 22.123,
-     "t1": 28.135,
-     "vo": "Et pour le Click & Collect, la préparation est différente : nous la voyons en fin de vidéo.",
+     "id": "p3_2_4",
+     "t0": 21.575,
+     "t1": 28.619,
+     "vo": "Et pour le Click & Collect, la préparation est différente : nous la voyons en fin de vidéo.",
      "cues": [
       {
        "phrase": "Click & Collect",
        "action": "l'encart vert monte",
-       "t": 22.785
+       "t": 22.865
       }
      ]
     }
@@ -251,411 +251,447 @@
    "words": [
     {
      "w": "La",
-     "s": 0.97,
-     "e": 1.138
+     "s": 0.86,
+     "e": 0.963
     },
     {
      "w": "préparation",
-     "s": 1.138,
-     "e": 1.81
+     "s": 0.975,
+     "e": 1.542
     },
     {
      "w": "du",
-     "s": 1.81,
-     "e": 1.978
+     "s": 1.605,
+     "e": 1.708
     },
     {
      "w": "colis",
-     "s": 1.978,
-     "e": 2.314
+     "s": 1.719,
+     "e": 1.977
     },
     {
      "w": "dépend",
-     "s": 2.314,
-     "e": 2.65
+     "s": 2.005,
+     "e": 2.315
     },
     {
      "w": "du",
-     "s": 2.65,
-     "e": 2.818
+     "s": 2.349,
+     "e": 2.452
     },
     {
      "w": "type",
-     "s": 2.818,
-     "e": 2.986
+     "s": 2.464,
+     "e": 2.67
     },
     {
      "w": "de",
-     "s": 2.986,
-     "e": 3.154
+     "s": 2.693,
+     "e": 2.796
     },
     {
      "w": "commande.",
-     "s": 3.154,
-     "e": 3.49
+     "s": 2.807,
+     "e": 3.323
     },
     {
      "w": "Deux",
-     "s": 4.953,
-     "e": 5.109
+     "s": 4.843,
+     "e": 5.007
     },
     {
      "w": "cas",
-     "s": 5.109,
-     "e": 5.266
+     "s": 5.025,
+     "e": 5.148
     },
     {
      "w": "de",
-     "s": 5.266,
-     "e": 5.423
+     "s": 5.162,
+     "e": 5.244
     },
     {
      "w": "figure",
-     "s": 5.423,
-     "e": 5.736
+     "s": 5.253,
+     "e": 5.5
     },
     {
      "w": "pour",
-     "s": 5.736,
-     "e": 5.893
+     "s": 5.527,
+     "e": 5.691
     },
     {
      "w": "les",
-     "s": 5.893,
-     "e": 6.049
+     "s": 5.709,
+     "e": 5.833
     },
     {
      "w": "commandes",
-     "s": 6.049,
-     "e": 6.363
+     "s": 5.846,
+     "e": 6.216
     },
     {
      "w": "à",
-     "s": 6.363,
-     "e": 6.519
+     "s": 6.257,
+     "e": 6.298
     },
     {
      "w": "envoyer :",
-     "s": 6.519,
-     "e": 6.833
+     "s": 6.302,
+     "e": 6.672
     },
     {
      "w": "l'enveloppe",
-     "s": 7.193,
-     "e": 7.808
+     "s": 8.123,
+     "e": 8.614
     },
     {
      "w": "bulle,",
-     "s": 7.808,
-     "e": 8.013
+     "s": 8.669,
+     "e": 9.012
     },
     {
      "w": "utilisée",
-     "s": 8.603,
-     "e": 9.361
+     "s": 9.051,
+     "e": 9.444
     },
     {
      "w": "pour",
-     "s": 9.361,
-     "e": 9.551
+     "s": 9.487,
+     "e": 9.684
     },
     {
      "w": "les",
-     "s": 9.551,
-     "e": 9.74
+     "s": 9.705,
+     "e": 9.853
     },
     {
      "w": "lettres",
-     "s": 9.74,
-     "e": 9.93
+     "s": 9.869,
+     "e": 10.213
     },
     {
      "w": "suivies",
-     "s": 9.93,
-     "e": 10.309
+     "s": 10.251,
+     "e": 10.595
     },
     {
      "w": "et",
-     "s": 10.309,
-     "e": 10.498
+     "s": 10.633,
+     "e": 10.731
     },
     {
      "w": "pour",
-     "s": 10.498,
-     "e": 10.688
+     "s": 10.742,
+     "e": 10.939
     },
     {
      "w": "les",
-     "s": 10.688,
-     "e": 10.877
+     "s": 10.961,
+     "e": 11.108
     },
     {
      "w": "commandes",
-     "s": 10.877,
-     "e": 11.256
+     "s": 11.124,
+     "e": 11.566
     },
     {
      "w": "d'un",
-     "s": 11.256,
-     "e": 11.446
+     "s": 11.616,
+     "e": 11.763
     },
     {
      "w": "seul",
-     "s": 11.446,
-     "e": 11.636
+     "s": 11.779,
+     "e": 11.976
     },
     {
      "w": "produit",
-     "s": 11.636,
-     "e": 12.015
+     "s": 11.998,
+     "e": 12.341
     },
     {
      "w": "de",
-     "s": 12.015,
-     "e": 12.204
+     "s": 12.38,
+     "e": 12.478
     },
     {
      "w": "faible",
-     "s": 12.204,
-     "e": 12.394
+     "s": 12.489,
+     "e": 12.783
     },
     {
      "w": "valeur,",
-     "s": 12.394,
-     "e": 12.773
+     "s": 12.816,
+     "e": 13.209
     },
     {
      "w": "et",
-     "s": 13.463,
-     "e": 13.633
+     "s": 15.081,
+     "e": 15.187
     },
     {
      "w": "le",
-     "s": 13.633,
-     "e": 13.803
+     "s": 15.198,
+     "e": 15.304
     },
     {
      "w": "carton",
-     "s": 13.803,
-     "e": 14.143
+     "s": 15.316,
+     "e": 15.633
     },
     {
      "w": "d'expédition,",
-     "s": 14.143,
-     "e": 14.823
+     "s": 15.668,
+     "e": 16.355
     },
     {
      "w": "utilisé",
-     "s": 15.423,
-     "e": 16.113
+     "s": 16.911,
+     "e": 17.271
     },
     {
      "w": "pour",
-     "s": 16.113,
-     "e": 16.285
+     "s": 17.311,
+     "e": 17.516
     },
     {
      "w": "les",
-     "s": 16.285,
-     "e": 16.458
+     "s": 17.539,
+     "e": 17.693
     },
     {
      "w": "commandes",
-     "s": 16.458,
-     "e": 16.803
+     "s": 17.71,
+     "e": 18.172
     },
     {
      "w": "multi-produits,",
-     "s": 16.803,
-     "e": 17.493
+     "s": 18.224,
+     "e": 18.994
     },
     {
      "w": "les",
-     "s": 18.053,
-     "e": 18.244
+     "s": 19.08,
+     "e": 19.234
     },
     {
      "w": "montres",
-     "s": 18.244,
-     "e": 18.435
+     "s": 19.251,
+     "e": 19.611
     },
     {
      "w": "et",
-     "s": 18.435,
-     "e": 18.627
+     "s": 19.651,
+     "e": 19.753
     },
     {
      "w": "les",
-     "s": 18.627,
-     "e": 18.818
+     "s": 19.765,
+     "e": 19.919
     },
     {
      "w": "bijoux",
-     "s": 18.818,
-     "e": 19.2
+     "s": 19.936,
+     "e": 20.244
     },
     {
      "w": "en",
-     "s": 19.2,
-     "e": 19.392
+     "s": 20.279,
+     "e": 20.381
     },
     {
      "w": "or.",
-     "s": 19.392,
-     "e": 19.583
+     "s": 20.393,
+     "e": 20.598
     },
     {
      "w": "Et",
-     "s": 22.253,
-     "e": 22.43
+     "s": 22.439,
+     "e": 22.535
     },
     {
      "w": "pour",
-     "s": 22.43,
-     "e": 22.607
+     "s": 22.546,
+     "e": 22.737
     },
     {
      "w": "le",
-     "s": 22.607,
-     "e": 22.785
+     "s": 22.759,
+     "e": 22.854
     },
     {
      "w": "Click &",
-     "s": 22.785,
-     "e": 22.962
+     "s": 22.865,
+     "e": 23.104
     },
     {
      "w": "Collect,",
-     "s": 22.962,
-     "e": 23.317
+     "s": 23.131,
+     "e": 23.562
     },
     {
      "w": "la",
-     "s": 23.317,
-     "e": 23.494
+     "s": 23.61,
+     "e": 23.706
     },
     {
      "w": "préparation",
-     "s": 23.494,
-     "e": 24.203
+     "s": 23.716,
+     "e": 24.243
     },
     {
      "w": "est",
-     "s": 24.203,
-     "e": 24.381
+     "s": 24.301,
+     "e": 24.445
     },
     {
      "w": "différente :",
-     "s": 24.381,
-     "e": 24.913
+     "s": 24.461,
+     "e": 25.036
     },
     {
      "w": "nous",
-     "s": 25.093,
-     "e": 25.26
+     "s": 25.629,
+     "e": 25.815
     },
     {
      "w": "la",
-     "s": 25.26,
-     "e": 25.428
+     "s": 25.836,
+     "e": 25.928
     },
     {
      "w": "voyons",
-     "s": 25.428,
-     "e": 25.595
+     "s": 25.939,
+     "e": 26.217
     },
     {
      "w": "en",
-     "s": 25.595,
-     "e": 25.763
+     "s": 26.248,
+     "e": 26.341
     },
     {
      "w": "fin",
-     "s": 25.763,
-     "e": 25.93
+     "s": 26.351,
+     "e": 26.49
     },
     {
      "w": "de",
-     "s": 25.93,
-     "e": 26.098
+     "s": 26.506,
+     "e": 26.598
     },
     {
      "w": "vidéo.",
-     "s": 26.098,
-     "e": 26.433
+     "s": 26.609,
+     "e": 26.933
     }
    ]
   },
   {
    "n": 3,
    "title": "Préparer une enveloppe bulle",
-   "lead": 0.8,
-   "tail": 1.5,
-   "adur": 17.659,
-   "dur": 19.959,
+   "lead": 0.5,
+   "tail": 1.0,
+   "adur": 34.98,
+   "dur": 36.48,
    "audio": "voiceover/v3/scene03.mp3",
    "shots": [
     {
-     "id": "v3_3_1",
+     "id": "p3_3_1",
      "t0": 0.0,
-     "t1": 7.415,
-     "vo": "Pour une enveloppe bulle, vous avez besoin de trois éléments : l'enveloppe bulle, un écrin dédié web,",
+     "t1": 10.5,
+     "vo": "Pour une enveloppe bulle, vous avez besoin : de l'enveloppe, d'un écrin web Aélys ou de l'écrin de la marque, d'un porte-facture et du livret « Merci pour votre commande ».",
      "cues": [
       {
-       "phrase": "trois éléments",
-       "action": "compteur 1-2-3",
-       "t": 3.325
+       "phrase": "enveloppe",
+       "action": "l'enveloppe est entourée",
+       "t": 3.403
       },
       {
-       "phrase": "l'enveloppe bulle",
-       "action": "l'enveloppe entre",
-       "t": 4.865
+       "phrase": "écrin",
+       "action": "l'écrin est entouré",
+       "t": 4.764
       },
-      {
-       "phrase": "écrin dédié web",
-       "action": "l'écrin entre",
-       "t": 6.3
-      }
-     ]
-    },
-    {
-     "id": "v3_3_2",
-     "t0": 7.415,
-     "t1": 13.017,
-     "vo": "et un porte-facture Aélys dans lequel vous glissez le bon de livraison et le livret « Merci pour votre commande ».",
-     "cues": [
       {
        "phrase": "porte-facture",
-       "action": "il arrive",
-       "t": 7.918
-      },
-      {
-       "phrase": "bon de livraison",
-       "action": "le document glisse",
-       "t": 10.346
+       "action": "le porte-facture est entouré",
+       "t": 7.825
       },
       {
        "phrase": "livret",
-       "action": "le livret glisse",
-       "t": 11.653
+       "action": "le livret est entouré",
+       "t": 8.919
       }
      ]
     },
     {
-     "id": "v3_3_3",
-     "t0": 13.017,
-     "t1": 19.959,
-     "vo": "Et si l'option « pochette cadeau » est cochée sur la commande, n'oubliez pas d'ajouter un sac Aélys.",
+     "id": "p3_3_4",
+     "t0": 10.5,
+     "t1": 20.5,
+     "vo": "Placez le bijou dans l'écrin, mettez le bon de livraison et le livret « Merci » à l'intérieur du porte-facture et glissez le tout dans l'enveloppe.",
+     "cues": [
+      {
+       "phrase": "bijou",
+       "action": "le bijou est placé dans l'écrin",
+       "t": 12.606
+      },
+      {
+       "phrase": "bon de livraison",
+       "action": "le bon et le livret entrent dans le porte-facture",
+       "t": 14.25
+      },
+      {
+       "phrase": "glissez",
+       "action": "le tout est glissé dans l'enveloppe",
+       "t": 17.933
+      }
+     ]
+    },
+    {
+     "id": "p3_3_5",
+     "t0": 20.5,
+     "t1": 26.5,
+     "vo": "Retirez la bande de protection de l'adhésif puis fermez l'enveloppe.",
+     "cues": [
+      {
+       "phrase": "Retirez",
+       "action": "la bande de protection est retirée",
+       "t": 20.93
+      },
+      {
+       "phrase": "fermez",
+       "action": "l'enveloppe est fermée",
+       "t": 23.544
+      }
+     ]
+    },
+    {
+     "id": "p3_3_6",
+     "t0": 26.5,
+     "t1": 32.0,
+     "vo": "Enfin, collez l'étiquette de transport sur le dessus.",
+     "cues": [
+      {
+       "phrase": "collez",
+       "action": "l'étiquette est collée",
+       "t": 26.98
+      }
+     ]
+    },
+    {
+     "id": "p3_3_3",
+     "t0": 32.0,
+     "t1": 36.48,
+     "vo": "Et si l'option « pochette cadeau » est cochée sur la commande, n'oubliez pas d'ajouter un sac",
      "cues": [
       {
        "phrase": "cochée",
        "action": "la case se coche",
-       "t": 15.388
+       "t": 33.091
       },
       {
        "phrase": "sac Aélys",
        "action": "le sac apparaît",
-       "t": 17.892
+       "t": 35.511
       }
      ]
     }
@@ -663,375 +699,592 @@
    "words": [
     {
      "w": "Pour",
-     "s": 0.955,
-     "e": 1.115
+     "s": 0.86,
+     "e": 1.031
     },
     {
      "w": "une",
-     "s": 1.115,
-     "e": 1.275
+     "s": 1.05,
+     "e": 1.178
     },
     {
      "w": "enveloppe",
-     "s": 1.275,
-     "e": 1.755
+     "s": 1.192,
+     "e": 1.577
     },
     {
      "w": "bulle,",
-     "s": 1.755,
-     "e": 1.915
+     "s": 1.62,
+     "e": 1.919
     },
     {
      "w": "vous",
-     "s": 1.915,
-     "e": 2.525
+     "s": 1.952,
+     "e": 2.123
     },
     {
      "w": "avez",
-     "s": 2.525,
-     "e": 2.845
+     "s": 2.143,
+     "e": 2.314
     },
     {
      "w": "besoin",
-     "s": 2.845,
-     "e": 3.165
+     "s": 2.333,
+     "e": 2.589
+    },
+    {
+     "w": ":",
+     "s": 2.617,
+     "e": 2.746
     },
     {
      "w": "de",
-     "s": 3.165,
-     "e": 3.325
+     "s": 3.29,
+     "e": 3.392
     },
     {
-     "w": "trois",
-     "s": 3.325,
-     "e": 3.485
+     "w": "l'enveloppe,",
+     "s": 3.403,
+     "e": 4.012
     },
     {
-     "w": "éléments :",
-     "s": 3.485,
-     "e": 3.965
-    },
-    {
-     "w": "l'enveloppe",
-     "s": 4.235,
-     "e": 4.865
-    },
-    {
-     "w": "bulle,",
-     "s": 4.865,
-     "e": 5.075
-    },
-    {
-     "w": "un",
-     "s": 5.705,
-     "e": 5.903
+     "w": "d'un",
+     "s": 4.56,
+     "e": 4.743
     },
     {
      "w": "écrin",
-     "s": 5.903,
-     "e": 6.3
+     "s": 4.764,
+     "e": 5.069
     },
     {
-     "w": "dédié",
-     "s": 6.3,
-     "e": 6.697
-    },
-    {
-     "w": "web,",
-     "s": 6.697,
-     "e": 6.895
-    },
-    {
-     "w": "et",
-     "s": 7.545,
-     "e": 7.732
-    },
-    {
-     "w": "un",
-     "s": 7.732,
-     "e": 7.918
-    },
-    {
-     "w": "porte-facture",
-     "s": 7.918,
-     "e": 8.665
+     "w": "web",
+     "s": 5.103,
+     "e": 5.286
     },
     {
      "w": "Aélys",
-     "s": 8.665,
-     "e": 9.039
+     "s": 5.307,
+     "e": 5.612
     },
     {
-     "w": "dans",
-     "s": 9.039,
-     "e": 9.226
-    },
-    {
-     "w": "lequel",
-     "s": 9.226,
-     "e": 9.599
-    },
-    {
-     "w": "vous",
-     "s": 9.599,
-     "e": 9.786
-    },
-    {
-     "w": "glissez",
-     "s": 9.786,
-     "e": 10.159
-    },
-    {
-     "w": "le",
-     "s": 10.159,
-     "e": 10.346
-    },
-    {
-     "w": "bon",
-     "s": 10.346,
-     "e": 10.533
+     "w": "ou",
+     "s": 5.646,
+     "e": 5.769
     },
     {
      "w": "de",
-     "s": 10.533,
-     "e": 10.719
+     "s": 5.782,
+     "e": 5.904
     },
     {
-     "w": "livraison",
-     "s": 10.719,
-     "e": 11.28
+     "w": "l'écrin",
+     "s": 5.918,
+     "e": 6.285
     },
     {
-     "w": "et",
-     "s": 11.28,
-     "e": 11.466
-    },
-    {
-     "w": "le",
-     "s": 11.466,
-     "e": 11.653
-    },
-    {
-     "w": "livret",
-     "s": 11.653,
-     "e": 12.026
-    },
-    {
-     "w": "« Merci",
-     "s": 12.026,
-     "e": 12.4
-    },
-    {
-     "w": "pour",
-     "s": 12.4,
-     "e": 12.587
-    },
-    {
-     "w": "votre",
-     "s": 12.587,
-     "e": 12.773
-    },
-    {
-     "w": "commande ».",
-     "s": 12.773,
-     "e": 13.147
-    },
-    {
-     "w": "Et",
-     "s": 13.147,
-     "e": 13.334
-    },
-    {
-     "w": "si",
-     "s": 13.334,
-     "e": 13.52
-    },
-    {
-     "w": "l'option",
-     "s": 13.52,
-     "e": 13.894
-    },
-    {
-     "w": "« pochette",
-     "s": 13.894,
-     "e": 14.267
-    },
-    {
-     "w": "cadeau »",
-     "s": 14.267,
-     "e": 14.641
-    },
-    {
-     "w": "est",
-     "s": 14.641,
-     "e": 14.827
-    },
-    {
-     "w": "cochée",
-     "s": 14.827,
-     "e": 15.201
-    },
-    {
-     "w": "sur",
-     "s": 15.201,
-     "e": 15.388
+     "w": "de",
+     "s": 6.325,
+     "e": 6.447
     },
     {
      "w": "la",
-     "s": 15.388,
-     "e": 15.574
+     "s": 6.461,
+     "e": 6.583
+    },
+    {
+     "w": "marque,",
+     "s": 6.597,
+     "e": 7.086
+    },
+    {
+     "w": "d'un",
+     "s": 7.62,
+     "e": 7.805
+    },
+    {
+     "w": "porte-facture",
+     "s": 7.825,
+     "e": 8.563
+    },
+    {
+     "w": "et",
+     "s": 8.646,
+     "e": 8.769
+    },
+    {
+     "w": "du",
+     "s": 8.782,
+     "e": 8.905
+    },
+    {
+     "w": "livret",
+     "s": 8.919,
+     "e": 9.288
+    },
+    {
+     "w": "« Merci",
+     "s": 9.329,
+     "e": 9.637
+    },
+    {
+     "w": "pour",
+     "s": 9.671,
+     "e": 9.917
+    },
+    {
+     "w": "votre",
+     "s": 9.944,
+     "e": 10.252
+    },
+    {
+     "w": "commande ».",
+     "s": 10.286,
+     "e": 10.902
+    },
+    {
+     "w": "Placez",
+     "s": 12.08,
+     "e": 12.435
+    },
+    {
+     "w": "le",
+     "s": 12.475,
+     "e": 12.593
+    },
+    {
+     "w": "bijou",
+     "s": 12.606,
+     "e": 12.902
+    },
+    {
+     "w": "dans",
+     "s": 12.935,
+     "e": 13.172
+    },
+    {
+     "w": "l'écrin,",
+     "s": 13.198,
+     "e": 13.671
+    },
+    {
+     "w": "mettez",
+     "s": 13.724,
+     "e": 14.079
+    },
+    {
+     "w": "le",
+     "s": 14.119,
+     "e": 14.237
+    },
+    {
+     "w": "bon",
+     "s": 14.25,
+     "e": 14.428
+    },
+    {
+     "w": "de",
+     "s": 14.447,
+     "e": 14.566
+    },
+    {
+     "w": "livraison",
+     "s": 14.579,
+     "e": 15.112
+    },
+    {
+     "w": "et",
+     "s": 15.171,
+     "e": 15.289
+    },
+    {
+     "w": "le",
+     "s": 15.302,
+     "e": 15.421
+    },
+    {
+     "w": "livret",
+     "s": 15.434,
+     "e": 15.789
+    },
+    {
+     "w": "« Merci »",
+     "s": 15.828,
+     "e": 16.124
+    },
+    {
+     "w": "à",
+     "s": 16.157,
+     "e": 16.216
+    },
+    {
+     "w": "l'intérieur",
+     "s": 16.223,
+     "e": 16.815
+    },
+    {
+     "w": "du",
+     "s": 16.881,
+     "e": 16.999
+    },
+    {
+     "w": "porte-facture",
+     "s": 17.012,
+     "e": 17.722
+    },
+    {
+     "w": "et",
+     "s": 17.801,
+     "e": 17.92
+    },
+    {
+     "w": "glissez",
+     "s": 17.933,
+     "e": 18.347
+    },
+    {
+     "w": "le",
+     "s": 18.393,
+     "e": 18.512
+    },
+    {
+     "w": "tout",
+     "s": 18.525,
+     "e": 18.761
+    },
+    {
+     "w": "dans",
+     "s": 18.788,
+     "e": 19.025
+    },
+    {
+     "w": "l'enveloppe.",
+     "s": 19.051,
+     "e": 19.761
+    },
+    {
+     "w": "Retirez",
+     "s": 20.93,
+     "e": 21.342
+    },
+    {
+     "w": "la",
+     "s": 21.387,
+     "e": 21.505
+    },
+    {
+     "w": "bande",
+     "s": 21.518,
+     "e": 21.812
+    },
+    {
+     "w": "de",
+     "s": 21.845,
+     "e": 21.962
+    },
+    {
+     "w": "protection",
+     "s": 21.976,
+     "e": 22.564
+    },
+    {
+     "w": "de",
+     "s": 22.629,
+     "e": 22.747
+    },
+    {
+     "w": "l'adhésif",
+     "s": 22.76,
+     "e": 23.23
+    },
+    {
+     "w": "puis",
+     "s": 23.282,
+     "e": 23.518
+    },
+    {
+     "w": "fermez",
+     "s": 23.544,
+     "e": 23.897
+    },
+    {
+     "w": "l'enveloppe.",
+     "s": 23.936,
+     "e": 24.642
+    },
+    {
+     "w": "Enfin,",
+     "s": 26.56,
+     "e": 26.938
+    },
+    {
+     "w": "collez",
+     "s": 26.98,
+     "e": 27.304
+    },
+    {
+     "w": "l'étiquette",
+     "s": 27.34,
+     "e": 27.88
+    },
+    {
+     "w": "de",
+     "s": 27.94,
+     "e": 28.048
+    },
+    {
+     "w": "transport",
+     "s": 28.06,
+     "e": 28.546
+    },
+    {
+     "w": "sur",
+     "s": 28.6,
+     "e": 28.762
+    },
+    {
+     "w": "le",
+     "s": 28.78,
+     "e": 28.888
+    },
+    {
+     "w": "dessus.",
+     "s": 28.9,
+     "e": 29.332
+    },
+    {
+     "w": "Et",
+     "s": 30.79,
+     "e": 30.902
+    },
+    {
+     "w": "si",
+     "s": 30.914,
+     "e": 31.026
+    },
+    {
+     "w": "l'option",
+     "s": 31.039,
+     "e": 31.431
+    },
+    {
+     "w": "« pochette",
+     "s": 31.474,
+     "e": 31.922
+    },
+    {
+     "w": "cadeau »",
+     "s": 31.972,
+     "e": 32.307
+    },
+    {
+     "w": "est",
+     "s": 32.345,
+     "e": 32.513
+    },
+    {
+     "w": "cochée",
+     "s": 32.531,
+     "e": 32.867
+    },
+    {
+     "w": "sur",
+     "s": 32.905,
+     "e": 33.072
+    },
+    {
+     "w": "la",
+     "s": 33.091,
+     "e": 33.203
     },
     {
      "w": "commande,",
-     "s": 15.574,
-     "e": 16.398
+     "s": 33.215,
+     "e": 33.775
     },
     {
      "w": "n'oubliez",
-     "s": 16.398,
-     "e": 16.771
+     "s": 33.837,
+     "e": 34.285
     },
     {
      "w": "pas",
-     "s": 16.771,
-     "e": 16.958
+     "s": 34.335,
+     "e": 34.503
     },
     {
      "w": "d'ajouter",
-     "s": 16.958,
-     "e": 17.518
+     "s": 34.522,
+     "e": 34.969
     },
     {
      "w": "un",
-     "s": 17.518,
-     "e": 17.705
+     "s": 35.019,
+     "e": 35.131
     },
     {
      "w": "sac",
-     "s": 17.705,
-     "e": 17.892
-    },
+     "s": 35.143,
+     "e": 35.311
+    }
+   ],
+   "clips": [
     {
-     "w": "Aélys.",
-     "s": 17.892,
-     "e": 18.265
+     "id": "env",
+     "t0": 0.5,
+     "dur": 31.5
     }
    ]
   },
   {
    "n": 4,
    "title": "Préparer un carton d'expédition",
-   "lead": 0.8,
-   "tail": 1.8,
-   "adur": 38.06,
-   "dur": 40.66,
+   "lead": 0.5,
+   "tail": 1.0,
+   "adur": 68.4,
+   "dur": 69.9,
    "audio": "voiceover/v3/scene04.mp3",
    "shots": [
     {
-     "id": "v3_4_1",
+     "id": "p3_4_1",
      "t0": 0.0,
-     "t1": 7.682,
+     "t1": 4.7,
      "vo": "Voici comment le préparer. Commencez par monter le carton bleu Aélys.",
      "cues": [
       {
        "phrase": "Voici comment le préparer",
        "action": "le bandeau « Carton d'expédition » apparaît",
-       "t": 0.995
+       "t": 0.86
       },
       {
        "phrase": "monter",
        "action": "la boîte bleue Aélys se déplie et se monte",
-       "t": 4.568
+       "t": 4.148
       }
      ]
     },
     {
-     "id": "v3_4_2",
-     "t0": 7.682,
-     "t1": 10.697,
-     "vo": "Garnissez-le de papier de soie.",
+     "id": "p3_4_2_3",
+     "t0": 4.7,
+     "t1": 16.0,
+     "vo": "Pliez une feuille de papier de soie en 2 et déposez-la dans le carton. Si un sac Aélys est demandé en pochette cadeau, mettez-la dans le fond du carton, en la pliant si nécessaire.",
      "cues": [
       {
-       "phrase": "papier de soie",
-       "action": "le papier de soie est déposé dans la boîte bleue",
-       "t": 8.557
-      }
-     ]
-    },
-    {
-     "id": "v3_4_3",
-     "t0": 10.697,
-     "t1": 20.79,
-     "vo": "Posez le bijou ou la montre, dans son écrin, entouré de papier de soie, et fermez le papier de soie avec l'autocollant Aélys.",
-     "cues": [
-      {
-       "phrase": "dans son écrin",
-       "action": "l'écrin se pose",
-       "t": 12.917
+       "phrase": "Pliez",
+       "action": "le papier de soie est plié",
+       "t": 6.88
       },
       {
-       "phrase": "fermez",
-       "action": "la soie se replie",
-       "t": 16.297
+       "phrase": "sac Aélys",
+       "action": "le sac apparaît",
+       "t": 12.369
+      },
+      {
+       "phrase": "mettez",
+       "action": "le sac est mis au fond",
+       "t": 14.639
+      }
+     ]
+    },
+    {
+     "id": "p3_4_4_5",
+     "t0": 16.0,
+     "t1": 30.5,
+     "vo": "Vous pouvez ajouter une nouvelle feuille de papier de soie, pliée en 2, pour venir la refermer sur l'écrin grâce à un autocollant Aélys.",
+     "cues": [
+      {
+       "phrase": "nouvelle feuille",
+       "action": "une nouvelle feuille de soie",
+       "t": 21.3
+      },
+      {
+       "phrase": "refermer",
+       "action": "la soie se replie sur l'écrin",
+       "t": 24.552
       },
       {
        "phrase": "autocollant",
        "action": "l'autocollant se colle",
-       "t": 18.499
+       "t": 26.115
       }
      ]
     },
     {
-     "id": "v3_4_4",
-     "t0": 20.79,
-     "t1": 30.169,
-     "vo": "Par-dessus, déposez le porte-facture Aélys, avec le livret « Merci pour votre commande » et le bon de livraison à l'intérieur.",
+     "id": "p3_4_6",
+     "t0": 30.5,
+     "t1": 40.5,
+     "vo": "Par-dessus, déposez le porte-facture Aélys, avec le livret « Merci pour votre commande » et le bon de livraison à l'intérieur.",
      "cues": [
       {
        "phrase": "porte-facture",
        "action": "il se pose",
-       "t": 22.654
+       "t": 32.291
       },
       {
        "phrase": "livret",
        "action": "le livret apparaît",
-       "t": 24.755
+       "t": 33.829
       },
       {
        "phrase": "bon de livraison",
        "action": "le document apparaît",
-       "t": 26.956
+       "t": 36.106
       }
      ]
     },
     {
-     "id": "v3_4_5",
-     "t0": 30.169,
-     "t1": 36.469,
-     "vo": "Fermez le colis avec la bande adhésive, renforcez la fermeture avec du scotch bande de garantie,",
+     "id": "p3_4_7",
+     "t0": 40.5,
+     "t1": 44.5,
+     "vo": "",
+     "cues": []
+    },
+    {
+     "id": "p3_4_8",
+     "t0": 44.5,
+     "t1": 55.5,
+     "vo": "Enlevez la bande adhésive de protection et fermez le carton.",
+     "cues": [
+      {
+       "phrase": "Enlevez",
+       "action": "la bande de protection est retirée",
+       "t": 48.56
+      },
+      {
+       "phrase": "fermez",
+       "action": "le carton est fermé",
+       "t": 50.741
+      }
+     ]
+    },
+    {
+     "id": "p3_4_9",
+     "t0": 55.5,
+     "t1": 60.5,
+     "vo": "Collez l'étiquette de transport sur le dessus.",
+     "cues": [
+      {
+       "phrase": "étiquette",
+       "action": "l'étiquette se colle",
+       "t": 57.111
+      }
+     ]
+    },
+    {
+     "id": "p3_4_10",
+     "t0": 60.5,
+     "t1": 69.9,
+     "vo": "Fermez le colis avec la bande adhésive, puis renforcez la fermeture avec du scotch bande de garantie.",
      "cues": [
       {
        "phrase": "bande adhésive",
-       "action": "1er scotch",
-       "t": 31.665
+       "action": "le scotch est posé",
+       "t": 62.399
       },
       {
        "phrase": "bande de garantie",
-       "action": "2e scotch, rouge",
-       "t": 35.032
-      }
-     ]
-    },
-    {
-     "id": "v3_4_6",
-     "t0": 36.469,
-     "t1": 40.66,
-     "vo": "et collez l'étiquette de transport sur le dessus.",
-     "cues": [
-      {
-       "phrase": "étiquette de transport",
-       "action": "l'étiquette descend et se colle",
-       "t": 37.559
+       "action": "la bande de garantie rouge",
+       "t": 65.841
       }
      ]
     }
@@ -1039,504 +1292,777 @@
    "words": [
     {
      "w": "Voici",
-     "s": 0.995,
-     "e": 1.318
+     "s": 0.86,
+     "e": 1.066
     },
     {
      "w": "comment",
-     "s": 1.318,
-     "e": 1.479
+     "s": 1.089,
+     "e": 1.378
     },
     {
      "w": "le",
-     "s": 1.479,
-     "e": 1.641
+     "s": 1.41,
+     "e": 1.493
     },
     {
      "w": "préparer.",
-     "s": 1.641,
-     "e": 2.125
+     "s": 1.502,
+     "e": 1.914
     },
     {
      "w": "Commencez",
-     "s": 3.765,
-     "e": 4.367
+     "s": 3.37,
+     "e": 3.895
     },
     {
      "w": "par",
-     "s": 4.367,
-     "e": 4.568
+     "s": 3.954,
+     "e": 4.129
     },
     {
      "w": "monter",
-     "s": 4.568,
-     "e": 4.97
+     "s": 4.148,
+     "e": 4.499
     },
     {
      "w": "le",
-     "s": 4.97,
-     "e": 5.171
+     "s": 4.538,
+     "e": 4.654
     },
     {
      "w": "carton",
-     "s": 5.171,
-     "e": 5.572
+     "s": 4.667,
+     "e": 5.018
     },
     {
      "w": "bleu",
-     "s": 5.572,
-     "e": 5.773
+     "s": 5.056,
+     "e": 5.29
     },
     {
      "w": "Aélys.",
-     "s": 5.773,
-     "e": 6.175
+     "s": 5.316,
+     "e": 5.725
     },
     {
-     "w": "Garnissez-le",
-     "s": 7.812,
-     "e": 8.371
+     "w": "Pliez",
+     "s": 6.88,
+     "e": 7.166
+    },
+    {
+     "w": "une",
+     "s": 7.198,
+     "e": 7.369
+    },
+    {
+     "w": "feuille",
+     "s": 7.388,
+     "e": 7.788
     },
     {
      "w": "de",
-     "s": 8.371,
-     "e": 8.557
+     "s": 7.833,
+     "e": 7.947
     },
     {
      "w": "papier",
-     "s": 8.557,
-     "e": 8.93
+     "s": 7.96,
+     "e": 8.303
     },
     {
      "w": "de",
-     "s": 8.93,
-     "e": 9.116
-    },
-    {
-     "w": "soie.",
-     "s": 9.116,
-     "e": 9.302
-    },
-    {
-     "w": "Posez",
-     "s": 10.827,
-     "e": 11.237
-    },
-    {
-     "w": "le",
-     "s": 11.237,
-     "e": 11.442
-    },
-    {
-     "w": "bijou",
-     "s": 11.442,
-     "e": 11.852
-    },
-    {
-     "w": "ou",
-     "s": 11.852,
-     "e": 12.057
-    },
-    {
-     "w": "la",
-     "s": 12.057,
-     "e": 12.262
-    },
-    {
-     "w": "montre,",
-     "s": 12.262,
-     "e": 12.917
-    },
-    {
-     "w": "dans",
-     "s": 12.917,
-     "e": 13.122
-    },
-    {
-     "w": "son",
-     "s": 13.122,
-     "e": 13.327
-    },
-    {
-     "w": "écrin,",
-     "s": 13.327,
-     "e": 13.737
-    },
-    {
-     "w": "entouré",
-     "s": 14.317,
-     "e": 14.756
-    },
-    {
-     "w": "de",
-     "s": 14.756,
-     "e": 14.902
-    },
-    {
-     "w": "papier",
-     "s": 14.902,
-     "e": 15.195
-    },
-    {
-     "w": "de",
-     "s": 15.195,
-     "e": 15.341
-    },
-    {
-     "w": "soie,",
-     "s": 15.341,
-     "e": 15.487
-    },
-    {
-     "w": "et",
-     "s": 16.127,
-     "e": 16.297
-    },
-    {
-     "w": "fermez",
-     "s": 16.297,
-     "e": 16.636
-    },
-    {
-     "w": "le",
-     "s": 16.636,
-     "e": 16.805
-    },
-    {
-     "w": "papier",
-     "s": 16.805,
-     "e": 17.144
-    },
-    {
-     "w": "de",
-     "s": 17.144,
-     "e": 17.313
+     "s": 8.341,
+     "e": 8.455
     },
     {
      "w": "soie",
-     "s": 17.313,
-     "e": 17.482
+     "s": 8.468,
+     "e": 8.696
     },
     {
-     "w": "avec",
-     "s": 17.482,
-     "e": 17.821
+     "w": "en",
+     "s": 8.722,
+     "e": 8.836
     },
     {
-     "w": "l'autocollant",
-     "s": 17.821,
-     "e": 18.499
-    },
-    {
-     "w": "Aélys.",
-     "s": 18.499,
-     "e": 18.837
-    },
-    {
-     "w": "Par-dessus,",
-     "s": 20.92,
-     "e": 21.47
-    },
-    {
-     "w": "déposez",
-     "s": 21.47,
-     "e": 22.47
-    },
-    {
-     "w": "le",
-     "s": 22.47,
-     "e": 22.654
-    },
-    {
-     "w": "porte-facture",
-     "s": 22.654,
-     "e": 23.388
-    },
-    {
-     "w": "Aélys,",
-     "s": 23.388,
-     "e": 23.754
-    },
-    {
-     "w": "avec",
-     "s": 23.754,
-     "e": 24.571
-    },
-    {
-     "w": "le",
-     "s": 24.571,
-     "e": 24.755
-    },
-    {
-     "w": "livret",
-     "s": 24.755,
-     "e": 25.122
-    },
-    {
-     "w": "« Merci",
-     "s": 25.122,
-     "e": 25.488
-    },
-    {
-     "w": "pour",
-     "s": 25.488,
-     "e": 25.672
-    },
-    {
-     "w": "votre",
-     "s": 25.672,
-     "e": 25.855
-    },
-    {
-     "w": "commande »",
-     "s": 25.855,
-     "e": 26.222
+     "w": "2",
+     "s": 8.849,
+     "e": 8.906
     },
     {
      "w": "et",
-     "s": 26.222,
-     "e": 26.406
+     "s": 8.912,
+     "e": 9.027
+    },
+    {
+     "w": "déposez-la",
+     "s": 9.039,
+     "e": 9.554
+    },
+    {
+     "w": "dans",
+     "s": 9.611,
+     "e": 9.84
     },
     {
      "w": "le",
-     "s": 26.406,
-     "e": 26.589
+     "s": 9.865,
+     "e": 9.979
     },
     {
-     "w": "bon",
-     "s": 26.589,
-     "e": 26.772
+     "w": "carton.",
+     "s": 9.992,
+     "e": 10.449
     },
     {
-     "w": "de",
-     "s": 26.772,
-     "e": 26.956
+     "w": "Si",
+     "s": 12.117,
+     "e": 12.23
     },
     {
-     "w": "livraison",
-     "s": 26.956,
-     "e": 27.506
+     "w": "un",
+     "s": 12.243,
+     "e": 12.356
     },
     {
-     "w": "à",
-     "s": 27.506,
-     "e": 27.69
+     "w": "sac",
+     "s": 12.369,
+     "e": 12.539
     },
     {
-     "w": "l'intérieur.",
-     "s": 27.69,
-     "e": 28.24
+     "w": "Aélys",
+     "s": 12.558,
+     "e": 12.842
     },
     {
-     "w": "Fermez",
-     "s": 30.299,
-     "e": 30.64
+     "w": "est",
+     "s": 12.873,
+     "e": 13.044
+    },
+    {
+     "w": "demandé",
+     "s": 13.062,
+     "e": 13.46
+    },
+    {
+     "w": "en",
+     "s": 13.504,
+     "e": 13.617
+    },
+    {
+     "w": "pochette",
+     "s": 13.63,
+     "e": 14.084
+    },
+    {
+     "w": "cadeau,",
+     "s": 14.134,
+     "e": 14.588
+    },
+    {
+     "w": "mettez-la",
+     "s": 14.639,
+     "e": 15.092
+    },
+    {
+     "w": "dans",
+     "s": 15.143,
+     "e": 15.37
     },
     {
      "w": "le",
-     "s": 30.64,
-     "e": 30.811
+     "s": 15.395,
+     "e": 15.509
     },
     {
-     "w": "colis",
-     "s": 30.811,
-     "e": 31.153
-    },
-    {
-     "w": "avec",
-     "s": 31.153,
-     "e": 31.494
-    },
-    {
-     "w": "la",
-     "s": 31.494,
-     "e": 31.665
-    },
-    {
-     "w": "bande",
-     "s": 31.665,
-     "e": 31.836
-    },
-    {
-     "w": "adhésive,",
-     "s": 31.836,
-     "e": 32.349
-    },
-    {
-     "w": "renforcez",
-     "s": 32.929,
-     "e": 33.502
-    },
-    {
-     "w": "la",
-     "s": 33.502,
-     "e": 33.694
-    },
-    {
-     "w": "fermeture",
-     "s": 33.694,
-     "e": 34.267
-    },
-    {
-     "w": "avec",
-     "s": 34.267,
-     "e": 34.65
+     "w": "fond",
+     "s": 15.521,
+     "e": 15.748
     },
     {
      "w": "du",
-     "s": 34.65,
-     "e": 34.841
+     "s": 15.773,
+     "e": 15.887
     },
     {
-     "w": "scotch",
-     "s": 34.841,
-     "e": 35.032
+     "w": "carton,",
+     "s": 15.899,
+     "e": 16.353
     },
     {
-     "w": "bande",
-     "s": 35.032,
-     "e": 35.224
+     "w": "en",
+     "s": 16.404,
+     "e": 16.517
+    },
+    {
+     "w": "la",
+     "s": 16.53,
+     "e": 16.643
+    },
+    {
+     "w": "pliant",
+     "s": 16.656,
+     "e": 16.996
+    },
+    {
+     "w": "si",
+     "s": 17.034,
+     "e": 17.148
+    },
+    {
+     "w": "nécessaire.",
+     "s": 17.16,
+     "e": 17.841
+    },
+    {
+     "w": "Vous",
+     "s": 20.05,
+     "e": 20.275
+    },
+    {
+     "w": "pouvez",
+     "s": 20.3,
+     "e": 20.638
+    },
+    {
+     "w": "ajouter",
+     "s": 20.675,
+     "e": 21.069
+    },
+    {
+     "w": "une",
+     "s": 21.113,
+     "e": 21.282
+    },
+    {
+     "w": "nouvelle",
+     "s": 21.3,
+     "e": 21.751
+    },
+    {
+     "w": "feuille",
+     "s": 21.801,
+     "e": 22.194
     },
     {
      "w": "de",
-     "s": 35.224,
-     "e": 35.415
+     "s": 22.238,
+     "e": 22.351
     },
     {
-     "w": "garantie,",
-     "s": 35.415,
-     "e": 35.989
-    },
-    {
-     "w": "et",
-     "s": 36.599,
-     "e": 36.759
-    },
-    {
-     "w": "collez",
-     "s": 36.759,
-     "e": 37.079
-    },
-    {
-     "w": "l'étiquette",
-     "s": 37.079,
-     "e": 37.559
+     "w": "papier",
+     "s": 22.363,
+     "e": 22.701
     },
     {
      "w": "de",
-     "s": 37.559,
-     "e": 37.719
+     "s": 22.738,
+     "e": 22.851
     },
     {
-     "w": "transport",
-     "s": 37.719,
-     "e": 38.039
+     "w": "soie,",
+     "s": 22.863,
+     "e": 23.201
+    },
+    {
+     "w": "pliée",
+     "s": 23.239,
+     "e": 23.52
+    },
+    {
+     "w": "en",
+     "s": 23.551,
+     "e": 23.664
+    },
+    {
+     "w": "2,",
+     "s": 23.676,
+     "e": 23.845
+    },
+    {
+     "w": "pour",
+     "s": 23.864,
+     "e": 24.089
+    },
+    {
+     "w": "venir",
+     "s": 24.114,
+     "e": 24.395
+    },
+    {
+     "w": "la",
+     "s": 24.427,
+     "e": 24.539
+    },
+    {
+     "w": "refermer",
+     "s": 24.552,
+     "e": 25.002
     },
     {
      "w": "sur",
-     "s": 38.039,
-     "e": 38.199
+     "s": 25.052,
+     "e": 25.221
+    },
+    {
+     "w": "l'écrin",
+     "s": 25.239,
+     "e": 25.577
+    },
+    {
+     "w": "grâce",
+     "s": 25.614,
+     "e": 25.896
+    },
+    {
+     "w": "à",
+     "s": 25.927,
+     "e": 25.983
+    },
+    {
+     "w": "un",
+     "s": 25.99,
+     "e": 26.102
+    },
+    {
+     "w": "autocollant",
+     "s": 26.115,
+     "e": 26.734
+    },
+    {
+     "w": "Aélys.",
+     "s": 26.802,
+     "e": 27.196
+    },
+    {
+     "w": "Par-dessus,",
+     "s": 31.06,
+     "e": 31.669
+    },
+    {
+     "w": "déposez",
+     "s": 31.737,
+     "e": 32.125
     },
     {
      "w": "le",
-     "s": 38.199,
-     "e": 38.359
+     "s": 32.168,
+     "e": 32.278
+    },
+    {
+     "w": "porte-facture",
+     "s": 32.291,
+     "e": 32.955
+    },
+    {
+     "w": "Aélys,",
+     "s": 33.029,
+     "e": 33.417
+    },
+    {
+     "w": "avec",
+     "s": 33.46,
+     "e": 33.682
+    },
+    {
+     "w": "le",
+     "s": 33.706,
+     "e": 33.817
+    },
+    {
+     "w": "livret",
+     "s": 33.829,
+     "e": 34.162
+    },
+    {
+     "w": "« Merci",
+     "s": 34.198,
+     "e": 34.475
+    },
+    {
+     "w": "pour",
+     "s": 34.506,
+     "e": 34.728
+    },
+    {
+     "w": "votre",
+     "s": 34.752,
+     "e": 35.029
+    },
+    {
+     "w": "commande »",
+     "s": 35.06,
+     "e": 35.503
+    },
+    {
+     "w": "et",
+     "s": 35.552,
+     "e": 35.663
+    },
+    {
+     "w": "le",
+     "s": 35.675,
+     "e": 35.786
+    },
+    {
+     "w": "bon",
+     "s": 35.798,
+     "e": 35.965
+    },
+    {
+     "w": "de",
+     "s": 35.983,
+     "e": 36.094
+    },
+    {
+     "w": "livraison",
+     "s": 36.106,
+     "e": 36.605
+    },
+    {
+     "w": "à",
+     "s": 36.66,
+     "e": 36.715
+    },
+    {
+     "w": "l'intérieur.",
+     "s": 36.722,
+     "e": 37.386
+    },
+    {
+     "w": "Enlevez",
+     "s": 48.56,
+     "e": 48.942
+    },
+    {
+     "w": "la",
+     "s": 48.984,
+     "e": 49.093
+    },
+    {
+     "w": "bande",
+     "s": 49.105,
+     "e": 49.378
+    },
+    {
+     "w": "adhésive",
+     "s": 49.408,
+     "e": 49.844
+    },
+    {
+     "w": "de",
+     "s": 49.893,
+     "e": 50.002
+    },
+    {
+     "w": "protection",
+     "s": 50.014,
+     "e": 50.559
+    },
+    {
+     "w": "et",
+     "s": 50.62,
+     "e": 50.729
+    },
+    {
+     "w": "fermez",
+     "s": 50.741,
+     "e": 51.068
+    },
+    {
+     "w": "le",
+     "s": 51.104,
+     "e": 51.213
+    },
+    {
+     "w": "carton.",
+     "s": 51.225,
+     "e": 51.662
+    },
+    {
+     "w": "Collez",
+     "s": 56.76,
+     "e": 57.076
+    },
+    {
+     "w": "l'étiquette",
+     "s": 57.111,
+     "e": 57.638
+    },
+    {
+     "w": "de",
+     "s": 57.696,
+     "e": 57.801
+    },
+    {
+     "w": "transport",
+     "s": 57.813,
+     "e": 58.287
+    },
+    {
+     "w": "sur",
+     "s": 58.34,
+     "e": 58.497
+    },
+    {
+     "w": "le",
+     "s": 58.515,
+     "e": 58.62
     },
     {
      "w": "dessus.",
-     "s": 38.359,
-     "e": 38.679
+     "s": 58.632,
+     "e": 59.053
+    },
+    {
+     "w": "Fermez",
+     "s": 60.84,
+     "e": 61.191
+    },
+    {
+     "w": "le",
+     "s": 61.23,
+     "e": 61.347
+    },
+    {
+     "w": "colis",
+     "s": 61.36,
+     "e": 61.652
+    },
+    {
+     "w": "avec",
+     "s": 61.684,
+     "e": 61.918
+    },
+    {
+     "w": "la",
+     "s": 61.944,
+     "e": 62.061
+    },
+    {
+     "w": "bande",
+     "s": 62.074,
+     "e": 62.366
+    },
+    {
+     "w": "adhésive,",
+     "s": 62.399,
+     "e": 62.983
+    },
+    {
+     "w": "puis",
+     "s": 63.048,
+     "e": 63.282
+    },
+    {
+     "w": "renforcez",
+     "s": 63.308,
+     "e": 63.834
+    },
+    {
+     "w": "la",
+     "s": 63.892,
+     "e": 64.009
+    },
+    {
+     "w": "fermeture",
+     "s": 64.022,
+     "e": 64.548
+    },
+    {
+     "w": "avec",
+     "s": 64.607,
+     "e": 64.84
+    },
+    {
+     "w": "du",
+     "s": 64.866,
+     "e": 64.983
+    },
+    {
+     "w": "scotch",
+     "s": 64.996,
+     "e": 65.347
+    },
+    {
+     "w": "bande",
+     "s": 65.386,
+     "e": 65.678
+    },
+    {
+     "w": "de",
+     "s": 65.711,
+     "e": 65.828
+    },
+    {
+     "w": "garantie.",
+     "s": 65.841,
+     "e": 66.425
+    }
+   ],
+   "clips": [
+    {
+     "id": "car",
+     "t0": 0.5,
+     "dur": 68.4
     }
    ]
   },
   {
    "n": 5,
-   "title": "Expédier, ou préparer un Click-and-collect",
+   "title": "Expédier, règle des 13h, click-and-collect",
    "lead": 0.8,
    "tail": 1.5,
-   "adur": 35.631,
-   "dur": 37.931,
+   "adur": 83.229,
+   "dur": 85.529,
    "audio": "voiceover/v3/scene05.mp3",
    "shots": [
     {
-     "id": "v3_5_1",
+     "id": "p3_5_1",
      "t0": 0.0,
-     "t1": 8.682,
+     "t1": 7.812,
      "vo": "Étape 7. Si votre magasin dispose d'un bureau de poste dans sa galerie, amenez-y le colis.",
      "cues": [
       {
        "phrase": "Étape 7",
        "action": "le cercle 7 s'allume",
-       "t": 0.955
+       "t": 0.86
       },
       {
        "phrase": "bureau de poste",
        "action": "le bureau de poste s'allume",
-       "t": 4.609
+       "t": 4.429
       }
      ]
     },
     {
-     "id": "v3_5_2",
-     "t0": 8.682,
-     "t1": 17.976,
+     "id": "p3_5_2",
+     "t0": 7.812,
+     "t1": 15.719,
      "vo": "Sinon, effectuez une demande de collecte auprès du bon transporteur, Colissimo ou Chronopost, avant 13h.",
      "cues": [
       {
        "phrase": "demande de collecte",
        "action": "un formulaire se coche",
-       "t": 10.54
+       "t": 9.646
       },
       {
        "phrase": "avant 13h",
        "action": "l'horloge s'agrandit",
-       "t": 15.372
+       "t": 14.035
       }
      ]
     },
     {
-     "id": "v3_5_3",
-     "t0": 17.976,
-     "t1": 30.454,
-     "vo": "Pour une commande Click & Collect, vous préparez le ou les bijoux exactement comme pour une vente classique en magasin, en y ajoutant simplement le porte-facture Aélys avec le bon de livraison et le livret « Merci pour votre commande ».",
+     "id": "p3_5_3",
+     "t0": 15.719,
+     "t1": 27.948,
+     "vo": "Les commandes doivent être traitées avant 13h. Pourquoi ? Parce que 13h est l'heure limite pour faire une demande de ramasse auprès de Colissimo et Chronopost.",
+     "cues": [
+      {
+       "phrase": "avant 13h",
+       "action": "l'horloge s'arrête sur 13h",
+       "t": 18.265
+      },
+      {
+       "phrase": "heure limite",
+       "action": "alerte rouge",
+       "t": 23.527
+      },
+      {
+       "phrase": "Colissimo et Chronopost",
+       "action": "le camion apparaît",
+       "t": 26.174
+      }
+     ]
+    },
+    {
+     "id": "p3_5_4",
+     "t0": 27.948,
+     "t1": 35.304,
+     "vo": "Si la demande est faite avant 13h, les transporteurs viennent récupérer le ou les colis l'après-midi même.",
+     "cues": [
+      {
+       "phrase": "avant 13h",
+       "action": "l'horloge 13h reste en coin",
+       "t": 29.971
+      },
+      {
+       "phrase": "l'après-midi même",
+       "action": "le camion repart",
+       "t": 33.338
+      }
+     ]
+    },
+    {
+     "id": "p3_5_5",
+     "t0": 35.304,
+     "t1": 45.029,
+     "vo": "Et si une commande arrive en cours de journée, surtout après 13h ? Pas d'inquiétude : elle sera traitée le matin suivant.",
+     "cues": [
+      {
+       "phrase": "après 13h",
+       "action": "le colis bascule dans la zone orange",
+       "t": 38.68
+      },
+      {
+       "phrase": "matin suivant",
+       "action": "le soleil se lève sur la zone suivante",
+       "t": 43.045
+      }
+     ]
+    },
+    {
+     "id": "p3_5_7",
+     "t0": 45.029,
+     "t1": 59.029,
+     "vo": "une commande Click & Collect, vous préparez le ou les bijoux exactement comme pour une vente classique en magasin, en y ajoutant simplement le porte-facture Aélys avec le bon de livraison et le livret",
      "cues": [
       {
        "phrase": "vente classique",
        "action": "écrin et sac apparaissent",
-       "t": 22.956
+       "t": 51.287
       },
       {
        "phrase": "porte-facture",
        "action": "il s'ajoute",
-       "t": 27.023
+       "t": 55.071
       },
       {
        "phrase": "livret",
        "action": "le livret s'ajoute",
-       "t": 29.516
+       "t": 57.637
       }
      ]
     },
     {
-     "id": "v3_5_4",
-     "t0": 30.454,
-     "t1": 37.931,
-     "vo": "Il n'y a pas d'étiquette de transport, ni d'expédition : le client vient récupérer sa commande en magasin.",
+     "id": "p3_5_8",
+     "t0": 59.029,
+     "t1": 75.029,
+     "vo": "",
+     "cues": []
+    },
+    {
+     "id": "p3_5_9",
+     "t0": 75.029,
+     "t1": 85.529,
+     "vo": "Il n'y a pas d'étiquette de transport, ni d'expédition : le client vient récupérer sa commande en magasin.",
      "cues": [
       {
        "phrase": "pas d'étiquette",
        "action": "l'étiquette est barrée",
-       "t": 31.119
+       "t": 76.36
       },
       {
        "phrase": "ni d'expédition",
        "action": "le camion est barré",
-       "t": 32.815
+       "t": 77.774
       },
       {
        "phrase": "le client vient",
        "action": "le client entre",
-       "t": 34.069
+       "t": 79.226
       }
      ]
     }
@@ -1544,433 +2070,725 @@
    "words": [
     {
      "w": "Étape",
-     "s": 0.955,
-     "e": 1.482
+     "s": 0.86,
+     "e": 1.304
     },
     {
      "w": "7.",
-     "s": 1.482,
-     "e": 1.745
+     "s": 1.354,
+     "e": 1.62
     },
     {
      "w": "Si",
-     "s": 3.225,
-     "e": 3.398
+     "s": 3.06,
+     "e": 3.163
     },
     {
      "w": "votre",
-     "s": 3.398,
-     "e": 3.571
+     "s": 3.174,
+     "e": 3.431
     },
     {
      "w": "magasin",
-     "s": 3.571,
-     "e": 4.09
+     "s": 3.459,
+     "e": 3.819
     },
     {
      "w": "dispose",
-     "s": 4.09,
-     "e": 4.436
+     "s": 3.859,
+     "e": 4.218
     },
     {
      "w": "d'un",
-     "s": 4.436,
-     "e": 4.609
+     "s": 4.258,
+     "e": 4.412
     },
     {
      "w": "bureau",
-     "s": 4.609,
-     "e": 4.954
+     "s": 4.429,
+     "e": 4.738
     },
     {
      "w": "de",
-     "s": 4.954,
-     "e": 5.127
+     "s": 4.772,
+     "e": 4.874
     },
     {
      "w": "poste",
-     "s": 5.127,
-     "e": 5.3
+     "s": 4.886,
+     "e": 5.143
     },
     {
      "w": "dans",
-     "s": 5.3,
-     "e": 5.473
+     "s": 5.171,
+     "e": 5.377
     },
     {
      "w": "sa",
-     "s": 5.473,
-     "e": 5.646
+     "s": 5.399,
+     "e": 5.502
     },
     {
      "w": "galerie,",
-     "s": 5.646,
-     "e": 6.165
+     "s": 5.514,
+     "e": 5.976
     },
     {
      "w": "amenez-y",
-     "s": 6.285,
-     "e": 6.771
+     "s": 6.027,
+     "e": 6.387
     },
     {
      "w": "le",
-     "s": 6.771,
-     "e": 6.892
+     "s": 6.426,
+     "e": 6.529
     },
     {
      "w": "colis.",
-     "s": 6.892,
-     "e": 7.135
+     "s": 6.541,
+     "e": 6.9
     },
     {
      "w": "Sinon,",
-     "s": 8.812,
-     "e": 9.262
+     "s": 8.593,
+     "e": 8.942
     },
     {
      "w": "effectuez",
-     "s": 9.832,
-     "e": 10.363
+     "s": 8.981,
+     "e": 9.43
     },
     {
      "w": "une",
-     "s": 10.363,
-     "e": 10.54
+     "s": 9.48,
+     "e": 9.629
     },
     {
      "w": "demande",
-     "s": 10.54,
-     "e": 10.894
+     "s": 9.646,
+     "e": 9.995
     },
     {
      "w": "de",
-     "s": 10.894,
-     "e": 11.071
+     "s": 10.034,
+     "e": 10.134
     },
     {
      "w": "collecte",
-     "s": 11.071,
-     "e": 11.424
+     "s": 10.145,
+     "e": 10.544
     },
     {
      "w": "auprès",
-     "s": 11.424,
-     "e": 11.778
+     "s": 10.588,
+     "e": 10.887
     },
     {
      "w": "du",
-     "s": 11.778,
-     "e": 11.955
+     "s": 10.92,
+     "e": 11.02
     },
     {
      "w": "bon",
-     "s": 11.955,
-     "e": 12.132
+     "s": 11.031,
+     "e": 11.181
     },
     {
      "w": "transporteur,",
-     "s": 12.132,
-     "e": 12.662
+     "s": 11.197,
+     "e": 11.896
     },
     {
      "w": "Colissimo",
-     "s": 13.302,
-     "e": 14.057
+     "s": 12.453,
+     "e": 13.01
     },
     {
      "w": "ou",
-     "s": 14.057,
-     "e": 14.246
+     "s": 13.072,
+     "e": 13.196
     },
     {
      "w": "Chronopost,",
-     "s": 14.246,
-     "e": 14.812
+     "s": 13.21,
+     "e": 13.953
     },
     {
      "w": "avant",
-     "s": 15.372,
-     "e": 15.64
+     "s": 14.035,
+     "e": 14.345
     },
     {
      "w": "13h.",
-     "s": 15.64,
-     "e": 16.042
+     "s": 14.379,
+     "e": 14.689
     },
     {
-     "w": "Pour",
-     "s": 18.106,
-     "e": 18.297
+     "w": "Les",
+     "s": 16.624,
+     "e": 16.767
     },
     {
-     "w": "une",
-     "s": 18.297,
-     "e": 18.488
+     "w": "commandes",
+     "s": 16.783,
+     "e": 17.212
     },
     {
-     "w": "commande",
-     "s": 18.488,
-     "e": 18.871
+     "w": "doivent",
+     "s": 17.259,
+     "e": 17.593
     },
     {
-     "w": "Click &",
-     "s": 18.871,
-     "e": 19.062
+     "w": "être",
+     "s": 17.63,
+     "e": 17.82
     },
     {
-     "w": "Collect,",
-     "s": 19.062,
-     "e": 19.895
+     "w": "traitées",
+     "s": 17.841,
+     "e": 18.223
     },
     {
-     "w": "vous",
-     "s": 19.895,
-     "e": 20.086
+     "w": "avant",
+     "s": 18.265,
+     "e": 18.503
     },
     {
-     "w": "préparez",
-     "s": 20.086,
-     "e": 20.66
+     "w": "13h.",
+     "s": 18.53,
+     "e": 18.768
     },
     {
-     "w": "le",
-     "s": 20.66,
-     "e": 20.852
+     "w": "Pourquoi ?",
+     "s": 20.208,
+     "e": 20.55
     },
     {
-     "w": "ou",
-     "s": 20.852,
-     "e": 21.043
+     "w": "Parce",
+     "s": 21.998,
+     "e": 22.263
     },
     {
-     "w": "les",
-     "s": 21.043,
-     "e": 21.234
+     "w": "que",
+     "s": 22.292,
+     "e": 22.451
     },
     {
-     "w": "bijoux",
-     "s": 21.234,
-     "e": 21.617
+     "w": "13h",
+     "s": 22.469,
+     "e": 22.627
     },
     {
-     "w": "exactement",
-     "s": 21.617,
-     "e": 22.191
+     "w": "est",
+     "s": 22.645,
+     "e": 22.804
     },
     {
-     "w": "comme",
-     "s": 22.191,
-     "e": 22.382
+     "w": "l'heure",
+     "s": 22.822,
+     "e": 23.139
+    },
+    {
+     "w": "limite",
+     "s": 23.174,
+     "e": 23.492
     },
     {
      "w": "pour",
-     "s": 22.382,
-     "e": 22.574
+     "s": 23.527,
+     "e": 23.739
+    },
+    {
+     "w": "faire",
+     "s": 23.763,
+     "e": 24.027
     },
     {
      "w": "une",
-     "s": 22.574,
-     "e": 22.765
+     "s": 24.057,
+     "e": 24.216
     },
     {
-     "w": "vente",
-     "s": 22.765,
-     "e": 22.956
-    },
-    {
-     "w": "classique",
-     "s": 22.956,
-     "e": 23.53
-    },
-    {
-     "w": "en",
-     "s": 23.53,
-     "e": 23.722
-    },
-    {
-     "w": "magasin,",
-     "s": 23.722,
-     "e": 24.296
-    },
-    {
-     "w": "en",
-     "s": 24.886,
-     "e": 25.064
-    },
-    {
-     "w": "y",
-     "s": 25.064,
-     "e": 25.242
-    },
-    {
-     "w": "ajoutant",
-     "s": 25.242,
-     "e": 25.776
-    },
-    {
-     "w": "simplement",
-     "s": 25.776,
-     "e": 26.132
-    },
-    {
-     "w": "le",
-     "s": 26.132,
-     "e": 26.31
-    },
-    {
-     "w": "porte-facture",
-     "s": 26.31,
-     "e": 27.023
-    },
-    {
-     "w": "Aélys",
-     "s": 27.023,
-     "e": 27.379
-    },
-    {
-     "w": "avec",
-     "s": 27.379,
-     "e": 27.735
-    },
-    {
-     "w": "le",
-     "s": 27.735,
-     "e": 27.913
-    },
-    {
-     "w": "bon",
-     "s": 27.913,
-     "e": 28.091
+     "w": "demande",
+     "s": 24.233,
+     "e": 24.604
     },
     {
      "w": "de",
-     "s": 28.091,
-     "e": 28.269
+     "s": 24.645,
+     "e": 24.751
     },
     {
-     "w": "livraison",
-     "s": 28.269,
-     "e": 28.803
+     "w": "ramasse",
+     "s": 24.763,
+     "e": 25.133
+    },
+    {
+     "w": "auprès",
+     "s": 25.174,
+     "e": 25.492
+    },
+    {
+     "w": "de",
+     "s": 25.527,
+     "e": 25.633
+    },
+    {
+     "w": "Colissimo",
+     "s": 25.645,
+     "e": 26.122
     },
     {
      "w": "et",
-     "s": 28.803,
-     "e": 28.982
+     "s": 26.174,
+     "e": 26.28
     },
     {
-     "w": "le",
-     "s": 28.982,
-     "e": 29.16
+     "w": "Chronopost.",
+     "s": 26.292,
+     "e": 26.927
     },
     {
-     "w": "livret",
-     "s": 29.16,
-     "e": 29.516
+     "w": "Si",
+     "s": 28.808,
+     "e": 28.918
     },
     {
-     "w": "« Merci",
-     "s": 29.516,
-     "e": 29.872
+     "w": "la",
+     "s": 28.93,
+     "e": 29.041
     },
     {
-     "w": "pour",
-     "s": 29.872,
-     "e": 30.05
+     "w": "demande",
+     "s": 29.053,
+     "e": 29.439
     },
     {
-     "w": "votre",
-     "s": 30.05,
-     "e": 30.228
+     "w": "est",
+     "s": 29.481,
+     "e": 29.647
     },
     {
-     "w": "commande ».",
-     "s": 30.228,
-     "e": 30.584
+     "w": "faite",
+     "s": 29.665,
+     "e": 29.941
     },
     {
-     "w": "Il",
-     "s": 30.584,
-     "e": 30.762
+     "w": "avant",
+     "s": 29.971,
+     "e": 30.247
     },
     {
-     "w": "n'y",
-     "s": 30.762,
-     "e": 30.94
+     "w": "13h,",
+     "s": 30.277,
+     "e": 30.553
     },
     {
-     "w": "a",
-     "s": 30.94,
-     "e": 31.119
+     "w": "les",
+     "s": 30.583,
+     "e": 30.749
     },
     {
-     "w": "pas",
-     "s": 31.119,
-     "e": 31.297
+     "w": "transporteurs",
+     "s": 30.767,
+     "e": 31.483
     },
     {
-     "w": "d'étiquette",
-     "s": 31.297,
-     "e": 31.831
-    },
-    {
-     "w": "de",
-     "s": 31.831,
-     "e": 32.009
-    },
-    {
-     "w": "transport,",
-     "s": 32.009,
-     "e": 32.815
-    },
-    {
-     "w": "ni",
-     "s": 32.815,
-     "e": 32.993
-    },
-    {
-     "w": "d'expédition :",
-     "s": 32.993,
-     "e": 33.706
-    },
-    {
-     "w": "le",
-     "s": 33.906,
-     "e": 34.069
-    },
-    {
-     "w": "client",
-     "s": 34.069,
-     "e": 34.233
-    },
-    {
-     "w": "vient",
-     "s": 34.233,
-     "e": 34.396
+     "w": "viennent",
+     "s": 31.563,
+     "e": 32.004
     },
     {
      "w": "récupérer",
-     "s": 34.396,
-     "e": 35.051
+     "s": 32.053,
+     "e": 32.549
     },
     {
-     "w": "sa",
-     "s": 35.051,
-     "e": 35.214
+     "w": "le",
+     "s": 32.604,
+     "e": 32.714
+    },
+    {
+     "w": "ou",
+     "s": 32.726,
+     "e": 32.836
+    },
+    {
+     "w": "les",
+     "s": 32.849,
+     "e": 33.014
+    },
+    {
+     "w": "colis",
+     "s": 33.032,
+     "e": 33.308
+    },
+    {
+     "w": "l'après-midi",
+     "s": 33.338,
+     "e": 33.889
+    },
+    {
+     "w": "même.",
+     "s": 33.951,
+     "e": 34.281
+    },
+    {
+     "w": "Et",
+     "s": 36.199,
+     "e": 36.296
+    },
+    {
+     "w": "si",
+     "s": 36.307,
+     "e": 36.404
+    },
+    {
+     "w": "une",
+     "s": 36.415,
+     "e": 36.561
     },
     {
      "w": "commande",
-     "s": 35.214,
-     "e": 35.541
+     "s": 36.577,
+     "e": 36.965
+    },
+    {
+     "w": "arrive",
+     "s": 37.008,
+     "e": 37.3
     },
     {
      "w": "en",
-     "s": 35.541,
-     "e": 35.705
+     "s": 37.332,
+     "e": 37.429
+    },
+    {
+     "w": "cours",
+     "s": 37.44,
+     "e": 37.682
+    },
+    {
+     "w": "de",
+     "s": 37.709,
+     "e": 37.806
+    },
+    {
+     "w": "journée,",
+     "s": 37.817,
+     "e": 38.254
+    },
+    {
+     "w": "surtout",
+     "s": 38.303,
+     "e": 38.642
+    },
+    {
+     "w": "après",
+     "s": 38.68,
+     "e": 38.923
+    },
+    {
+     "w": "13h ?",
+     "s": 38.95,
+     "e": 39.192
+    },
+    {
+     "w": "Pas",
+     "s": 40.752,
+     "e": 40.874
+    },
+    {
+     "w": "d'inquiétude :",
+     "s": 40.887,
+     "e": 41.414
+    },
+    {
+     "w": "elle",
+     "s": 42.002,
+     "e": 42.173
+    },
+    {
+     "w": "sera",
+     "s": 42.192,
+     "e": 42.363
+    },
+    {
+     "w": "traitée",
+     "s": 42.382,
+     "e": 42.68
+    },
+    {
+     "w": "le",
+     "s": 42.713,
+     "e": 42.799
+    },
+    {
+     "w": "matin",
+     "s": 42.808,
+     "e": 43.022
+    },
+    {
+     "w": "suivant.",
+     "s": 43.045,
+     "e": 43.429
+    },
+    {
+     "w": "une",
+     "s": 45.989,
+     "e": 46.175
+    },
+    {
+     "w": "commande",
+     "s": 46.195,
+     "e": 46.691
+    },
+    {
+     "w": "Click &",
+     "s": 46.746,
+     "e": 47.055
+    },
+    {
+     "w": "Collect,",
+     "s": 47.09,
+     "e": 47.647
+    },
+    {
+     "w": "vous",
+     "s": 47.709,
+     "e": 47.957
+    },
+    {
+     "w": "préparez",
+     "s": 47.984,
+     "e": 48.479
+    },
+    {
+     "w": "le",
+     "s": 48.534,
+     "e": 48.658
+    },
+    {
+     "w": "ou",
+     "s": 48.672,
+     "e": 48.796
+    },
+    {
+     "w": "les",
+     "s": 48.81,
+     "e": 48.995
+    },
+    {
+     "w": "bijoux",
+     "s": 49.016,
+     "e": 49.388
+    },
+    {
+     "w": "exactement",
+     "s": 49.429,
+     "e": 50.048
+    },
+    {
+     "w": "comme",
+     "s": 50.117,
+     "e": 50.427
+    },
+    {
+     "w": "pour",
+     "s": 50.461,
+     "e": 50.709
+    },
+    {
+     "w": "une",
+     "s": 50.736,
+     "e": 50.922
+    },
+    {
+     "w": "vente",
+     "s": 50.943,
+     "e": 51.252
+    },
+    {
+     "w": "classique",
+     "s": 51.287,
+     "e": 51.844
+    },
+    {
+     "w": "en",
+     "s": 51.906,
+     "e": 52.03
+    },
+    {
+     "w": "magasin,",
+     "s": 52.043,
+     "e": 52.601
+    },
+    {
+     "w": "en",
+     "s": 52.663,
+     "e": 52.786
+    },
+    {
+     "w": "y",
+     "s": 52.8,
+     "e": 52.862
+    },
+    {
+     "w": "ajoutant",
+     "s": 52.869,
+     "e": 53.364
+    },
+    {
+     "w": "simplement",
+     "s": 53.419,
+     "e": 54.039
+    },
+    {
+     "w": "le",
+     "s": 54.107,
+     "e": 54.231
+    },
+    {
+     "w": "porte-facture",
+     "s": 54.245,
+     "e": 54.988
+    },
+    {
+     "w": "Aélys",
+     "s": 55.071,
+     "e": 55.38
+    },
+    {
+     "w": "avec",
+     "s": 55.415,
+     "e": 55.662
+    },
+    {
+     "w": "le",
+     "s": 55.69,
+     "e": 55.814
+    },
+    {
+     "w": "bon",
+     "s": 55.827,
+     "e": 56.013
+    },
+    {
+     "w": "de",
+     "s": 56.034,
+     "e": 56.158
+    },
+    {
+     "w": "livraison",
+     "s": 56.172,
+     "e": 56.729
+    },
+    {
+     "w": "et",
+     "s": 56.791,
+     "e": 56.915
+    },
+    {
+     "w": "le",
+     "s": 56.928,
+     "e": 57.052
+    },
+    {
+     "w": "livret",
+     "s": 57.066,
+     "e": 57.437
+    },
+    {
+     "w": "Il",
+     "s": 76.089,
+     "e": 76.187
+    },
+    {
+     "w": "n'y",
+     "s": 76.197,
+     "e": 76.295
+    },
+    {
+     "w": "a",
+     "s": 76.306,
+     "e": 76.355
+    },
+    {
+     "w": "pas",
+     "s": 76.36,
+     "e": 76.507
+    },
+    {
+     "w": "d'étiquette",
+     "s": 76.524,
+     "e": 77.013
+    },
+    {
+     "w": "de",
+     "s": 77.067,
+     "e": 77.165
+    },
+    {
+     "w": "transport,",
+     "s": 77.176,
+     "e": 77.714
+    },
+    {
+     "w": "ni",
+     "s": 77.774,
+     "e": 77.871
+    },
+    {
+     "w": "d'expédition :",
+     "s": 77.882,
+     "e": 78.518
+    },
+    {
+     "w": "le",
+     "s": 79.119,
+     "e": 79.215
+    },
+    {
+     "w": "client",
+     "s": 79.226,
+     "e": 79.515
+    },
+    {
+     "w": "vient",
+     "s": 79.547,
+     "e": 79.787
+    },
+    {
+     "w": "récupérer",
+     "s": 79.814,
+     "e": 80.247
+    },
+    {
+     "w": "sa",
+     "s": 80.295,
+     "e": 80.392
+    },
+    {
+     "w": "commande",
+     "s": 80.402,
+     "e": 80.788
+    },
+    {
+     "w": "en",
+     "s": 80.83,
+     "e": 80.927
     },
     {
      "w": "magasin.",
-     "s": 35.705,
-     "e": 36.196
+     "s": 80.937,
+     "e": 81.371
+    }
+   ],
+   "clips": [
+    {
+     "id": "cc",
+     "t0": 45.029,
+     "dur": 39.0
     }
    ]
   },
@@ -1978,62 +2796,62 @@
    "n": 6,
    "title": "Conclusion de la série",
    "lead": 0.8,
-   "tail": 3.4,
-   "adur": 20.114,
-   "dur": 24.314,
+   "tail": 2.0,
+   "adur": 19.341,
+   "dur": 22.141,
    "audio": "voiceover/v3/scene06.mp3",
    "shots": [
     {
-     "id": "v3_6_1",
+     "id": "p3_6_1",
      "t0": 0.0,
-     "t1": 11.871,
-     "vo": "Pour résumer : le stock du site, c'est le stock du réseau. Chaque matin, consultez les 3 onglets de l'interface de commande et traitez les commandes avant 13h.",
+     "t1": 11.019,
+     "vo": "Pour résumer : le stock du site, c'est le stock du réseau. Chaque matin, consultez les 3 onglets de l'interface de commande et traitez les commandes avant 13h.",
      "cues": [
       {
        "phrase": "stock du réseau",
        "action": "pictogramme 1",
-       "t": 3.407
+       "t": 3.564
       },
       {
        "phrase": "3 onglets",
        "action": "pictogramme 2",
-       "t": 7.021
+       "t": 6.995
       },
       {
        "phrase": "avant 13h",
        "action": "pictogramme 3",
-       "t": 9.636
+       "t": 9.847
       }
      ]
     },
     {
-     "id": "v3_6_2",
-     "t0": 11.871,
-     "t1": 18.889,
+     "id": "p3_6_2",
+     "t0": 11.019,
+     "t1": 17.466,
      "vo": "Préparez ensuite votre colis selon son type, et expédiez-le ou remettez-le au client.",
      "cues": [
       {
        "phrase": "selon son type",
        "action": "pictogramme préparation",
-       "t": 13.455
+       "t": 13.232
       },
       {
        "phrase": "remettez-le",
        "action": "pictogramme remise",
-       "t": 16.051
+       "t": 15.273
       }
      ]
     },
     {
-     "id": "v3_6_3",
-     "t0": 18.889,
-     "t1": 24.314,
-     "vo": "Merci, et bonnes ventes !",
+     "id": "p3_6_3",
+     "t0": 17.466,
+     "t1": 22.141,
+     "vo": "Merci à vous pour votre collaboration.",
      "cues": [
       {
        "phrase": "bonnes ventes",
        "action": "le logo s'illumine",
-       "t": 20.081
+       "t": 18.594
       }
      ]
     }
@@ -2041,223 +2859,233 @@
    "words": [
     {
      "w": "Pour",
-     "s": 0.99,
-     "e": 1.153
+     "s": 0.86,
+     "e": 1.04
     },
     {
      "w": "résumer :",
-     "s": 1.153,
-     "e": 1.64
+     "s": 1.06,
+     "e": 1.465
     },
     {
      "w": "le",
-     "s": 1.93,
-     "e": 2.141
+     "s": 2.04,
+     "e": 2.146
     },
     {
      "w": "stock",
-     "s": 2.141,
-     "e": 2.352
+     "s": 2.157,
+     "e": 2.421
     },
     {
      "w": "du",
-     "s": 2.352,
-     "e": 2.563
+     "s": 2.45,
+     "e": 2.556
     },
     {
      "w": "site,",
-     "s": 2.563,
-     "e": 2.774
+     "s": 2.567,
+     "e": 2.884
     },
     {
      "w": "c'est",
-     "s": 2.774,
-     "e": 2.985
+     "s": 2.919,
+     "e": 3.13
     },
     {
      "w": "le",
-     "s": 2.985,
-     "e": 3.196
+     "s": 3.154,
+     "e": 3.259
     },
     {
      "w": "stock",
-     "s": 3.196,
-     "e": 3.407
+     "s": 3.271,
+     "e": 3.535
     },
     {
      "w": "du",
-     "s": 3.407,
-     "e": 3.618
+     "s": 3.564,
+     "e": 3.669
     },
     {
      "w": "réseau.",
-     "s": 3.618,
-     "e": 4.04
+     "s": 3.681,
+     "e": 4.103
     },
     {
      "w": "Chaque",
-     "s": 5.637,
-     "e": 5.945
+     "s": 5.646,
+     "e": 5.926
     },
     {
      "w": "matin,",
-     "s": 5.945,
-     "e": 6.252
+     "s": 5.958,
+     "e": 6.284
     },
     {
      "w": "consultez",
-     "s": 6.252,
-     "e": 6.714
+     "s": 6.321,
+     "e": 6.741
     },
     {
      "w": "les",
-     "s": 6.714,
-     "e": 6.867
+     "s": 6.787,
+     "e": 6.927
     },
     {
      "w": "3",
-     "s": 6.867,
-     "e": 7.021
+     "s": 6.943,
+     "e": 6.99
     },
     {
      "w": "onglets",
-     "s": 7.021,
-     "e": 7.329
+     "s": 6.995,
+     "e": 7.322
     },
     {
      "w": "de",
-     "s": 7.329,
-     "e": 7.483
+     "s": 7.358,
+     "e": 7.451
     },
     {
      "w": "l'interface",
-     "s": 7.483,
-     "e": 7.944
+     "s": 7.462,
+     "e": 7.928
     },
     {
      "w": "de",
-     "s": 7.944,
-     "e": 8.098
+     "s": 7.98,
+     "e": 8.073
     },
     {
      "w": "commande",
-     "s": 8.098,
-     "e": 8.405
+     "s": 8.084,
+     "e": 8.457
     },
     {
      "w": "et",
-     "s": 8.405,
-     "e": 8.559
+     "s": 8.499,
+     "e": 8.592
     },
     {
      "w": "traitez",
-     "s": 8.559,
-     "e": 8.867
+     "s": 8.602,
+     "e": 8.929
     },
     {
      "w": "les",
-     "s": 8.867,
-     "e": 9.02
+     "s": 8.965,
+     "e": 9.106
     },
     {
      "w": "commandes",
-     "s": 9.02,
-     "e": 9.328
+     "s": 9.121,
+     "e": 9.541
     },
     {
      "w": "avant",
-     "s": 9.328,
-     "e": 9.636
+     "s": 9.588,
+     "e": 9.821
     },
     {
      "w": "13h.",
-     "s": 9.636,
-     "e": 10.097
+     "s": 9.847,
+     "e": 10.08
     },
     {
      "w": "Préparez",
-     "s": 12.001,
-     "e": 12.546
+     "s": 11.841,
+     "e": 12.241
     },
     {
      "w": "ensuite",
-     "s": 12.546,
-     "e": 12.91
+     "s": 12.286,
+     "e": 12.636
     },
     {
      "w": "votre",
-     "s": 12.91,
-     "e": 13.091
+     "s": 12.675,
+     "e": 12.926
     },
     {
      "w": "colis",
-     "s": 13.091,
-     "e": 13.455
+     "s": 12.954,
+     "e": 13.204
     },
     {
      "w": "selon",
-     "s": 13.455,
-     "e": 13.818
+     "s": 13.232,
+     "e": 13.482
     },
     {
      "w": "son",
-     "s": 13.818,
-     "e": 14.0
+     "s": 13.51,
+     "e": 13.66
     },
     {
      "w": "type,",
-     "s": 14.0,
-     "e": 14.181
+     "s": 13.677,
+     "e": 13.977
     },
     {
      "w": "et",
-     "s": 14.951,
-     "e": 15.171
+     "s": 14.371,
+     "e": 14.487
     },
     {
      "w": "expédiez-le",
-     "s": 15.171,
-     "e": 15.831
+     "s": 14.5,
+     "e": 15.079
     },
     {
      "w": "ou",
-     "s": 15.831,
-     "e": 16.051
+     "s": 15.144,
+     "e": 15.26
     },
     {
      "w": "remettez-le",
-     "s": 16.051,
-     "e": 16.711
+     "s": 15.273,
+     "e": 15.852
     },
     {
      "w": "au",
-     "s": 16.711,
-     "e": 16.931
+     "s": 15.917,
+     "e": 16.033
     },
     {
      "w": "client.",
-     "s": 16.931,
-     "e": 17.151
+     "s": 16.046,
+     "e": 16.509
     },
     {
-     "w": "Merci,",
-     "s": 19.019,
-     "e": 19.727
+     "w": "Merci",
+     "s": 18.281,
+     "e": 18.516
     },
     {
-     "w": "et",
-     "s": 19.727,
-     "e": 20.081
+     "w": "à",
+     "s": 18.542,
+     "e": 18.588
     },
     {
-     "w": "bonnes",
-     "s": 20.081,
-     "e": 20.435
+     "w": "vous",
+     "s": 18.594,
+     "e": 18.781
     },
     {
-     "w": "ventes !",
-     "s": 20.435,
-     "e": 20.789
+     "w": "pour",
+     "s": 18.802,
+     "e": 18.989
+    },
+    {
+     "w": "votre",
+     "s": 19.01,
+     "e": 19.244
+    },
+    {
+     "w": "collaboration.",
+     "s": 19.27,
+     "e": 19.973
     }
    ]
   }
