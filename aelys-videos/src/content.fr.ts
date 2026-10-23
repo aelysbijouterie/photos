@@ -72,7 +72,7 @@ export const video2 = {
     onlyBl: 'Click-and-collect :\nbon de livraison uniquement',
   },
   s5: {
-    tabs: '3 onglets · Traitement avant 13h',
+    tabs: '3 onglets · 5 étapes',
     steps: ['Ouvrir la\ncommande', 'Retrouver la\nréf. Odéis', 'Chercher le\nproduit', 'Scanner\net valider', 'Imprimer\nles documents'],
     next: 'À SUIVRE',
     nextTitle: 'Vidéo 3',

@@ -9,7 +9,7 @@ import {KeyText} from '../components/KeyText';
 import {Avatar} from '../components/Brand';
 import {ArrowSvg, Chip, Layer, Tile} from '../components/ui';
 import {TabBadge} from '../components/TabBadge';
-import {Screen, ClipAt, Hl} from '../components/Screen';
+import {Screen, ClipAt} from '../components/Screen';
 import {BellIcon, CheckIcon, CrossIcon, FileIcon, GemIcon, HomeIcon, MailIcon, PhoneIcon, PrinterIcon, ScanIcon, SearchIcon, StoreIcon, TruckIcon, ZapIcon} from '../components/Icon';
 import {lerp, pop, prog, progOut} from '../anim';
 import {ParcelTile, ShopTile} from '../video1/parts';
@@ -23,7 +23,7 @@ const O = colors.tabs.eReservation;
 const G = colors.tabs.clickCollect;
 
 // Plans (début, secondes de la scène)
-const T2 = S('v2_2_2'), T3 = S('v2_2_3'), T4 = S('v2_2_4'), T5 = S('v2_2_5'), T6 = S('v2_2_6'), T7 = S('v2_2_7'), T8 = S('v2_2_8'), T9 = S('v2_2_9');
+const T2 = S('v2_2_2'), T3 = S('v2_2_3'), T4 = S('v2_2_4'), T5 = S('v2_2_5'), T6 = S('v2_2_8'), T7 = S('v2_2_7');
 const win = (t: number, a: number, b: number) => prog(t, a, a + 0.4) * (1 - prog(t, b - 0.35, b));
 
 // Positions (pixels de la source) des zones à entourer
@@ -35,37 +35,22 @@ const UI1_TABS = [
 const UI2_TAB = {x: 169, y: 271, w: 320, h: 56};
 const UI2_ROW = {x: 135, y: 444, w: 1108, h: 80};
 const ER_TAB = {x: 505, y: 243, w: 255, h: 48};
-const ER_VOIR = {x: 866, y: 394, w: 180, h: 42};
-const ER_VALID = {x: 282, y: 452, w: 264, h: 32};
-const ER_SUPPR = {x: 828, y: 452, w: 172, h: 32};
-const ER_CLIENT = {x: 1090, y: 130, w: 190, h: 90};
 const CC_TAB = {x: 816, y: 250, w: 258, h: 52};
 
-// Plan 2.2.5 : gestes de la voix (instants de la scène)
+// Plan 2.2.5 : présentation de l'onglet e-réservation
 const E_TAB = C('v2_2_5', 0);
 const E_SIDE = C('v2_2_5', 1); // « mette l'article de côté »
 const E_UNPAID = C('v2_2_5', 2);
-const E_VOIR = C('v2_2_5', 3); // « cliquez sur voir la commande »
-const E_PRODUCT = C('v2_2_5', 4);
-const E_CLIENT = C('v2_2_5', 5); // « En haut à droite »
-const E_VALIDATE = C('v2_2_5', 6); // « cliquez sur valider »
-const E_PRINT = C('v2_2_5', 7);
-const E_NOSTOCK = C('v2_2_5', 8); // « Si vous ne disposez pas »
-const E_REFUSE = C('v2_2_5', 9);
 
 export const V2_Scene02: React.FC = () => {
   const {frame, fps, t} = useClock();
 
-  // ── 2.2.1 : le PC, l'interface s'ouvre
   const p1 = win(t, 0, T2);
   const zoom1 = lerp(prog(t, 0, T2), 1, 1.06);
-  // ── 2.2.2 : les trois onglets
   const p2 = win(t, T2, T3);
   const tabC = [C('v2_2_2', 0), C('v2_2_2', 0) + 0.55, C('v2_2_2', 0) + 1.1];
-  // ── 2.2.3 : À envoyer
   const p3 = win(t, T3, T4);
   const parcel = prog(t, C('v2_2_3', 0) - 0.2, C('v2_2_3', 0) + 1.0);
-  // ── 2.2.4 : modes d'envoi
   const p4 = win(t, T4, T5);
   const modes = [
     {i: <MailIcon size={120} strokeWidth={1.6} />, t: C('v2_2_4', 0)},
@@ -73,29 +58,13 @@ export const V2_Scene02: React.FC = () => {
     {i: <StoreIcon size={120} strokeWidth={1.6} />, t: C('v2_2_4', 2)},
     {i: <TruckIcon size={120} strokeWidth={1.6} />, t: C('v2_2_4', 3)},
   ];
-  // ── 2.2.5 : E-réservation (vidéo + animation)
   const p5 = win(t, T5, T6);
-  const anim5 = prog(t, E_SIDE - 0.4, E_SIDE) * (1 - prog(t, E_VOIR - 0.5, E_VOIR - 0.1));
-  const erA = E_TAB - 0.2; // extrait « onglet » (4 s)
-  const erBStart = E_VOIR - 0.9; // extrait « page de la réservation » : le clic tombe sur « Voir la commande »
-  const erB2Start = E_VALIDATE - 1.0; // fin de l'extrait : curseur vers « Valider » puis clic
-  const zoomClient = prog(t, E_CLIENT - 0.3, E_CLIENT + 0.9) * (1 - prog(t, E_VALIDATE - 1.3, E_VALIDATE - 0.5));
-  const pageHls: Hl[] = [
-    {...ER_CLIENT, color: O, from: E_CLIENT, to: E_VALIDATE - 1.0, pulse: true},
-    {...ER_VALID, color: G, from: E_VALIDATE - 0.9, to: E_NOSTOCK, pulse: true},
-    {...ER_SUPPR, color: colors.red, from: E_NOSTOCK, pulse: true},
-  ];
-  // ── 2.2.6 : validation puis e-mail
+  const anim5 = prog(t, E_SIDE - 0.4, E_SIDE);
+  const erA = E_TAB - 0.2;
   const p6 = win(t, T6, T7);
-  const mail = prog(t, C('v2_2_6', 1), C('v2_2_6', 1) + 1.3);
-  // ── 2.2.7 : 48 h, pas de rappel
-  const p7 = win(t, T7, T8);
-  const ring = prog(t, C('v2_2_7', 0) - 3.2, C('v2_2_7', 0) + 0.2);
-  // ── 2.2.8 : click-and-collect
-  const p8 = win(t, T8, T9);
   const walk = prog(t, C('v2_2_8', 1), C('v2_2_8', 1) + 1.4);
-  // ── 2.2.9 : même traitement
-  const p9 = prog(t, T9, T9 + 0.4);
+  const pB = prog(t, T7, T7 + 0.4);
+  const pick = prog(t, C('v2_2_7', 0) - 0.2, C('v2_2_7', 0) + 0.6);
 
   const sfx = [
     {t: 1.0, name: 'click' as const, volume: 0.3},
@@ -105,19 +74,8 @@ export const V2_Scene02: React.FC = () => {
     ...modes.map((m) => ({t: m.t, name: 'pop' as const, volume: 0.28})),
     {t: E_TAB, name: 'ding' as const, volume: 0.2},
     {t: E_SIDE, name: 'click' as const, volume: 0.3},
-    {t: E_VOIR, name: 'click' as const, volume: 0.3},
-    {t: E_VALIDATE + 0.5, name: 'click' as const, volume: 0.3},
-    {t: E_PRINT, name: 'tick' as const, volume: 0.3},
-    {t: E_NOSTOCK, name: 'stamp' as const, volume: 0.25},
-    {t: C('v2_2_6', 0), name: 'click' as const, volume: 0.3},
-    {t: C('v2_2_6', 1), name: 'whoosh' as const, volume: 0.22},
-    {t: C('v2_2_6', 2), name: 'ding' as const, volume: 0.25},
-    {t: C('v2_2_7', 0) - 3.2, name: 'tick' as const, volume: 0.15},
-    {t: C('v2_2_7', 1), name: 'pop' as const, volume: 0.28},
-    {t: C('v2_2_7', 2), name: 'stamp' as const, volume: 0.3},
     {t: C('v2_2_8', 0), name: 'chaching' as const, volume: 0.22},
-    {t: C('v2_2_9', 0), name: 'pop' as const, volume: 0.25},
-    {t: C('v2_2_9', 1), name: 'stamp' as const, volume: 0.3},
+    {t: C('v2_2_7', 0), name: 'whoosh' as const, volume: 0.25},
   ];
 
   return (
@@ -173,15 +131,13 @@ export const V2_Scene02: React.FC = () => {
         ))}
       </AbsoluteFill>
 
-      {/* ── 2.2.5 : e-réservation */}
+      {/* ── 2.2.5 : e-réservation, présentation de l'onglet */}
       <AbsoluteFill style={{opacity: p5}}>
         <TabBadge tab="eReservation" x={960} y={118} size={42} scale={pop(frame, fps, E_TAB - 0.4)} />
-        {/* extrait 1 : l'onglet */}
         <ClipAt at={erA} dur={4.0} x={360} y={170} w={1200} src="media/clip_er_a.mp4" kind="video" sw={1280} sh={720} sceneT={t} appear={erA} out={E_SIDE - 0.5}
           highlights={[{...ER_TAB, color: O, from: E_TAB, pulse: true}]} />
         <Screen x={360} y={170} w={1200} src="media/er_list.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={erA + 4.0} out={E_SIDE - 0.5}
           highlights={[{...ER_TAB, color: O, from: E_TAB, pulse: true}]} />
-        {/* animation : la cliente réserve, l'article est mis de côté */}
         <AbsoluteFill style={{opacity: anim5}}>
           <div style={{position: 'absolute', left: 250, top: 300, transform: `scale(${pop(frame, fps, E_SIDE - 0.2)})`, transformOrigin: 'bottom center'}}>
             <Avatar who="helene" size={440} />
@@ -196,62 +152,15 @@ export const V2_Scene02: React.FC = () => {
             <GemIcon size={120} strokeWidth={1.5} />
           </Tile>
           <Chip x={1420} y={290} text="non réglé" bg={colors.white} color={colors.red} border={colors.red} size={36} scale={pop(frame, fps, E_UNPAID)} />
-          <KeyText text={txt.s2.reserve} t={t} at={E_SIDE + 1.6} out={E_VOIR - 0.5} y={270} size={52} color={O} />
+          <KeyText text={txt.s2.reserve} t={t} at={E_SIDE + 1.6} y={190} size={52} color={O} />
         </AbsoluteFill>
-        {/* extrait 2 : page de la réservation */}
-        <ClipAt at={erBStart} dur={9.0} x={360} y={170} w={1200} src="media/clip_er_b.mp4" kind="video" sw={1280} sh={720} sceneT={t} appear={erBStart} out={E_CLIENT - 0.4} rate={1} />
-        {/* arrêt sur image : zoom sur le bloc client */}
-        <Screen x={360} y={170} w={1200} src="media/er_page.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={erBStart + 9.0 - 0.01} out={E_VALIDATE - 1.1}
-          zoom={lerp(zoomClient, 1, 2.3)} fx={lerp(zoomClient, 640, 1000)} fy={lerp(zoomClient, 360, 190)} highlights={[{...ER_CLIENT, color: O, from: E_CLIENT, to: E_VALIDATE - 1.2, pulse: true}]} />
-        <Chip x={960} y={900 - 50} text={txt.s2.client} bg={O} size={38} opacity={prog(t, E_CLIENT, E_CLIENT + 0.4) * (1 - prog(t, E_VALIDATE - 1.3, E_VALIDATE - 0.9))} />
-        {/* fin de l'extrait : clic sur « Valider et imprimer » */}
-        <ClipAt at={erB2Start} dur={3.9} x={360} y={170} w={1200} src="media/clip_er_b.mp4" kind="video" sw={1280} sh={720} sceneT={t} appear={erB2Start} startFromSec={9.0} highlights={pageHls} />
-        <Screen x={360} y={170} w={1200} src="media/er_btn.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={erB2Start + 3.88} highlights={pageHls} />
-        <Chip x={560} y={900 - 50} text={txt.s2.valider.replace('\n', ' ')} bg={G} size={34} opacity={prog(t, E_VALIDATE - 0.8, E_VALIDATE - 0.4) * (1 - prog(t, E_NOSTOCK - 0.3, E_NOSTOCK))} />
-        <Chip x={1380} y={900 - 50} text={txt.s2.supprimer.replace('\n', ' ')} bg={colors.red} size={34} opacity={prog(t, E_NOSTOCK, E_NOSTOCK + 0.4)} />
-      </AbsoluteFill>
-
-      {/* ── 2.2.6 : validation, e-mail, 48 h */}
-      <AbsoluteFill style={{opacity: p6}}>
-        <TabBadge tab="eReservation" x={960} y={118} size={42} />
-        <Screen x={80} y={230} w={1040} src="media/er_btn.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={T6}
-          highlights={[{...ER_VALID, color: G, from: T6 + 0.3, pulse: true}]} />
-        <Layer>
-          <ArrowSvg x1={1160} y1={440} x2={1420} y2={440} p={mail} color={O} w={9} />
-        </Layer>
-        <Tile x={1560} y={440} size={250} scale={pop(frame, fps, C('v2_2_6', 1))} label={txt.s2.mail} labelColor={O}>
-          <MailIcon size={140} strokeWidth={1.6} color={O} />
-        </Tile>
-        <div style={{position: 'absolute', left: 1560 + 70, top: 440 - 190, transform: `scale(${pop(frame, fps, C('v2_2_6', 2))})`, background: colors.navy, color: colors.white, fontFamily: fonts.main, fontWeight: 800, fontSize: 52, borderRadius: 999, padding: '10px 32px'}}>48 h</div>
-      </AbsoluteFill>
-
-      {/* ── 2.2.7 : 48 h écoulées, pas de rappel */}
-      <AbsoluteFill style={{opacity: p7}}>
-        <svg width={1920} height={1080} style={{position: 'absolute', left: 0, top: 0}}>
-          <circle cx={560} cy={460} r={190} fill="none" stroke={colors.grey} strokeWidth={30} />
-          <circle cx={560} cy={460} r={190} fill="none" stroke={O} strokeWidth={30} strokeLinecap="round" strokeDasharray={`${2 * Math.PI * 190 * (1 - ring)} ${2 * Math.PI * 190}`} transform="rotate(-90 560 460)" />
-        </svg>
-        <div style={{position: 'absolute', left: 560 - 150, top: 460 - 62, width: 300, textAlign: 'center', fontFamily: fonts.main, fontWeight: 800, fontSize: 100, color: O}}>{`${Math.max(0, Math.ceil(48 * (1 - ring)))}h`}</div>
-        <Layer>
-          <ArrowSvg x1={800} y1={460} x2={1060} y2={460} p={prog(t, C('v2_2_7', 1) - 0.8, C('v2_2_7', 1) - 0.1)} color={colors.greyText} w={8} />
-        </Layer>
-        <Tile x={1240} y={460} size={260} scale={pop(frame, fps, C('v2_2_7', 1))} state={t > C('v2_2_7', 1) ? 'lit' : 'dim'} label="retour en vitrine">
-          <GemIcon size={130} strokeWidth={1.5} />
-        </Tile>
-        <div style={{position: 'absolute', left: 1580, top: 440 - 90, transform: `scale(${pop(frame, fps, C('v2_2_7', 2))})`}}>
-          <div style={{position: 'relative', width: 180, height: 180, color: colors.greyText}}>
-            <BellIcon size={170} strokeWidth={1.5} />
-            <div style={{position: 'absolute', inset: -12, color: colors.red}}><CrossIcon size={196} strokeWidth={2.4} /></div>
-          </div>
-          <div style={{width: 300, marginLeft: -60, marginTop: 24, textAlign: 'center', fontFamily: fonts.main, fontWeight: 800, fontSize: 38, color: colors.navy}}>pas de rappel</div>
-        </div>
       </AbsoluteFill>
 
       {/* ── 2.2.8 : click-and-collect */}
-      <AbsoluteFill style={{opacity: p8}}>
-        <TabBadge tab="clickCollect" x={960} y={118} size={42} scale={pop(frame, fps, T8 + 0.2)} />
-        <Screen x={900} y={200} w={900} src="media/cc_list.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={T8 + 0.5}
-          highlights={[{...CC_TAB, color: G, from: T8 + 1.2, pulse: true}]} />
+      <AbsoluteFill style={{opacity: p6}}>
+        <TabBadge tab="clickCollect" x={960} y={118} size={42} scale={pop(frame, fps, T6 + 0.2)} />
+        <Screen x={900} y={200} w={900} src="media/cc_list.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={T6 + 0.5}
+          highlights={[{...CC_TAB, color: G, from: T6 + 1.2, pulse: true}]} />
         <div style={{position: 'absolute', left: 90, top: 300, transform: `scale(${pop(frame, fps, C('v2_2_8', 0) - 0.5)})`, transformOrigin: 'bottom center', opacity: 1 - prog(t, C('v2_2_8', 1) + 0.6, C('v2_2_8', 1) + 1.0)}}>
           <Avatar who="thomas" size={380} />
         </div>
@@ -266,27 +175,13 @@ export const V2_Scene02: React.FC = () => {
         </div>
       </AbsoluteFill>
 
-      {/* ── 2.2.9 : même traitement, sans transporteur */}
-      <AbsoluteFill style={{opacity: p9}}>
-        <TabBadge tab="clickCollect" x={960} y={118} size={42} />
-        {[<FileIcon key="a" size={90} strokeWidth={1.6} />, <SearchIcon key="b" size={90} strokeWidth={1.6} />, <ScanIcon key="c" size={90} strokeWidth={1.6} />, <PrinterIcon key="d" size={90} strokeWidth={1.6} />].map((ic, i) => (
-          <React.Fragment key={i}>
-            <Tile x={300 + i * 280} y={330} size={190} scale={pop(frame, fps, C('v2_2_9', 0) + i * 0.35 - 0.3)} state="idle">
-              <span style={{color: G}}>{ic}</span>
-            </Tile>
-            {i < 3 ? (
-              <Layer>
-                <ArrowSvg x1={300 + i * 280 + 110} y1={330} x2={300 + (i + 1) * 280 - 110} y2={330} p={prog(t, C('v2_2_9', 0) + i * 0.35, C('v2_2_9', 0) + i * 0.35 + 0.4)} color={G} w={7} />
-              </Layer>
-            ) : null}
-          </React.Fragment>
+      {/* ── 2.2.7 : liaison, on va traiter chaque onglet */}
+      <AbsoluteFill style={{opacity: pB}}>
+        {[colors.tabs.aEnvoyer, colors.tabs.eReservation, colors.tabs.clickCollect].map((c, i) => (
+          <div key={i} style={{position: 'absolute', left: 960 - 200 + (i - 1) * 520 - 20, top: lerp(pick, 460, i === 0 ? 300 : 460), transform: `scale(${(i === 0 ? 1 + 0.2 * pick : 1 - 0.1 * pick) * pop(frame, fps, T7 + 0.1 + i * 0.2)})`, opacity: i === 0 ? 1 : 1 - 0.55 * pick, width: 440, textAlign: 'center', background: c, color: colors.white, fontFamily: fonts.main, fontWeight: 800, fontSize: 40, padding: '24px 0', borderRadius: 999}}>
+            {['A envoyer', 'En e-réservation', 'En click-and-collect'][i]}
+          </div>
         ))}
-        <div style={{position: 'absolute', left: 1440, top: 330 - 95, width: 190, height: 190, transform: `scale(${pop(frame, fps, C('v2_2_9', 1) - 0.2)})`, color: colors.greyText}}>
-          <TruckIcon size={190} strokeWidth={1.4} />
-          <div style={{position: 'absolute', inset: -14, color: colors.red}}><CrossIcon size={218} strokeWidth={2.4} /></div>
-        </div>
-        <Screen x={600} y={500} w={720} src="media/cc_one_button.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={T9 + 1.2}
-          highlights={[{x: 574, y: 592, w: 130, h: 36, color: G, from: T9 + 2.0, pulse: true}]} />
       </AbsoluteFill>
     </SceneShell>
   );
