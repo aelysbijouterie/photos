@@ -17,7 +17,7 @@ const C = (id: string, i: number) => cueT(sc, id, i);
 const G = colors.tabs.clickCollect;
 
 const Panel: React.FC<{x: number; title: string; icon: React.ReactNode; progIn: number; focus: number; children?: React.ReactNode}> = ({x, title, icon, progIn, focus, children}) => (
-  <div style={{position: 'absolute', left: x, top: 170, width: 740, height: 520, borderRadius: 44, background: colors.white, border: `6px solid ${focus > 0.5 ? colors.gold : 'rgba(7,29,59,0.14)'}`, boxShadow: focus > 0.5 ? '0 30px 70px rgba(199,153,60,0.35)' : '0 20px 50px rgba(7,29,59,0.12)', opacity: progIn * (0.4 + 0.6 * focus), transform: `scale(${0.9 + 0.1 * progIn})`, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 50, fontFamily: fonts.main, color: colors.navy}}>
+  <div style={{position: 'absolute', left: x, top: 170, width: 740, height: 570, borderRadius: 44, background: colors.white, border: `6px solid ${focus > 0.5 ? colors.gold : 'rgba(7,29,59,0.14)'}`, boxShadow: focus > 0.5 ? '0 30px 70px rgba(199,153,60,0.35)' : '0 20px 50px rgba(7,29,59,0.12)', opacity: progIn * (0.4 + 0.6 * focus), transform: `scale(${0.9 + 0.1 * progIn})`, display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 50, fontFamily: fonts.main, color: colors.navy}}>
     {icon}
     <div style={{fontWeight: 800, fontSize: 52, marginTop: 20}}>{title}</div>
     {children}
@@ -54,11 +54,11 @@ export const V3_Scene02: React.FC = () => {
       <AbsoluteFill>
         <Panel x={lerp(split, 560, 110)} title="Enveloppe bulle" icon={<PackageIcon size={150} strokeWidth={1.4} />} progIn={split} focus={lf} />
         <Panel x={lerp(split, 560, 1070)} title="Carton d'expédition" icon={<BoxesIcon size={150} strokeWidth={1.4} />} progIn={split} focus={rf} />
-        {chip('p3_2_2', 0, 'Lettre suivie', 480, 545)}
-        {chip('p3_2_2', 1, '1 seul produit de faible valeur', 480, 635)}
-        {chip('p3_2_3', 0, 'Multi-produits', 1440, 530)}
-        {chip('p3_2_3', 1, 'Montres', 1440, 610)}
-        {chip('p3_2_3', 2, 'Bijoux en or', 1440, 690)}
+        {chip('p3_2_2', 0, 'Lettre suivie', 480, 540)}
+        {chip('p3_2_2', 1, '1 seul produit de faible valeur', 480, 630)}
+        {chip('p3_2_3', 0, 'Multi-produits', 1440, 520)}
+        {chip('p3_2_3', 1, 'Montres', 1440, 600)}
+        {chip('p3_2_3', 2, 'Bijoux en or', 1440, 680)}
       </AbsoluteFill>
       <AbsoluteFill style={{opacity: banner}}>
         <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 330, background: 'rgba(46,158,107,0.14)', borderTop: `6px solid ${G}`, transform: `translateY(${(1 - banner) * 120}px)`}} />

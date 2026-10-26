@@ -48,9 +48,9 @@ export const V3_Scene05: React.FC = () => {
   const cross1 = prog(t, C('p3_5_9', 0) - 0.1, C('p3_5_9', 0) + 0.3);
   const cross2 = prog(t, C('p3_5_9', 1) - 0.1, C('p3_5_9', 1) + 0.3);
   const ccTiles = [
-    {c: C('p3_5_7', 0), icon: <><GemIcon size={64} strokeWidth={1.6} /></>, label: 'Écrin et sac Aélys', y: 235},
-    {c: C('p3_5_7', 1), icon: <FileIcon size={78} strokeWidth={1.6} />, label: 'Porte-facture', y: 420},
-    {c: C('p3_5_7', 2), icon: <ReceiptIcon size={78} strokeWidth={1.6} />, label: 'Livret et bon', y: 605},
+    {c: C('p3_5_7', 0), icon: <><GemIcon size={52} strokeWidth={1.6} /></>, label: 'Écrin et sac Aélys', y: 210},
+    {c: C('p3_5_7', 1), icon: <FileIcon size={78} strokeWidth={1.6} />, label: 'Porte-facture', y: 385},
+    {c: C('p3_5_7', 2), icon: <ReceiptIcon size={78} strokeWidth={1.6} />, label: 'Livret et bon', y: 560},
   ];
 
   const sfx = [
@@ -142,7 +142,7 @@ export const V3_Scene05: React.FC = () => {
         <Screen x={560} y={130} w={1200} src="media/v3_cc_end.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={CLIP_END - 0.02} />
         <AbsoluteFill style={{opacity: 1 - prepOut}}>
           {ccTiles.map((x, i) => (
-            <Tile key={i} x={300} y={x.y} size={140} scale={pop(frame, fps, x.c)} label={x.label} labelColor={colors.navy}>
+            <Tile key={i} x={300} y={x.y} size={110} scale={pop(frame, fps, x.c)} label={x.label} labelColor={colors.navy}>
               {x.icon}
             </Tile>
           ))}

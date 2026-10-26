@@ -22,10 +22,10 @@ export const V3_Scene03: React.FC = () => {
   const T4 = S('p3_3_4'), T5 = S('p3_3_5'), T6 = S('p3_3_6'), T3 = S('p3_3_3');
   const gift = prog(t, T3 - 0.2, T3 + 0.4);
   const tiles = [
-    {c: C('p3_3_1', 0), icon: <PackageIcon size={78} strokeWidth={1.6} />, label: 'Enveloppe bulle'},
-    {c: C('p3_3_1', 1), icon: <GemIcon size={78} strokeWidth={1.6} />, label: 'Écrin'},
-    {c: C('p3_3_1', 2), icon: <FileIcon size={78} strokeWidth={1.6} />, label: 'Porte-facture'},
-    {c: C('p3_3_1', 3), icon: <ReceiptIcon size={78} strokeWidth={1.6} />, label: 'Livret « Merci »'},
+    {c: C('p3_3_1', 0), icon: <PackageIcon size={62} strokeWidth={1.6} />, label: 'Enveloppe bulle'},
+    {c: C('p3_3_1', 1), icon: <GemIcon size={62} strokeWidth={1.6} />, label: 'Écrin'},
+    {c: C('p3_3_1', 2), icon: <FileIcon size={62} strokeWidth={1.6} />, label: 'Porte-facture'},
+    {c: C('p3_3_1', 3), icon: <ReceiptIcon size={62} strokeWidth={1.6} />, label: 'Livret « Merci »'},
   ];
   const caps = [
     {a: C('p3_3_4', 0), b: C('p3_3_4', 1), text: "Bijou dans l'écrin"},
@@ -51,7 +51,7 @@ export const V3_Scene03: React.FC = () => {
       </AbsoluteFill>
       <AbsoluteFill style={{opacity: 1 - gift}}>
         {tiles.map((x, i) => (
-          <Tile key={i} x={300} y={215 + i * 170} size={140} scale={pop(frame, fps, x.c)} label={x.label} labelColor={colors.navy} state={t > T4 ? 'dim' : 'idle'}>
+          <Tile key={i} x={300} y={190 + i * 175} size={110} scale={pop(frame, fps, x.c)} label={x.label} labelColor={colors.navy} state={t > T4 ? 'dim' : 'idle'}>
             {x.icon}
           </Tile>
         ))}
