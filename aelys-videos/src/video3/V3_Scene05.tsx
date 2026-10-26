@@ -22,7 +22,6 @@ const C = (id: string, i: number) => cueT(sc, id, i);
 const O = colors.tabs.eReservation;
 const win = (t: number, a: number, b: number) => prog(t, a, a + 0.4) * (1 - prog(t, b - 0.35, b));
 const clip = sc.clips![0];
-const CLIP_END = clip.t0 + clip.dur;
 
 export const V3_Scene05: React.FC = () => {
   const {frame, fps, t} = useClock();
@@ -138,8 +137,7 @@ export const V3_Scene05: React.FC = () => {
       {/* ── click-and-collect */}
       <AbsoluteFill style={{opacity: qc}}>
         <TabBadge tab="clickCollect" x={1680} y={76} size={36} />
-        <ClipAt at={clip.t0} dur={clip.dur} x={560} y={130} w={1200} src="media/v3_cc.mp4" kind="video" sw={1280} sh={720} sceneT={t} appear={clip.t0} />
-        <Screen x={560} y={130} w={1200} src="media/v3_cc_end.jpg" kind="image" sw={1280} sh={720} sceneT={t} appear={CLIP_END - 0.02} />
+        <ClipAt at={clip.t0} dur={Math.min(39, clip.dur + sc.tail)} x={560} y={130} w={1200} src="media/v3_cc.mp4" kind="video" sw={1280} sh={720} sceneT={t} appear={clip.t0} />
         <AbsoluteFill style={{opacity: 1 - prepOut}}>
           {ccTiles.map((x, i) => (
             <Tile key={i} x={300} y={x.y} size={110} scale={pop(frame, fps, x.c)} label={x.label} labelColor={colors.navy}>
