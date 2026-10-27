@@ -1919,8 +1919,8 @@
    "title": "Expédier, règle des 13h, click-and-collect",
    "lead": 0.8,
    "tail": 1.5,
-   "adur": 64.369,
-   "dur": 66.669,
+   "adur": 71.779,
+   "dur": 74.079,
    "audio": "voiceover/v3/scene05.mp3",
    "shots": [
     {
@@ -2044,7 +2044,7 @@
     {
      "id": "p3_5_9",
      "t0": 59.029,
-     "t1": 66.669,
+     "t1": 74.079,
      "vo": "Il n'y a pas d'étiquette de transport, ni d'expédition : le client vient récupérer sa commande en magasin.",
      "cues": [
       {
@@ -2811,7 +2811,7 @@
     {
      "id": "cc",
      "t0": 45.029,
-     "dur": 20.14
+     "dur": 27.55
     }
    ]
   },
